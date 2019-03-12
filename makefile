@@ -33,23 +33,17 @@ else                                   # UTCS
 endif
 
 
-netflix-tests:
-	git clone https://gitlab.com/fareszf/cs329e-netflix-tests.git
+# Modify this to make more or less .HTML files representing our files
+Website.html: website/main.py
+	$(PYDOC) -w website/main.py
 
-Netflix.html: Netflix.py
-	$(PYDOC) -w Netflix
+Website.log:
+	git log > Website.log
 
-Netflix.log:
-	git log > Netflix.log
-
-RunNetflix.tmp: RunNetflix.in RunNetflix.out RunNetflix.py
-	$(PYTHON) RunNetflix.py < RunNetflix.in > RunNetflix.tmp
-	diff --strip-trailing-cr RunNetflix.tmp RunNetflix.out
-
-TestNetflix.tmp: TestNetflix.py
-	$(COVERAGE) run    --branch TestNetflix.py >  TestNetflix.tmp 2>&1
-	$(COVERAGE) report -m                      >> TestNetflix.tmp
-	cat TestNetflix.tmp
+TestWebsite.tmp: TestWebsite.py
+	$(COVERAGE) run    --branch TestWebsite.py >  TestWebsite.tmp 2>&1
+	# $(COVERAGE) report -m                      >> TestWebsite.tmp  # Uncomment line when tests are made
+	cat TestWebsite.tmp
 
 check:
 	@not_found=0;                                 \
@@ -73,7 +67,6 @@ check:
 clean:
 	rm -f  .coverage
 	rm -f  *.pyc
-	rm -f  RunWebsite.tmp
 	rm -f  TestWebsite.tmp
 	rm -rf __pycache__
 
@@ -113,13 +106,10 @@ versions:
 	which    $(PIP)
 	pip      --version
 	@echo
-	which    $(PYDOC)
-	pydoc    --version
-	@echo
 	which    $(PYLINT)
 	pylint   --version
 	@echo
 	which    $(PYTHON)
 	python   --version
 
-test: Netflix.html Netflix.log RunNetflix.tmp TestNetflix.tmp netflix-tests check
+test: Website.html Website.log TestWebsite.tmp check
