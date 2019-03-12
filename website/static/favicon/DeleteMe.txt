@@ -1,0 +1,1 @@
+This folder holds the favicon (if we decide to use one).
