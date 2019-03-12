@@ -10,4 +10,4 @@ netflix:
     image: "python:latest"
     script:
     - ls -al
-    # - make test
+    - make test
