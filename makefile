@@ -1,20 +1,13 @@
-.PHONY: Netflix.log
+.PHONY: Website.log
 
 FILES :=                              \
-    Netflix.html                      \
-    Netflix.log                       \
-    Netflix.py                        \
-    RunNetflix.in                     \
-    RunNetflix.out                    \
-    RunNetflix.py                     \
-    TestNetflix.out                   \
-    TestNetflix.py
-
-#    cs329e-netflix-tests/YourGitLabID-RunNetflix.in   \
-#    cs329e-netflix-tests/YourGitLabID-RunNetflix.out  \
-#    cs329e-netflix-tests/YourGitLabID-TestNetflix.out \
-#    cs329e-netflix-tests/YourGitLabID-TestNetflix.py  \
-#
+    .gitignore                        \
+    .gitlab-ci.yml                    \
+    requirements.txt                  \
+    TestWebsite.py                    \
+    website/main.py                   \
+    website/views.py                  \
+    website/__init__.py
 
 ifeq ($(shell uname), Darwin)          # Apple
     PYTHON   := python3
@@ -80,24 +73,22 @@ check:
 clean:
 	rm -f  .coverage
 	rm -f  *.pyc
-	rm -f  RunNetflix.tmp
-	rm -f  TestNetflix.tmp
+	rm -f  RunWebsite.tmp
+	rm -f  TestWebsite.tmp
 	rm -rf __pycache__
-	rm -rf cs329e-netflix-tests
 
 config:
 	git config -l
 
 format:
-	$(AUTOPEP8) -i Netflix.py
-	$(AUTOPEP8) -i RunNetflix.py
-	$(AUTOPEP8) -i TestNetflix.py
+	$(AUTOPEP8) -i website/main.py
+	$(AUTOPEP8) -i website/views.py
+	$(AUTOPEP8) -i website/__init__.py
 
 scrub:
 	make clean
-	rm -f  Netflix.html
-	rm -f  Netflix.log
-	rm -rf Netflix-tests
+	rm -f  Website.html
+	rm -f  Website.log
 
 status:
 	make clean
@@ -122,9 +113,9 @@ versions:
 	which    $(PIP)
 	pip      --version
 	@echo
-#	which    $(PYDOC)
-#	pydoc    --version
-#	@echo
+	which    $(PYDOC)
+	pydoc    --version
+	@echo
 	which    $(PYLINT)
 	pylint   --version
 	@echo

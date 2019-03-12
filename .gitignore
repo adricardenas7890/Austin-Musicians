@@ -1,5 +1,6 @@
 ChristianEnv
 venv
+.vscode
 __pycache__
 .coverage
 .DS_Store
