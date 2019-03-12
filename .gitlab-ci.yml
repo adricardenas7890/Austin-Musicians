@@ -7,7 +7,7 @@ before_script:
     - printenv | sort
 
 netflix:
-    image: "python:3.5"
+    image: "python:latest"
     script:
     - ls -al
     # - make test
