@@ -1,0 +1,1 @@
+This folder is meant to hold all of our css stuff. Hopefully broken up by page.

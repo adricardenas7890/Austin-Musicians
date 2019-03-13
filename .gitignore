@@ -1,1 +1,10 @@
 ChristianEnv
+venv
+settings.json
+__pycache__
+.coverage
+.DS_Store
+.mypy_cache
+.pylintrc
+*.pyc
+*.tmp

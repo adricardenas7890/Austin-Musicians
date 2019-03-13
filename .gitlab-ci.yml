@@ -1,0 +1,13 @@
+before_script:
+    - date
+    - uname -a
+    - pip install --upgrade pip
+    - pip install -r requirements.txt
+    - make versions	
+    - printenv | sort
+
+Website:
+    image: "python:latest"
+    script:
+    - ls -al
+    - make test
