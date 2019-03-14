@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{% Title %}</title>
+    <title>{% block title %}{% endblock %} - Local Austin Musicians</title>
 
     <!--- BOOTSTRAP 4 -->
     <link rel="stylesheet" href="./static/css/main.css">
@@ -15,9 +15,12 @@
 
 </head>
 <body>
-    <!-- This will contain things that do not change about page layout -->
+
+    <!--
+    This will contain things that do not change about page layout: navbar changed here
+     -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">IDB-GROUP11</a>
+      <a class="navbar-brand" href="#">Austin Musicians</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -27,13 +30,13 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Artists</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">World Disasters</a>
+            <a class="nav-link" href="#">Genres</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="#">Shows</a>
           </li>
         </ul>
       </div>
