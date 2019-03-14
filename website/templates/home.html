@@ -1,7 +1,23 @@
+<!-- any changes to main formatting do to base.html -->
 {% extends 'base.html' %}
 
+
+<!-- controls page title, "- Local Austin Musicians" will always come after it -->
+{% block header %}
+    <h1>{% block title %}Home{% endblock %}</h1>
+{% endblock %}
+
+
+
+<!-- contains content of the page -->
 {% block content %}
-        <h1>HW</h1>
 
+    <div class="container main-title-container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-lg-offset-4">
+                <h1 class="text-center">Austin Musicians</h1>
+            </div>
 
+        </div>
+    </div>
 {% endblock content %}
