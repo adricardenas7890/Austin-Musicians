@@ -1,5 +1,15 @@
+<!-- any changes to main formatting do to base.html -->
 {% extends 'base.html' %}
 
+
+<!-- controls page title, "- Local Austin Musicians" will always come after it -->
+{% block header %}
+    <h1>{% block title %}About{% endblock %}</h1>
+{% endblock %}
+
+
+
+<!-- contains content of the page -->
 {% block content %}
     <div class="container main-title-container">
         <div class="row justify-content-center">
@@ -50,4 +60,4 @@
 
     <!--Tools used -->
 
-{% enblock content %}
+{% endblock content %}
