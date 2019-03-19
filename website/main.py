@@ -6,7 +6,7 @@ app = Flask(__name__)
 def index():
 	return render_template('home.html')
 
-@app.route('/abouts/')
+@app.route('/about/')
 def about():
 	return render_template('about.html')
 
@@ -18,9 +18,9 @@ def models():
 def artists():
 	return render_template('artists.html')
 
-@app.route('/genres/')
-def genres():
-	return render_template('genres.html')
+@app.route('/venues/')
+def venues():
+	return render_template('venues.html')
 
 @app.route('/shows/')
 def shows():

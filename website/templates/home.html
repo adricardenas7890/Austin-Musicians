@@ -12,12 +12,15 @@
 <!-- contains content of the page -->
 {% block content %}
 
-    <div class="container main-title-container">
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-lg-offset-4">
-                <h1 class="text-center">Austin Musicians</h1>
-            </div>
-
+        <div class="main-title-container">
         </div>
-    </div>
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <h1 class="text-center cover">
+                    <a href="{{ url_for('models') }}"><img src="/static/images/logo.png" alt="austin musicians"></a>
+                </h1>
+            </div>
+        </div>
+
+
 {% endblock content %}
