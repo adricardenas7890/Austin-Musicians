@@ -1,1 +1,0 @@
-This folder is meant to hold all static images.
