@@ -26,6 +26,10 @@ def venues():
 def shows():
 	return render_template('shows.html')
 
+'''
+	add in functions for artists, venues, shows!!!!!!!!!!!
+'''
+
 
 if __name__ == "__main__":
 	app.debug = True
