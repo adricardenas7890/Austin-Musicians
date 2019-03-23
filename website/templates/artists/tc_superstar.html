@@ -5,6 +5,107 @@
 {% endblock %}
 
 {% block content %}
+    <h1 class="text-center">TC Superstar</h1>
+    <div style="text-align: center;">
+        <img src="/static/images/tc_superstar.jpg">
+    </div>
+    <!-- Members 
+        Should be under image in small text -->
+    <p>
+        <br>
+        Members:
+        Mitchell Webb: Synth, Sampler, Vocals
+        Julio Correa: Guitar
+        LB Flett: Dancer
+        Emily DiFranco: Dancer
+        Francis Rodriguez: Dancer
+        Eileen Yuriko Roby: Dancer
+        Aaron Chavez: Synth, Sampler, Vocals
+        Connor McCampbell: Vocals, Guitar, Recorded production
 
+    </p>
+
+    <!-- Genre -->
+    <p>Genre: Synthwave Dance Pop</p>
+
+    <!-- About the artist 
+        Title, with about information -->
+    <div>
+        <h3>About</h3>
+        <p>
+            TC Superstar is the solo project of Austin based songwriter Connor McCampbell. He wrote a 
+            <br>
+            collection of synth wave songs over the summer of 2017 and released TC Superstar's first album, 
+            <br>
+            Masc, in September 2017 through Austin based label Porch Fire Records. Fans and critics have 
+            <br>
+            described TC Superstar as "bloopy 80s revivalist synth pop" with "congested vocals" and "pretty 
+            <br>
+            good beats." McCampbell's influences include Talking Heads, Chairlift, Arthur Russel, and Alex 
+            <br>
+            Cameron.
+    </div>
+
+    <!-- Tour dates -->
+    <div class="graph-page-container">
+        <div class="container page-title-container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-lg-offset-4">
+                    <h3 class="text-center">Tour</h3>
+                </div>
+            </div>
+                <div class="row table-row justify-content-center">
+                    <div class="col">
+                        <table class="table table-hover">
+                            <tr>
+                                <th>Date</th>
+                                <th>Venue</th>
+                                <th>Location</th>
+                            </tr>
+                            <tr>
+                                <td>03/30</td>  
+                                <td>
+                                    <a href="{{url_for('empire_control_room')}}">Empire Control Room</a>
+                                </td>
+                                <td>Austin, TX</td>
+                            </tr>
+                            <tr>
+                                <td>04/07</td>  
+                                <td>
+                                    <a href="{{url_for('cheer_up_charlies')}}">Swan Dive</a>
+                                </td>
+                                <td>Austin, TX</td>
+                            </tr>
+                            <tr>
+                                <td>04/12</td>  
+                                <td>
+                                    <a href="{{url_for('cheer_up_charlies')}}">Cheer Up Charlies</a>
+                                </td>
+                                <td>Austin, TX</td>
+                            </tr>
+                            <tr>
+                                <td>04/15</td>  
+                                <td>
+                                    <a href="{{url_for('cheer_up_charlies')}}">Cheer Up Charlies</a>
+                                </td>
+                                <td>Austin, TX</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- Links -->
+    <div>
+        <h4>Check them out at...</h4>
+        <p>
+            http://tcsuperstar.com/<br>
+            https://www.facebook.com/TCSuperstar/<br>
+            https://www.instagram.com/tc_superstar/<br>
+            tcsuperstar.booking@gmail.com<br>
+            http://tcsuperstar.com/epk.html<br>
+        </p>
+    </div>
 
 {% endblock content %}
