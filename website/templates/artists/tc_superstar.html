@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% block content %}
+    <div class="container">
     <h1 class="text-center">TC Superstar</h1>
     <div style="text-align: center;">
         <img src="/static/images/tc_superstar.jpg">
@@ -34,15 +35,10 @@
         <h3>About</h3>
         <p>
             TC Superstar is the solo project of Austin based songwriter Connor McCampbell. He wrote a 
-            <br>
-            collection of synth wave songs over the summer of 2017 and released TC Superstar's first album, 
-            <br>
+            collection of synth wave songs over the summer of 2017 and released TC Superstar's first album,
             Masc, in September 2017 through Austin based label Porch Fire Records. Fans and critics have 
-            <br>
             described TC Superstar as "bloopy 80s revivalist synth pop" with "congested vocals" and "pretty 
-            <br>
             good beats." McCampbell's influences include Talking Heads, Chairlift, Arthur Russel, and Alex 
-            <br>
             Cameron.
     </div>
 
@@ -66,13 +62,6 @@
                                 <td>03/30</td>  
                                 <td>
                                     <a href="{{url_for('empire_control_room')}}">Empire Control Room</a>
-                                </td>
-                                <td>Austin, TX</td>
-                            </tr>
-                            <tr>
-                                <td>04/07</td>  
-                                <td>
-                                    <a href="{{url_for('cheer_up_charlies')}}">Swan Dive</a>
                                 </td>
                                 <td>Austin, TX</td>
                             </tr>
@@ -107,5 +96,6 @@
             http://tcsuperstar.com/epk.html<br>
         </p>
     </div>
+</div>
 
 {% endblock content %}
