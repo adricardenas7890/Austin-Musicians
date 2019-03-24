@@ -7,9 +7,21 @@
 {% block content %}
     <div class="container">
         <h1 class="text-center">Queer Dance Party</h1>
-    </div>
-    <div style="text-align: center;">
-        <img src="/static/images/queer_dance_party.jpg">
+        <div style="text-align: center;">
+            <div>
+                <img src="/static/images/queer_dance_party.jpg" style="width:500px;height:600px;">
+            </div>
+            <div>
+                <p>
+                    Tickets<br>
+                    Info: April 20<sup>th</sup> @ 9:30p<br>
+                    <a href="{{url_for('cheer_up_charlies')}}">Cheer Up Charlies</a><br>
+                    Featuring: <a href="{{url_for('tc_superstar')}}">TC Superstar</a>
+                </p>
+            </div>
+        </div>
     </div>
 
-{% endblock content %}
+    
+
+{% endblock content %} 

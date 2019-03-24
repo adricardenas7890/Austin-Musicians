@@ -7,9 +7,19 @@
 {% block content %}
     <div class="container">
         <h1 class="text-center">Clusterfunk EP Release</h1>
-    </div>
-    <div style="text-align: center;">
-        <img src="/static/images/cluster_funk.jpg">
+        <div style="text-align: center;">
+            <div>
+                <img src="/static/images/cluster_funk.jpg" style="width:500px;height:600px;">
+            </div>
+            <div>
+                <p>
+                    Tickets<br>
+                    Info: March 30<sup>th</sup> @ 9p<br>
+                    <a href="{{url_for('empire_control_room')}}">Empire Control Room</a><br>
+                    Featuring: <a href="{{url_for('tc_superstar')}}">Tc Superstar</a>
+                </p>
+            </div>
+        </div>
     </div>
 
-{% endblock content %}
+{% endblock content %} 
