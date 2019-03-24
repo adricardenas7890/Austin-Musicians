@@ -61,8 +61,9 @@ def mohawk():
 
 
 '''
-	render shows: FILL IN
+	render shows
 '''
+
 @app.route('/shows/queer_dance_party')
 def queer_dance_party():
 	return render_template('shows/queer_dance_party.html')
