@@ -67,6 +67,14 @@ def mohawk():
 def queer_dance_party():
 	return render_template('shows/queer_dance_party.html')
 
+@app.route('/shows/clusterfunk_ep_release')
+def cluster_funk():
+	return render_template('shows/clusterfunk_ep_release.html')
+
+@app.route('/shows/drip_drop_iv')
+def drip_drop_iv():
+	return render_template('shows/drip_drop_iv.html')
+
 
 
 
