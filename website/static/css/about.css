@@ -1,0 +1,30 @@
+/* Override General Template CSS */
+.full-page-container{
+    height: initial;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+img.about{
+    min-width: 100%;
+}
+
+.card-custom{
+    margin: 5px;
+    width: 25rem;
+}
+
+.split-topbottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.max-width-1140-centered{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
