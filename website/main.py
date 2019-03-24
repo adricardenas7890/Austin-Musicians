@@ -2,26 +2,32 @@ from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
+# Main Page
 @app.route('/')
 def index():
 	return render_template('home.html')
 
+# About Page
 @app.route('/about/')
 def about():
 	return render_template('about.html')
 
+# ????? Unsure what this is here for
 @app.route('/general/')
 def models():
 	return render_template('models.html')
 
+# Artists Page
 @app.route('/artists/')
 def artists():
 	return render_template('artists.html')
 
+# Venue Page
 @app.route('/venues/')
 def venues():
 	return render_template('venues.html')
 
+# Shows Page
 @app.route('/shows/')
 def shows():
 

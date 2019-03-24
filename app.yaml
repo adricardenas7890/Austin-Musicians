@@ -1,0 +1,24 @@
+# [START flask_app]
+runtime: python37
+# api_version: 1
+entrypoint: gunicorn -b :$PORT website.main:app
+
+# libraries:
+# - name: ssl
+#   version: latest
+
+# This configures Google App Engine to serve the files in the app's static
+# directory.
+handlers:
+- url: /static
+  static_dir: website/static/
+- url: /media
+  static_dir: Website/media/
+
+# This handler routes all requests not caught above to your main app. It is
+# required when static routes are defined, but can be omitted (along with
+# the entire handlers section) when there are no static files defined.
+- url: /.*
+  script: auto
+
+# [END flask_app]

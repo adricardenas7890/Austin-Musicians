@@ -1,1 +1,0 @@
-This folder is meant to hold all static Javascript we write. Hopefully broken up by page + universal scripts.
