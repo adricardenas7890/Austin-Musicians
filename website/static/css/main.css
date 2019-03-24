@@ -59,9 +59,7 @@ h3.fancy-cursive{
 .graph-page-container {
     height: 90%;
     overflow: hidden;
-    padding-top:20%;
-    padding-bottom:20%;
-
+    padding-top: 50px;
 }
 
 .page-title-container-austin {
@@ -85,7 +83,7 @@ h3.fancy-cursive{
 }
 
 .table-row {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .centered {
