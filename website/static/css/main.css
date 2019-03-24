@@ -32,8 +32,8 @@ h3.fancy-cursive{
 }
 
 .main-title-container-austin {
-    padding-top: 300px! important;
-    padding-bottom: 90px! important;
+    padding-top: 40vh;
+    padding-bottom: 10vh;
     border: black;
 }
 
@@ -42,7 +42,7 @@ h3.fancy-cursive{
     overflow: hidden;
 }
 .full-page-container-austin {
-    height: 100%;
+    height: calc(100% - 60px);
     overflow: hidden;
     background-image: url(/static/images/coverphoto2.png);
     background-position: center top;
