@@ -12,21 +12,31 @@ h1.text-center.cover {
     color: black;
 }
 
+h3.fancy-cursive{
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 50px;
+    text-shadow: 1px 1px black;
+}
+
 .navbar {
     background-color: rgb(255, 255, 255) ! important;
 }
 
 .main-title-container {
     padding-top: 300px! important;
-    padding-bottom:50px! important;
+    padding-bottom: 90px! important;
     border: black;
-
 }
 
 .full-page-container {
-    height: 90%;
+    height: 100%;
     overflow: hidden;
-    background-image: url(/static/images/coverphoto2.jpeg);
+    background-image: url(/static/images/coverphoto2.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .full-page-container2 {
