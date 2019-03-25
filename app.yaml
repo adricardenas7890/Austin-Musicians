@@ -1,11 +1,6 @@
 # [START flask_app]
 runtime: python37
-# api_version: 1
 entrypoint: gunicorn -b :$PORT website.main:app
-
-# libraries:
-# - name: ssl
-#   version: latest
 
 # This configures Google App Engine to serve the files in the app's static
 # directory.
