@@ -1,4 +1,4 @@
-.PHONY: Website.log
+.PHONY: IDB1.log
 
 FILES :=                              \
     .gitignore                        \
@@ -37,8 +37,8 @@ endif
 Website.html: website/main.py
 	$(PYDOC) -w website/main.py
 
-Website.log:
-	git log > Website.log
+IDB1.log:
+	git log > IDB1.log
 
 TestWebsite.tmp: TestWebsite.py
 	$(COVERAGE) run    --branch TestWebsite.py >  TestWebsite.tmp 2>&1
@@ -81,7 +81,7 @@ format:
 scrub:
 	make clean
 	rm -f  Website.html
-	rm -f  Website.log
+	rm -f  IDB1.log
 
 status:
 	make clean
@@ -112,4 +112,4 @@ versions:
 	which    $(PYTHON)
 	python   --version
 
-test: Website.html Website.log TestWebsite.tmp check
+test: Website.html IDB1.log TestWebsite.tmp check

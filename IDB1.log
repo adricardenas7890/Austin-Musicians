@@ -1,3 +1,118 @@
+commit 9793813eec7de9503eb8e3307de78c0f926bd856
+Merge: 30cbfbf a6c09b1
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Sun Mar 24 21:33:10 2019 -0500
+
+    Merge branch 'dev_phase1' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase1
+
+commit 30cbfbf19917fbb331bb5a21583c9164d1a223d5
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Sun Mar 24 21:33:06 2019 -0500
+
+    Removed some old images. Updated Log and app.yaml
+
+commit a6c09b100af7c12b6ad1288316d86c998a94bfa9
+Merge: 41b5611 30204ec
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Sun Mar 24 21:05:47 2019 -0500
+
+    Merge branch 'dev_phase1' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase1
+
+commit 41b5611e88d48ef5e23035b90a2208c2aa66b0db
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Sun Mar 24 21:05:41 2019 -0500
+
+    updated katelynn's about info on the about page
+
+commit 30204ecdbd698bc64909311295525d586557758f
+Author: Daniel Noble <daniel.noble@utexas.edu>
+Date:   Sun Mar 24 20:52:47 2019 -0500
+
+    Formatted information for queer dance party show page
+
+commit 4b6d1aa625954391c31953270161d10ae920ca43
+Author: Daniel Noble <daniel.noble@utexas.edu>
+Date:   Sun Mar 24 20:51:48 2019 -0500
+
+    Changes to shows
+
+commit b8db9598dac8ab7ee8e6ba8cb0e004af258483c0
+Merge: 996e1f3 6a36237
+Author: Daniel Noble <daniel.noble@utexas.edu>
+Date:   Sun Mar 24 20:49:45 2019 -0500
+
+    Merge branch 'dev_phase1' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase1
+
+commit 6a36237a93fef7c927600d319dceb77019e7610b
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Sun Mar 24 20:50:05 2019 -0500
+
+    changes to venue pages
+
+commit 996e1f3f2986be01cac8382328b7b55b5506807d
+Author: Daniel Noble <daniel.noble@utexas.edu>
+Date:   Sun Mar 24 20:49:32 2019 -0500
+
+    Formatted clusterfunk ep release page
+
+commit a4b6e044a02c58a162e8139d9ea90b48b3f95a11
+Merge: 53ebc83 854d8de
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Sun Mar 24 20:28:48 2019 -0500
+
+    Merge branch 'dev_phase1' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase1
+
+commit 53ebc835fe4de57a3f442e94220becc128183146
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Sun Mar 24 20:28:32 2019 -0500
+
+    added sortable tables
+
+commit 854d8de9ad81adc79ce38e3e818e57dfa7b34082
+Author: Daniel Noble <daniel.noble@utexas.edu>
+Date:   Sun Mar 24 20:25:23 2019 -0500
+
+    Added formatting for an artist page
+
+commit 51cfa881736cb6ac142c2f8f9e93b5e268cdd4a0
+Merge: a07a711 21a0f3b
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Sun Mar 24 20:24:09 2019 -0500
+
+    Merge branch 'dev_phase1' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase1
+
+commit a07a7113b6f2bb72e29e708bde6665192d06b626
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Sun Mar 24 20:22:50 2019 -0500
+
+    about page fixes
+
+commit 21a0f3ba80022222e957c71cdc901283a59329cd
+Author: Daniel Noble <daniel.noble@utexas.edu>
+Date:   Sun Mar 24 20:16:42 2019 -0500
+
+    Updated explosions in the sky page format
+
+commit d55d33c3a41c0226032d4665ffe0253cdc992280
+Merge: a43efc2 54135c7
+Author: Daniel Noble <daniel.noble@utexas.edu>
+Date:   Sun Mar 24 20:00:16 2019 -0500
+
+    Merge branch 'dev_phase1' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase1
+
+commit a43efc2cf8bbf895a5d78a55284cde2d2ee71d84
+Author: Daniel Noble <daniel.noble@utexas.edu>
+Date:   Sun Mar 24 19:50:41 2019 -0500
+
+    Formatted the artists page
+
+commit 54135c7601557558d03a03d1b3587850f0aaafe5
+Merge: c1aa8e4 397446c
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Sun Mar 24 19:08:02 2019 -0500
+
+    Merge branch 'dev_phase1' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase1
+
 commit 397446c57d0d3def9af73b875b92c055491aa4d8
 Author: ChristianGil <cmg580@utexas.edu>
 Date:   Sun Mar 24 18:07:53 2019 -0500
@@ -70,6 +185,14 @@ Author: ChristianGil <cmg580@utexas.edu>
 Date:   Sun Mar 24 12:54:26 2019 -0500
 
     Added in Google Cloud Compatability
+
+commit c1aa8e409651a2125935e9608f9d97c60e5abc75
+Merge: d108302 62dda5f
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Sat Mar 23 20:33:57 2019 -0500
+
+    Merge branch 'master' into dev_phase1
+    solve merge conflicts before merging to master
 
 commit d108302142e80eca8f74de99d1988d8c2dcc83cc
 Author: Katelynn19 <kwhittington19@utexas.edu>
@@ -192,6 +315,13 @@ Date:   Fri Mar 22 09:16:52 2019 -0700
 
     main.py updated with url, must fill in the rest for shows
 
+commit 62dda5f07ce320cd2d94d872f3eb46463d784e15
+Merge: 9810ca2 62e1280
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Wed Mar 20 19:04:10 2019 -0500
+
+    Merge branch 'dev_phase1'
+
 commit 62e128006d7ecf73c8006359f0282f7a59beee5c
 Author: Adriana Cardenas <adri.cardenas@utexas.edu>
 Date:   Wed Mar 20 19:03:38 2019 -0500
@@ -203,6 +333,13 @@ Author: Adriana Cardenas <adri.cardenas@utexas.edu>
 Date:   Tue Mar 19 23:30:08 2019 -0500
 
     splash page with added section for more information, main.js
+
+commit 9810ca2468f6ccba62b43d192824f393711d5c2d
+Merge: df4e1fb f523c1c
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Tue Mar 19 14:52:56 2019 -0500
+
+    erge branch 'master' of https://gitlab.com/ChristianGil/cs329e-idb
 
 commit df4e1fb74404aad6c4a73ac987b923e06246502f
 Author: Adriana Cardenas <adri.cardenas@utexas.edu>
@@ -264,6 +401,19 @@ Author: Kevin Han <kevinhan007@gmail.com>
 Date:   Thu Mar 14 13:53:28 2019 -0500
 
     Added Flask to main.py and created a home page
+
+commit f523c1c9f0c2c83147d37ff54bcfaaf8f34c1492
+Merge: f4caff4 22251b6
+Author: Daniel Alejandro Noble Hernandez <daniel.noble@utexas.edu>
+Date:   Wed Mar 13 01:10:44 2019 +0000
+
+    Merge branch 'dev_phase1' into 'master'
+    
+    First Merge: No True work done
+    
+    Closes #1 and #2
+    
+    See merge request ChristianGil/cs329e-idb!1
 
 commit 22251b64e3ca64bdb244428fe2619328ac88ff27
 Author: Adriana Cardenas <adri.cardenas@utexas.edu>
