@@ -6,27 +6,48 @@ html, body {
     font-family: "Georgia", serif! important;
 }
 
+.about-cards{
+    max-width: 25rem;
+}
+
+img.about-image{
+    height: 400px! important;
+}
+
 h1.text-center.cover {
     font-style: italic;
     font-size: 50px;
     color: black;
 }
 
+h3.fancy-cursive{
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 50px;
+    text-shadow: 1px 1px black;
+}
+
 .navbar {
     background-color: rgb(255, 255, 255) ! important;
 }
 
-.main-title-container {
-    padding-top: 300px! important;
-    padding-bottom:50px! important;
+.main-title-container-austin {
+    padding-top: 40vh;
+    padding-bottom: 10vh;
     border: black;
-
 }
 
 .full-page-container {
-    height: 90%;
+    height: 100%;
     overflow: hidden;
-    background-image: url(/static/images/coverphoto2.jpeg);
+}
+.full-page-container-austin {
+    height: calc(100% - 60px);
+    overflow: hidden;
+    background-image: url(/static/images/coverphoto2.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .full-page-container2 {
@@ -38,12 +59,10 @@ h1.text-center.cover {
 .graph-page-container {
     height: 90%;
     overflow: hidden;
-    padding-top:20%;
-    padding-bottom:20%;
-
+    padding-top: 50px;
 }
 
-.page-title-container {
+.page-title-container-austin {
     padding-top: 500px! important;
     border: black;
 
@@ -64,7 +83,7 @@ h1.text-center.cover {
 }
 
 .table-row {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .centered {
@@ -87,8 +106,11 @@ h1.text-center.cover {
 }
 
 .cover, img{
-  width:100%;
   max-width:100%;
+}
+
+img.width-100{
+    width: 100%;
 }
 
 .hideme {
