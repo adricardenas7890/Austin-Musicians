@@ -1,3 +1,37 @@
+commit 9aff8cb3c62353192017f7d31c96fbf6aca275dc
+Merge: 7028f14 c28c903
+Author: Christian Gil <cmg580@utexas.edu>
+Date:   Mon Mar 25 03:21:38 2019 +0000
+
+    Merge branch 'dev_phase1' into 'master'
+    
+    about links -- DONE
+    
+    See merge request ChristianGil/cs329e-idb!3
+
+commit c28c9030556b1e5c58e4bb268a609372cdb64462
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Sun Mar 24 22:03:26 2019 -0500
+
+    about links
+
+commit 7028f14e187d3df850de69350c4f04d30114118b
+Merge: c1aa8e4 1f5fa57
+Author: Christian Gil <cmg580@utexas.edu>
+Date:   Mon Mar 25 02:46:26 2019 +0000
+
+    Merge branch 'dev_phase1' into 'master'
+    
+    Final steps!
+    
+    See merge request ChristianGil/cs329e-idb!2
+
+commit 1f5fa578e6c1f5c93ea85c58e40a12501f53981b
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Sun Mar 24 21:44:27 2019 -0500
+
+    Finished About page. Created IDB1.log
+
 commit 9793813eec7de9503eb8e3307de78c0f926bd856
 Merge: 30cbfbf a6c09b1
 Author: ChristianGil <cmg580@utexas.edu>
