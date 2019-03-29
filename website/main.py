@@ -1,4 +1,8 @@
 from flask import Flask, render_template, url_for
+from models import app
+import os
+
+# app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['SQLALCHEMY_DATABASE_URI']
 
 app = Flask(__name__)
 

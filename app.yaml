@@ -16,4 +16,17 @@ handlers:
 - url: /.*
   script: auto
 
+
+env_variables:
+    # Replace user, password, database, and instance connection name with the values obtained
+    # when configuring your Cloud SQL instance.
+    SQLALCHEMY_DATABASE_URI: >-
+      postgresql+psycopg2://postgres:password123@/austin-music?host=/cloudsql/cs329e:us-central1:austin-music
+
+# Replace project and instance with the values obtained  when configuring your
+# Cloud SQL instance.
+beta_settings:
+    cloud_sql_instances: cs329e:us-central1:austin-music
+
+
 # [END flask_app]
