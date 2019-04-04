@@ -1,5 +1,5 @@
 from flask import Flask, render_template, url_for
-from models import app
+from models import Band, Venue, Shows
 import os
 
 # app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['SQLALCHEMY_DATABASE_URI']
@@ -24,18 +24,44 @@ def models():
 # Artists Page
 @app.route('/artists/')
 def artists():
-	return render_template('artists.html')
+	context = db.session.query(Band).all()
+	return render_template('artists.html', Band = context)
 
 # Venue Page
 @app.route('/venues/')
 def venues():
-	return render_template('venues.html')
+	context = db.session.query(Venue).all()
+	return render_template('venues.html', venues = context)
 
 # Shows Page
 @app.route('/shows/')
 def shows():
+	context = db.session.query(Shows).all()
+	return render_template('shows.html', shows = context)
 
-	return render_template('shows.html')
+'''
+	Dynamic Rendering
+'''
+
+# UNFINISHED: GOOGLE "Dynamic URLS Flask" for info https://stackoverflow.com/questions/35107885/how-to-generate-dynamic-urls-in-flask
+
+# Artists Page
+@app.route('/artists/<variable>')
+def artists(variable):
+	context = db.session.query(Band).all()
+	return render_template('artists.html', Band = context)
+
+# Venue Page
+@app.route('/venues/<variable>')
+def venues(variable):
+	context = db.session.query(Venue).all()
+	return render_template('venues.html', venues = context)
+
+# Shows Page
+@app.route('/shows/<variable>')
+def shows(variable):
+	context = db.session.query(Shows).all()
+	return render_template('shows.html', shows = context)
 
 '''
 	render artists
