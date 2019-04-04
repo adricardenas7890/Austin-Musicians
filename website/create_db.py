@@ -143,7 +143,7 @@ def create_shows():
         flyer            = show['Image Link']
 
         # if tickets = 'none' replace with nothing
-        if tickets == "None": 
+        if tickets == "None" or tickets == "none": 
             tickets = ""
 
         # if tickets link not valid, set to nothing
