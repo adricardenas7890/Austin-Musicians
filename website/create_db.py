@@ -163,13 +163,13 @@ def create_shows():
 
 
         newShow = Shows(id               = i,
-                        show_name        = show['Name'],
-                        presented_by     = show['Presented By'],
-                        featured_artists = show['Featured Artists'],
-                        venue            = show['Venue'],
-                        date_time        = show['Date and Time'],
-                        tickets          = show['Tickets'],
-                        flyer            = show['Image Link'])
+                        show_name        = show_name,
+                        presented_by     = presented_by,
+                        featured_artists = featured_artists,
+                        venue            = venue,
+                        date_time        = date_time,
+                        tickets          = tickets,
+                        flyer            = flyer)
             
         db.session.add(newShow)
         db.session.commit()
