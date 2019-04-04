@@ -31,8 +31,18 @@
                                             <a href="{{ show.show_name }}">{{ show.show_name }}</a>
                                         </td>
                                         <td>{{ show.presented_by }}</td>
-                                        <td>{{ show.featured_artists }}</td>
-                                        <td>{{ show.venue }}</td>
+                                        <td>
+                                            {% for artist in show.featured_artists.split(",") %}
+                                                {% if artist in show.featured_artists %}  <!---check if artist is in band.groups...i think-->
+                                                    <a href="{{ artist }}">{{ artist }}</a> <br>
+                                                {% else %}
+                                                    {{ artist }}
+                                                {% endif %}
+                                            {% endfor %}                                        
+                                        </td>
+                                        <td>
+                                            <a href="{{ show.venue }}">{{show.venue}}</a>
+                                        </td>
                                         <td>{{ show.date_time }}</td>
                                     </tr>
                                     {% endfor %}

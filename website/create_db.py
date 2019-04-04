@@ -156,14 +156,6 @@ def create_shows():
         if not isLinkValid(flyer): 
             flyer = ""
 
-        # clean columns - capitalize all first letters and no repeat commas
-        show_name = capitalizeFirst(removeExtraCommas(show_name))
-        presented_by = capitalizeFirst(removeExtraCommas(presented_by))
-        featured_artists = capitalizeFirst(removeExtraCommas(featured_artists))
-        venue = capitalizeFirst(removeExtraCommas(venue))
-        date_time = capitalizeFirst(removeExtraCommas(date_time))
-
-
         newShow = Shows(id               = i,
                         show_name        = show_name,
                         presented_by     = presented_by,

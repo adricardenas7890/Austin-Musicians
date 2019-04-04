@@ -65,7 +65,7 @@ def venue(url):
 # Shows Page
 @app.route('/shows/<url>')
 def show(url):
-	context = Shows.query.filter_by(Shows.show_name == url).first()
+	context = Shows.query.filter(Shows.show_name == url).first()
 	return render_template('shows.html', show = context)
 
 
