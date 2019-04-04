@@ -109,7 +109,7 @@ def create_venues():
         band['Genres (Format: \"Genre, Genre\")'] = capitalizeFirst(band['Genres (Format: \"Genre, Genre\")'])
 
 
-        if !isLinkValid(band['Website']):
+        if !(isLinkValid(band['Website'])):
             band['Website'] = ''
 
         band['Images'] = removeAllButFirstLink(band['Images'])
