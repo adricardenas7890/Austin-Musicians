@@ -63,11 +63,14 @@ def create_bands():
         genre = capitalizeFirst( removeExtraCommas( genre ) )
         # Make sure that year_started is an int
         if type(year_started) != int:
-            year_started = 0
+            year_started = None
         # Check that the image link is valid
         if not isLinkValid( image ):
             image = ""
         image = removeAllButFirstLink( image )
+        # If the word none is in albums, remove it
+        if albums.lower() == "none" or albums.lower() == "na" or albums.lower() == "n/a":
+            albums = ""
         # Check that the tour link is valid
         if not isLinkValid( tour ):
             tour = ""
@@ -98,7 +101,7 @@ def create_bands():
         db.session.commit()
 
 def create_venues():
-    venues = load_json('venues.json')
+    venues = load_json('database/venues.json')
 
     for i, venue in enumerate(venues):
 
@@ -135,7 +138,7 @@ def create_shows():
         # Get data
         show_name        = show['Name']
         presented_by     = show['Presented By']
-        featured_artists = show['Featured Artist']
+        featured_artists = show['Featured Artists']
         venue            = show['Venue']
         date_time        = show['Date and Time']
         tickets          = show['Tickets']
@@ -164,7 +167,7 @@ def create_shows():
         newShow = Shows(id               = i,
                         show_name        = show['Name'],
                         presented_by     = show['Presented By'],
-                        featured_artists = show['Featured Artist'],
+                        featured_artists = show['Featured Artists'],
                         venue            = show['Venue'],
                         date_time        = show['Date and Time'],
                         tickets          = show['Tickets'],
@@ -175,4 +178,6 @@ def create_shows():
 
 create_bands()
 create_shows()
+create_venues()
+
 # end of create_db.py
