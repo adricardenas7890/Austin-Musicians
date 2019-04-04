@@ -4,7 +4,7 @@ refer to home.html for documentation on flask
 {% extends 'base.html' %}
 
 {% block header %}
-    <h1>{% block title %}Genres{% endblock %}</h1>
+    <h1>{% block title %}Venues{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
@@ -23,52 +23,41 @@ refer to home.html for documentation on flask
                                     <th>Venue Name</th>
                                     <th>Location</th>
                                     <th>Genres</th>
-                                    <th>Year Founded</th>
-                                    <th>Still Open?</th>
+                                    <th>Days Open</th>
+                                    <th>Hours Open</th>
                                 </tr>
                             </thead>
                             <tbody>
+                                {% for venue in venues %}
                                 <tr>
                                     <td>
-                                        <a href="{{url_for('cheer_up_charlies')}}">Cheer Up Charlies</a>
+                                        <a href="{{ venue.venue_name }}">{{ venue.venue_name }}</a>
                                     </td>
-                                    <td>900 Red River Street</td>
-                                    <td>Electronic, Indie, Rock</td>
-                                    <td>2014</td>
-                                    <td>Yes</td>
+                                    <td>{{ venue.location }}</td>
+                                    <!-- Genre(s) listed? -->
+                                    {% if venue.genres == "" %}
+                                        <td>Various</td>
+                                    {% else %}
+                                        <td>{{ venue.genres }}</td>
+                                    {% endif %}
+                                    <!-- is day and hours open available? -->
+                                    {% if venue.days_open == "" %}
+                                        <td>Not Available</td>
+                                    {% else %}
+                                        <td>{{ venue.days_open }}</td>
+                                    {% endif %}
+                                    {% if venue.hours_open == "" %}
+                                        <td>Not Available</td>
+                                    {% else %}
+                                        <td>{{ venue.hours_open }}</td>
+                                    {% endif %}
                                 </tr>
-                                <tr>
-                                    <td>
-                                        <a href="{{url_for('empire_control_room')}}">Empire Control Room & Garage</a>
-                                    </td>
-                                    <td>606 East 7th Street</td>
-                                    <td>Electonic, Dance</td>
-                                    <td>2013</td>
-                                    <td>Yes</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="{{url_for('mohawk')}}">Mohawk</a>
-                                    </td>
-                                    <td>912 Red River Street</td>
-                                    <td>Rock, Indie</td>
-                                    <td>2006</td>
-                                    <td>Yes</td>
-                                </tr>
+                                {% endfor %}
                             </tbody>
                         </table>
                     </div>
                 </div>
         </div>
     </div>
-
-
-
-
-<!--Kind, location, date and time, human impact, economic impact, resources needed, ways to help, citations, external links -->
-<!-- Embedded images, maps, etc -->
-
-<!-- LINKS TO ORGANIZATIONS -->
-<!-- LINKS TO PEOPLE -->
 
 {% endblock content %}
