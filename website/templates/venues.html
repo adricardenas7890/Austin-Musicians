@@ -42,12 +42,16 @@ refer to home.html for documentation on flask
                                     {% endif %}
                                     <!-- is day and hours open available? -->
                                     {% if venue.days_open == "" %}
-                                        <td>Not Available</td>
+                                        <td>Varies</td>
+                                    {% elif venue.days_open == "NA" %}
+                                        <td>Varies</td>
                                     {% else %}
                                         <td>{{ venue.days_open }}</td>
                                     {% endif %}
                                     {% if venue.hours_open == "" %}
                                         <td>Not Available</td>
+                                    {% elif venue.hours_open == "NA" %}
+                                        <td>Varies</td>
                                     {% else %}
                                         <td>{{ venue.hours_open }}</td>
                                     {% endif %}
