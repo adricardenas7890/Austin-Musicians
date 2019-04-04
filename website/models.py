@@ -12,24 +12,18 @@ db = SQLAlchemy(app)
 class Band(db.Model):
     __tablename__ = 'band'
 
-    group =         db.Column( db.String(80),  nullable = False ) 
-    artists   =     db.Column( db.String(500), nullable = True ) 
-    genre     =     db.Column( db.String(50),  nullable = True) 
-    is_shows  =     db.Column( db.Boolean, nullable = False ) 
-    year_started =  db.Column( db.Integer, nullable = True ) 
-    id =            db.Column( db.Integer, primary_key = True )
-    
-    # group =             band["group"]
-    # artists =           band["artists"]
-    # genre =             band["Genre"]
-    # year_started =      band["year_started"]
-    # group_summary =     band["group_summary"]
-    # image =             band["image"]
-    # albums =            band["albums"]
-    # tour =              band["tour"]
-    # external_links =    band["external_links"]
-    # social_media =      band["social_media"]
-    # email =             band["email"]
+    group =             db.Column( db.String(100),  nullable = False ) 
+    artists =           db.Column( db.String(500), nullable = True ) 
+    genre =             db.Column( db.String(50),  nullable = True) 
+    year_started =      db.Column( db.Integer,  nullable = True) 
+    group_summary =     db.Column( db.String(10000),  nullable = True) 
+    image =             db.Column( db.String(500), nullable = True )
+    albums =            db.Column( db.String(10000), nullable = True )
+    tour =              db.Column( db.String(500), nullable = True )
+    external_links =    db.Column( db.String(500), nullable = True )
+    social_media =      db.Column( db.String(10000), nullable = True )
+    email =             db.Column( db.String(100),  nullable = False ) 
+    id =                db.Column( db.Integer, primary_key = True )
 
 class Venue(db.Model):
 	__tablename__ = 'venue'

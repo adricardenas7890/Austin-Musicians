@@ -1,7 +1,5 @@
 # beginning of create_db.py
 import json
-from models import app, db, Artist, Venue
-
 from models import *
 import os
 
@@ -47,43 +45,6 @@ def create_bands():
 
     # For each band
     for i, band in enumerate(bands):
-
-        if band['What year did they start making music'] == "None":
-            band['What year did they start making music'] = 0000
-
-        newBand = Artist(id = i,
-                        band_name = band['Artist name'],
-                        members = band['Group name, if none then put none'],
-                        genre = band['Genre of music'],
-                        is_shows = False,
-                        year_started = band['What year did they start making music'])
-        
-        db.session.add(newBand)
-        db.session.commit()
-
-def create_venues():
-    venues = load_json('venues.json')
-
-    for i, venue in enumerate(bands):
-        if venue['Venue'] == "":
-            band['Venue'] = "!!Missing Venue Name!!"
-
-        if venue['Website'][:8] != "https://":
-            venue['Website'] = 
-
-        newVenue = Venue(id = i,
-                        venue_name = band['Venue'],
-                        location = band['Location (do not include Austin,TX, ZIP)'],
-                        genres = band['Genres (Format: \"Genre, Genre\")'],
-                        days_open = band['Days Open (Format: \"Genre, Genre\")'],
-                        hours_open = band['Hours (Format: \"Mon-Sun\")'],
-                        image_link = band['Images'],
-                        information = band['Information (Keep short, use google/wiki)'],
-                        website_link = band['Website'])
-
-        db.session.add(newVenue)
-        db.session.commit()
-
         # Get the data
         group =             band["group"]
         artists =           band["artists"]
@@ -126,19 +87,36 @@ def create_venues():
         # db.session.add(newBand)
         # db.session.commit()
 
+def create_venues():
+    venues = load_json('venues.json')
+
+    for i, venue in enumerate(bands):
+        newVenue = Venue(id = i,
+                        venue_name = band['Venue'],
+                        location = band['Location (do not include Austin,TX, ZIP)'],
+                        genres = band['Genres (Format: \"Genre, Genre\")'],
+                        days_open = band['Days Open (Format: \"Genre, Genre\")'],
+                        hours_open = band['Hours (Format: \"Mon-Sun\")'],
+                        image_link = band['Images'],
+                        information = band['Information (Keep short, use google/wiki)'],
+                        website_link = band['Website'])
+
+        db.session.add(newVenue)
+        db.session.commit()
+		
 def create_shows():
     shows = load_json('shows.json')
 
     # For each show
     for i, show in emumerate(shows):
         # Get data
-            show_name        = show['Name'],
-            presented_by     = show['Presented By'],
-            featured_artists = show['Featured Artist'],
-            venue            = show['Venue'],
-            date_time        = show['Date and Time'],
-            tickets          = show['Tickets'],
-            flyer            = show['Image Link'])
+        show_name        = show['Name']
+        presented_by     = show['Presented By']
+        featured_artists = show['Featured Artist']
+        venue            = show['Venue']
+        date_time        = show['Date and Time']
+        tickets          = show['Tickets']
+        flyer            = show['Image Link']
 
         if tickets == "None": 
             tickets = ""
