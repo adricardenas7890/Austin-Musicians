@@ -1,4 +1,4 @@
 {
     "python.linting.pylintEnabled": true,
-    "python.pythonPath": "ChristianEnv/bin/python"
+    "python.pythonPath": "/anaconda3/envs/CS329E-SE/bin/python"
 }

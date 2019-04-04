@@ -19,6 +19,18 @@ class Artist(db.Model):
     year_started =  db.Column( db.Integer, nullable = True ) 
     id =            db.Column( db.Integer, primary_key = True )
 
+class Shows(db.Shows):
+    __tablename__ = 'shows'
+
+    show_name        =  db.Column( db.String(80), nullable = False)
+    presented_by     =  db.Column( db.String(80), nullable = True)
+    featured_artists =  db.Column( db.String(300), nullable = False)
+    venue            =  db.Column( db.String(80), nullable = False)
+    date_time        =  db.Column( db.String(80), nullable = False)
+    tickets          =  db.Column( db.String(500), nullable = True)
+    flyer            =  db.Column( db.String(500), nullable = True)
+    id               =  db.Column( db.Integer, primary_key = True)
+
 db.drop_all()
 db.create_all()
 # End of models.py
