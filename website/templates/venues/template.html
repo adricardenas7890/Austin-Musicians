@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1>{% block title %}{{ venue.venue_name }}{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="text-center">{{ venue.venue_name }}</h1>
+        <div style="text-align: center;">
+            <img class = "width-100" src="{{ venue.image_link }}">
+        </div>
+        <!-- About Section -->
+        <div>
+            <br>
+            <h3>About</h3>
+            <p>{{ venue.information }}</p>
+        </div>
+
+        <div class="row">
+            <!--Location -->
+            <div class="col-md-6">
+                <br>
+            <h3>Location</h3>
+            <p>{{ venue.location }}</p>
+            <!-- <iframe width="400" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ1aFZAqS1RIYRu5WiNjw8b0A&key=AIzaSyAfxluUBh_b2hLLZo0Feoo1CvD_lCIkdkA" allowfullscreen></iframe> -->
+        </div>
+
+            <!-- Contact information -->
+            <div class="col-md-6">
+                <br>
+            <h3>Contact</h3>
+            <a href="{{ venue.website_link }}" target="_blank">Venue Website</a><br>
+            </div>
+        </div>
+        <!-- Upcoming Shows -->
+        <div>
+            <br>
+            <h3>Upcoming Shows</h3>
+            {% set show_exist = [] %}
+            <ul>
+                <!-- looping through shows -->
+                {% for show in shows %}
+                    {% if show.venue == venue.venue_name %}
+                        <!-- if the show's venue is this venue -->
+                        {% if show_exist.append(0) %}{% endif %}
+                        <li>
+                            <!-- linking to show's page -->
+                            <a href="/shows/{{ show.show_name }}">{{ show.show_name }}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+                <!-- if there are no upcoming shows -->
+                {% if show_exist|length == 0 %}
+                    <li>No Upcoming Shows</li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+
+{% endblock content %}

@@ -60,7 +60,8 @@ def artist(url):
 @app.route('/venues/<url>')
 def venue(url):
 	context = Venue.query.filter(Venue.venue_name == url).first()
-	return render_template('venues.html', venue = context)
+	show_context = Shows.query.order_by(Shows.show_name).all()
+	return render_template('venues/template.html', venue = context, shows = show_context)
 
 # Shows Page
 @app.route('/shows/<url>')
