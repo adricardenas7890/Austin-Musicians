@@ -26,33 +26,28 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                {% for band in bands %}
                                 <tr>
                                     <td>
-                                        <a href="{{url_for('octopus_project')}}">Octopus Project</a>
+                                        <a href="{{ band.group }}">{{ band.group }}</a>
                                     </td>
-                                    <td>Josh Lambert, Toto Miranda, Yvonne Lambert, Lauren Gurgiolo</td>
-                                    <td>Electronic</td>
-                                    <td>Not On Tour</td>
-                                    <td>1999</td>
+                                    <td>{{ band.artists }}</td>
+                                    <td>{{ band.genre }}</td>
+                                    <!-- Is the band on tour? -->
+                                    {% if band.tour != "" %}
+                                        <td>On Tour</td>
+                                    {% else %}
+                                        <td>Not On Tour</td>
+                                    {% endif %}
+                                    <!-- If the year is zero, dont write anything -->
+                                    {% if band.year_started == 0 %}
+                                        <td></td>
+                                    {% else %}
+                                        <td>{{ band.year_started }}</td>
+                                    {% endif %}
+                                    
                                 </tr>
-                                <tr>
-                                    <td>
-                                        <a href="{{url_for('explosions_in_the_sky')}}"> Explosions in the Sky</a>
-                                    </td>
-                                    <td>Chris Hrasky, Michael James, Munaf Rayani, Mark Smith</td>
-                                    <td>Rock</td>
-                                    <td>On Tour</td>
-                                    <td>1999</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="{{url_for('tc_superstar')}}"> TC Superstar</a>
-                                    </td>
-                                    <td>Mitchell Webb, Julio Correa, LB Flett, Emily DiFranco,<br> Francis Rodriguez, Eileen Yuriko Roby, Aaron Chavez,<br> Connor McCampbell</td>
-                                    <td>Electronic</td>
-                                    <td>On Tour</td>
-                                    <td>2016</td>
-                                </tr>
+                                {% endfor %}
                             </tbody>
                         </table>
                     </div>

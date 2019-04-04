@@ -50,6 +50,6 @@ class Shows(db.Model):
     flyer            =  db.Column( db.String(500), nullable = True)
     id               =  db.Column( db.Integer, primary_key = True)
 
-db.drop_all()
-db.create_all()
+# db.drop_all()
+# db.create_all()
 # End of models.py
