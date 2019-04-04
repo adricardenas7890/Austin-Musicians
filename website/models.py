@@ -9,15 +9,27 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True # to suppress a warning message
 db = SQLAlchemy(app)
 
-class Artist(db.Model):
-    __tablename__ = 'artist'
+class Band(db.Model):
+    __tablename__ = 'band'
 
-    band_name =     db.Column( db.String(80),  nullable = False ) 
-    members   =     db.Column( db.String(500), nullable = True ) 
+    group =         db.Column( db.String(80),  nullable = False ) 
+    artists   =     db.Column( db.String(500), nullable = True ) 
     genre     =     db.Column( db.String(50),  nullable = True) 
     is_shows  =     db.Column( db.Boolean, nullable = False ) 
     year_started =  db.Column( db.Integer, nullable = True ) 
     id =            db.Column( db.Integer, primary_key = True )
+    
+    group =             band["group"]
+    artists =           band["artists"]
+    genre =             band["Genre"]
+    year_started =      band["year_started"]
+    group_summary =     band["group_summary"]
+    image =             band["image"]
+    albums =            band["albums"]
+    tour =              band["tour"]
+    external_links =    band["external_links"]
+    social_media =      band["social_media"]
+    email =             band["email"]
 
 class Venue(db.Model):
 	__tablename__ = 'venue'
