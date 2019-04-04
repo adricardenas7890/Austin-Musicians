@@ -1,6 +1,5 @@
 # beginning of create_db.py
 import json
-<<<<<<< HEAD
 from models import app, db, Artist, Venue
 
 from models import *
