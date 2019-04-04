@@ -169,7 +169,7 @@ def create_shows():
                         venue            = venue,
                         date_time        = date_time,
                         tickets          = tickets,
-                        flyer            = flyers)
+                        flyer            = flyer)
             
         db.session.add(newShow)
         db.session.commit()
