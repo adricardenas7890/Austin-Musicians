@@ -125,6 +125,50 @@ def create_venues():
 
         # db.session.add(newBand)
         # db.session.commit()
-		
+
+def create_shows():
+    shows = load_json('shows.json')
+
+    # For each show
+    for i, show in emumerate(shows):
+        # Get data
+            show_name        = show['Name'],
+            presented_by     = show['Presented By'],
+            featured_artists = show['Featured Artist'],
+            venue            = show['Venue'],
+            date_time        = show['Date and Time'],
+            tickets          = show['Tickets'],
+            flyer            = show['Image Link'])
+
+        if tickets == "None": 
+            tickets = ""
+
+        if not isLinkValid(tickets): 
+            tickets = ""
+
+        if not isLinkValid(flyer): 
+            flyer = ""
+
+        # clean columns - capitalize all first letters and no repeat commas
+        show_name = capitalizeFirst(removeExtraCommas(show_name))
+        presented_by = capitalizeFirst(removeExtraCommas(presented_by))
+        featured_artists = capitalizeFirst(removeExtraCommas(featured_artists))
+        venue = capitalizeFirst(removeExtraCommas(venue))
+        date_time = capitalizeFirst(removeExtraCommas(date_time))
+
+
+        newShow = Shows(id               = i,
+                        show_name        = show['Name'],
+                        presented_by     = show['Presented By'],
+                        featured_artists = show['Featured Artist'],
+                        venue            = show['Venue'],
+                        date_time        = show['Date and Time'],
+                        tickets          = show['Tickets'],
+                        flyer            = show['Image Link'])
+            
+        db.session.add(newShow)
+        db.session.commit()
+
 create_bands()
+create_shows()
 # end of create_db.py
