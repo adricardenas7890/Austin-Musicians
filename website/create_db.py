@@ -1,8 +1,5 @@
 # beginning of create_db.py
 import json
-<<<<<<< HEAD
-from models import app, db, Artist, Venue
-
 from models import *
 import os
 
@@ -94,12 +91,6 @@ def create_venues():
     venues = load_json('venues.json')
 
     for i, venue in enumerate(bands):
-        if venue['Venue'] == "":
-            band['Venue'] = "!!Missing Venue Name!!"
-
-        if venue['Website'][:8] != "https://":
-            venue['Website'] = 
-
         newVenue = Venue(id = i,
                         venue_name = band['Venue'],
                         location = band['Location (do not include Austin,TX, ZIP)'],
@@ -113,5 +104,49 @@ def create_venues():
         db.session.add(newVenue)
         db.session.commit()
 		
+def create_shows():
+    shows = load_json('shows.json')
+
+    # For each show
+    for i, show in emumerate(shows):
+        # Get data
+        show_name        = show['Name']
+        presented_by     = show['Presented By']
+        featured_artists = show['Featured Artist']
+        venue            = show['Venue']
+        date_time        = show['Date and Time']
+        tickets          = show['Tickets']
+        flyer            = show['Image Link']
+
+        if tickets == "None": 
+            tickets = ""
+
+        if not isLinkValid(tickets): 
+            tickets = ""
+
+        if not isLinkValid(flyer): 
+            flyer = ""
+
+        # clean columns - capitalize all first letters and no repeat commas
+        show_name = capitalizeFirst(removeExtraCommas(show_name))
+        presented_by = capitalizeFirst(removeExtraCommas(presented_by))
+        featured_artists = capitalizeFirst(removeExtraCommas(featured_artists))
+        venue = capitalizeFirst(removeExtraCommas(venue))
+        date_time = capitalizeFirst(removeExtraCommas(date_time))
+
+
+        newShow = Shows(id               = i,
+                        show_name        = show['Name'],
+                        presented_by     = show['Presented By'],
+                        featured_artists = show['Featured Artist'],
+                        venue            = show['Venue'],
+                        date_time        = show['Date and Time'],
+                        tickets          = show['Tickets'],
+                        flyer            = show['Image Link'])
+            
+        db.session.add(newShow)
+        db.session.commit()
+
 create_bands()
+create_shows()
 # end of create_db.py
