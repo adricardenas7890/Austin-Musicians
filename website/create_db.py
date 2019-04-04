@@ -9,7 +9,6 @@ def load_json(filename):
     with open(filename) as file:
         jsn = json.load(file)
         file.close()
-
     return jsn
 
 # Function to remove extra commas
@@ -82,10 +81,21 @@ def create_bands():
             email = ""
 
         # Create our Band Object
+        newBand = Band(group = group,
+                    artists = artists,
+                    genre = genre,
+                    year_started = year_started,
+                    group_summary = group_summary,
+                    image = image,
+                    albums = albums,
+                    tour = tour,
+                    external_links = external_links,
+                    social_media = social_media,
+                    email = email,
+                    id = i)
 
-
-        # db.session.add(newBand)
-        # db.session.commit()
+        db.session.add(newBand)
+        db.session.commit()
 
 def create_venues():
     venues = load_json('venues.json')
