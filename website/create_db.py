@@ -105,9 +105,6 @@ def create_venues():
 
     for i, venue in enumerate(venues):
 
-        if venue['Venue'] != "":
-            venue['Venue'] = "!!Missing Venue Name!!"
-
         venue['Venue'] = capitalizeFirst(venue['Venue'])
         venue['Genres (Format: \"Genre, Genre\")'] = capitalizeFirst( venue['Genres (Format: \"Genre, Genre\")'] )
             
