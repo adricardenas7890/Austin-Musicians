@@ -15,8 +15,15 @@
                 <p>
                     <a href="{{ show.tickets }}">Tickets</a><br>
                     Date and Time: {{ show.date_time }}<br>
-                    <a href="{{ show.venue }}">{{ show.venue }}</a><br>
-                    Featuring: <a href="{{ show.featured_artists }}">{{ show.featued_artists }}</a>
+                    <a href="{{ show.venue }}">{{ show.venue }}</a><br> <!--set proper href-->
+                    Featuring: 
+                    {% for artist in show.featured_artists.split(",") %}
+                        {% if artist in show.featured_artists %}  <!---check if artist is in band.groups...i think-->
+                            <a href="{{ artist }}">{{ artist }}</a> <br>
+                        {% else %}
+                            {{ artist }}
+                        {% endif %}
+                    {% endfor %}  
                 </p>
             </div>
         </div>
