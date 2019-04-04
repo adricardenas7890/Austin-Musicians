@@ -129,7 +129,7 @@ def create_venues():
         db.session.commit()
 		
 def create_shows():
-    shows = load_json('shows.json')
+    shows = load_json('database/shows.json')
 
     # For each show
     for i, show in emumerate(shows):
