@@ -1,6 +1,6 @@
 # beginning of create_db.py
 import json
-from models import app, db, Artist
+from models import app, db, Artist, Venue
 import os
 
 current = os.path.dirname( os.path.realpath(__file__) )
@@ -27,6 +27,29 @@ def create_bands():
                         year_started = band['What year did they start making music'])
         
         db.session.add(newBand)
+        db.session.commit()
+
+def create_venues():
+    venues = load_json('venues.json')
+
+    for i, venue in enumerate(bands):
+        if venue['Venue'] == "":
+            band['Venue'] = "!!Missing Venue Name!!"
+
+        if venue['Website'][:8] != "https://":
+            venue['Website'] = 
+
+        newVenue = Venue(id = i,
+                        venue_name = band['Venue'],
+                        location = band['Location (do not include Austin,TX, ZIP)'],
+                        genres = band['Genres (Format: \"Genre, Genre\")'],
+                        days_open = band['Days Open (Format: \"Genre, Genre\")'],
+                        hours_open = band['Hours (Format: \"Mon-Sun\")'],
+                        image_link = band['Images'],
+                        information = band['Information (Keep short, use google/wiki)'],
+                        website_link = band['Website'])
+
+        db.session.add(newVenue)
         db.session.commit()
 		
 create_bands()
