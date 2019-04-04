@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1>{% block title %}{{ show.show_name }}{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="text-center">{{ show.show_name }}</h1>
+        <div style="text-align: center;">
+            <div>
+                <img class = "width-100" src="{{ show.flyer }}">
+            </div>
+            <div>
+                <p>
+                    <a href="{{ show.tickets }}">Tickets</a><br>
+                    Date and Time: {{ show.date_time }}<br>
+                    <a href="{{ show.venue }}">{{ show.venue }}</a><br>
+                    Featuring: <a href="{{ show.featured_artists }}">{{ show.featued_artists }}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

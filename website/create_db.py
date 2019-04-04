@@ -2,6 +2,8 @@
 import json
 from models import *
 import os
+db.drop_all()
+db.create_all()
 
 current = os.path.dirname( os.path.realpath(__file__) )
 def load_json(filename):

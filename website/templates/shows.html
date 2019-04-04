@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} 
 
 {% block header %}
     <h1>{% block title %}Shows{% endblock %}</h1>
@@ -25,43 +25,17 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>
-                                        <a href="{{url_for('queer_dance_party')}}">Queer Dance Party</a>
-                                    </td>
-                                    <td>FullNote</td>
-                                    <td>
-                                        <a href="{{url_for('tc_superstar')}}">TC Superstar</a>, Pelvis Wresley, Bleached Roses, Carry Illinois
-                                    </td>
-                                    <td>
-                                        <a href="{{url_for('cheer_up_charlies')}}">Cheer Up Charlies</a>
-                                    </td>
-                                    <td>April 12<sup>th</sup> @ 9:30pm</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="{{url_for('cluster_funk')}}">Clusterfunk EP Release</a>
-                                    </td>
-                                    <td>Jam Panic</td>
-                                    <td>
-                                        Clusterfunk, <a href="{{url_for('tc_superstar')}}">TC Superstar</a>, Garden Cosmos
-                                    </td>
-                                    <td>
-                                        <a href="{{url_for('empire_control_room')}}">Empire Control Room</a>
-                                    </td>
-                                    <td>March 30<sup>th</sup> @ 9pm</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="{{url_for('drip_drop_iv')}}">Drip Drop IV</a>
-                                    </td>
-                                    <td>Austin Black Pride + Pink Eleplant Radio</td>
-                                    <td>DJ Nevolution AND DJ Nneka The Plug</td>
-                                    <td>
-                                        <a href="{{url_for('cheer_up_charlies')}}">Cheer Up Charlies</a> 
-                                    </td>
-                                    <td>March 30<sup>th</sup> @ 10pm</td>
-                                </tr>
+                                    {% for show in shows %}
+                                    <tr>
+                                        <td>
+                                            <a href="{{ show.show_name }}">{{ show.show_name }}</a>
+                                        </td>
+                                        <td>{{ show.presented_by }}</td>
+                                        <td>{{ show.featured_artists }}</td>
+                                        <td>{{ show.venue }}</td>
+                                        <td>{{ show.date_time }}</td>
+                                    </tr>
+                                    {% endfor %}
                             </tbody>
                         </table>
                     </div>
