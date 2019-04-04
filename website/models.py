@@ -14,7 +14,7 @@ class Band(db.Model):
 
     group =             db.Column( db.String(100),  nullable = False ) 
     artists =           db.Column( db.String(500), nullable = True ) 
-    genre =             db.Column( db.String(50),  nullable = True) 
+    genre =             db.Column( db.String(100),  nullable = True) 
     year_started =      db.Column( db.Integer,  nullable = True) 
     group_summary =     db.Column( db.String(10000),  nullable = True) 
     image =             db.Column( db.String(500), nullable = True )
@@ -31,14 +31,14 @@ class Venue(db.Model):
 	venue_name =	db.Column( db.String(80), nullable = False )
 	location =		db.Column( db.String(100), nullable = False )
 	genres = 		db.Column( db.String(100), nullable = True )
-	days_open = 	db.Column( db.String(50), nullable = True )
-	hours_open =	db.Column( db.String(50), nullable = True )
+	days_open = 	db.Column( db.String(100), nullable = True )
+	hours_open =	db.Column( db.String(100), nullable = True )
 	image_link =	db.Column( db.String(500), nullable = True )
 	information =	db.Column( db.String(10000), nullable = True )
 	website_link =	db.Column( db.String(1000), nullable = True )
-	id =			db.Column( db.Integer, pirmary_key = True )
+	id =			db.Column( db.Integer, primary_key = True )
 
-class Shows(db.Shows):
+class Shows(db.Model):
     __tablename__ = 'shows'
 
     show_name        =  db.Column( db.String(80), nullable = False)
