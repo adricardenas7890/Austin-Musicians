@@ -90,20 +90,27 @@ def create_bands():
 def create_venues():
     venues = load_json('venues.json')
 
-    band['Venue'] = capitalizeFirst(band['Venue'])
-
-    if !isLinkValid(band['Website']):
-        band['Website'] = ''
-
-    band['Images'] = removeAllButFirstLink(band['Images'])
-
     for i, venue in enumerate(bands):
+
+        if band['Venue'] != "":
+            band['Venue'] = "!!Missing Venue Name!!"
+
+        band['Venue'] = capitalizeFirst(band['Venue'])
+        band['Genres (Format: \"Genre, Genre\")'] = capitalizeFirst(band['Genres (Format: \"Genre, Genre\")'])
+
+
+        if !isLinkValid(band['Website']):
+            band['Website'] = ''
+
+        band['Images'] = removeAllButFirstLink(band['Images'])
+
+
         newVenue = Venue(id = i,
                         venue_name = band['Venue'],
                         location = band['Location (do not include Austin,TX, ZIP)'],
                         genres = band['Genres (Format: \"Genre, Genre\")'],
-                        days_open = band['Days Open (Format: \"Genre, Genre\")'],
-                        hours_open = band['Hours (Format: \"Mon-Sun\")'],
+                        days_open = band['Days Open (Format: \"Mon-Sun\")'],
+                        hours_open = band['Hours (Format: \"3PM-9PM)'],
                         image_link = band['Images'],
                         information = band['Information (Keep short, use google/wiki)'],
                         website_link = band['Website'])
