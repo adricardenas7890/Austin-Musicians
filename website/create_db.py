@@ -1,8 +1,5 @@
 # beginning of create_db.py
 import json
-<<<<<<< HEAD
-from models import app, db, Artist, Venue
-
 from models import *
 import os
 
@@ -133,20 +130,23 @@ def create_shows():
     # For each show
     for i, show in emumerate(shows):
         # Get data
-            show_name        = show['Name'],
-            presented_by     = show['Presented By'],
-            featured_artists = show['Featured Artist'],
-            venue            = show['Venue'],
-            date_time        = show['Date and Time'],
-            tickets          = show['Tickets'],
-            flyer            = show['Image Link'])
-
+            show_name        = show['Name']
+            presented_by     = show['Presented By']
+            featured_artists = show['Featured Artist']
+            venue            = show['Venue']
+            date_time        = show['Date and Time']
+            tickets          = show['Tickets']
+            flyer            = show['Image Link']
+        
+        # if tickets = 'none' replace with nothing
         if tickets == "None": 
             tickets = ""
 
+        # if tickets link not valid, set to nothing
         if not isLinkValid(tickets): 
             tickets = ""
 
+        # if flyer link not valid, set to nothing
         if not isLinkValid(flyer): 
             flyer = ""
 
