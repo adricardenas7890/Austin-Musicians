@@ -100,30 +100,30 @@ def create_bands():
 def create_venues():
     venues = load_json('venues.json')
 
-    for i, venue in enumerate(bands):
+    for i, venue in enumerate(venues):
 
-        if band['Venue'] != "":
-            band['Venue'] = "!!Missing Venue Name!!"
+        if venue['Venue'] != "":
+            venue['Venue'] = "!!Missing Venue Name!!"
 
-        band['Venue'] = capitalizeFirst(band['Venue'])
-        band['Genres (Format: \"Genre, Genre\")'] = capitalizeFirst(band['Genres (Format: \"Genre, Genre\")'])
+        venue['Venue'] = capitalizeFirst(venue['Venue'])
+        venue['Genres (Format: \"Genre, Genre\")'] = capitalizeFirst(venue['Genres (Format: \"Genre, Genre\")'])
 
 
-        if !(isLinkValid(band['Website'])):
-            band['Website'] = ''
+        if not isLinkValid(venue['Website']):
+            venue['Website'] = ''
 
-        band['Images'] = removeAllButFirstLink(band['Images'])
+        venue['Images'] = removeAllButFirstLink(venue['Images'])
 
 
         newVenue = Venue(id = i,
-                        venue_name = band['Venue'],
-                        location = band['Location (do not include Austin,TX, ZIP)'],
-                        genres = band['Genres (Format: \"Genre, Genre\")'],
-                        days_open = band['Days Open (Format: \"Mon-Sun\")'],
-                        hours_open = band['Hours (Format: \"3PM-9PM)'],
-                        image_link = band['Images'],
-                        information = band['Information (Keep short, use google/wiki)'],
-                        website_link = band['Website'])
+                        venue_name = venue['Venue'],
+                        location = venue['Location (do not include Austin,TX, ZIP)'],
+                        genres = venue['Genres (Format: \"Genre, Genre\")'],
+                        days_open = venue['Days Open (Format: \"Mon-Sun\")'],
+                        hours_open = venue['Hours (Format: \"3PM-9PM)'],
+                        image_link = venue['Images'],
+                        information = venue['Information (Keep short, use google/wiki)'],
+                        website_link = venue['Website'])
 
         db.session.add(newVenue)
         db.session.commit()
