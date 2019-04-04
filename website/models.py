@@ -19,17 +19,17 @@ class Band(db.Model):
     year_started =  db.Column( db.Integer, nullable = True ) 
     id =            db.Column( db.Integer, primary_key = True )
     
-    group =             band["group"]
-    artists =           band["artists"]
-    genre =             band["Genre"]
-    year_started =      band["year_started"]
-    group_summary =     band["group_summary"]
-    image =             band["image"]
-    albums =            band["albums"]
-    tour =              band["tour"]
-    external_links =    band["external_links"]
-    social_media =      band["social_media"]
-    email =             band["email"]
+    # group =             band["group"]
+    # artists =           band["artists"]
+    # genre =             band["Genre"]
+    # year_started =      band["year_started"]
+    # group_summary =     band["group_summary"]
+    # image =             band["image"]
+    # albums =            band["albums"]
+    # tour =              band["tour"]
+    # external_links =    band["external_links"]
+    # social_media =      band["social_media"]
+    # email =             band["email"]
 
 db.drop_all()
 db.create_all()
