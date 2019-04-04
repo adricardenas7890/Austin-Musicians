@@ -106,11 +106,10 @@ def create_venues():
             venue['Venue'] = "!!Missing Venue Name!!"
 
         venue['Venue'] = capitalizeFirst(venue['Venue'])
-        venue['Genres (Format: \"Genre, Genre\")'] = capitalizeFirst(venue['Genres (Format: \"Genre, Genre\")'])
-
-
+        venue['Genres (Format: \"Genre, Genre\")'] = capitalizeFirst( venue['Genres (Format: \"Genre, Genre\")'] )
+            
         if not isLinkValid(venue['Website']):
-            venue['Website'] = ''
+            venue['Website'] = ""
 
         venue['Images'] = removeAllButFirstLink(venue['Images'])
 
@@ -132,7 +131,7 @@ def create_shows():
     shows = load_json('database/shows.json')
 
     # For each show
-    for i, show in emumerate(shows):
+    for i, show in enumerate(shows):
         # Get data
         show_name        = show['Name']
         presented_by     = show['Presented By']

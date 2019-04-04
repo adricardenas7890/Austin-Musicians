@@ -36,9 +36,9 @@ class Venue(db.Model):
 	image_link =	db.Column( db.String(500), nullable = True )
 	information =	db.Column( db.String(10000), nullable = True )
 	website_link =	db.Column( db.String(1000), nullable = True )
-	id =			db.Column( db.Integer, pirmary_key = True )
+	id =			db.Column( db.Integer, primary_key = True )
 
-class Shows(db.Shows):
+class Shows(db.Model):
     __tablename__ = 'shows'
 
     show_name        =  db.Column( db.String(80), nullable = False)
