@@ -100,6 +100,13 @@ def create_bands():
 def create_venues():
     venues = load_json('venues.json')
 
+    band['Venue'] = capitalizeFirst(band['Venue'])
+
+    if !isLinkValid(band['Website']):
+        band['Website'] = ''
+
+    band['Images'] = removeAllButFirstLink(band['Images'])
+
     for i, venue in enumerate(bands):
         newVenue = Venue(id = i,
                         venue_name = band['Venue'],
@@ -128,12 +135,15 @@ def create_shows():
         tickets          = show['Tickets']
         flyer            = show['Image Link']
 
+        # if tickets = 'none' replace with nothing
         if tickets == "None": 
             tickets = ""
 
+        # if tickets link not valid, set to nothing
         if not isLinkValid(tickets): 
             tickets = ""
 
+        # if flyer link not valid, set to nothing
         if not isLinkValid(flyer): 
             flyer = ""
 
