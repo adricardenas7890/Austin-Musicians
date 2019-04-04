@@ -17,7 +17,8 @@ def load_json(filename):
 # Function to remove extra commas
 def removeExtraCommas( inputString ):
     inputString = inputString.split(",")
-    inputString = inputString.clear("")
+    for _ in range(inputString.count("")):
+        inputString.remove("")
     inputString = ",".join(inputString)
     return inputString
 # Function to capitalize the first letter of each word
@@ -33,7 +34,8 @@ def isLinkValid( inputLink ):
 # Remove all but first link
 def removeAllButFirstLink( inputLink ):
     inputLink = inputLink.split("\n")
-    inputLink = inputLink.clear("")
+    for _ in range(inputLink.count("")):
+        inputLink.remove("")
     if len(inputLink) > 1:
         return inputLink[0]
     else:
