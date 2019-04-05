@@ -67,7 +67,8 @@ def venue(url):
 @app.route('/shows/<url>')
 def show(url):
 	context = Shows.query.filter(Shows.show_name == url).first()
-	return render_template('shows/template.html', show = context)
+	band_context = Band.query.order_by(Band.group).all()
+	return render_template('shows/template.html', show = context, bands = band_context)
 
 
 if __name__ == "__main__":
