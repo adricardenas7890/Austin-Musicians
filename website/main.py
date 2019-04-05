@@ -42,7 +42,8 @@ def venues():
 @app.route('/shows/')
 def shows():
 	context = Shows.query.order_by(Shows.show_name).all()
-	return render_template('shows.html', shows = context)
+	band_context = Band.query.order_by(Band.group).all()
+	return render_template('shows.html', shows = context, bands = band_context)
 
 '''
 	Dynamic Rendering of each page
