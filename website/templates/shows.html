@@ -28,7 +28,11 @@
                                     {% for show in shows %}
                                     <tr>
                                         <td>
-                                            <a href="{{ show.show_name }}">{{ show.show_name }}</a>
+                                            {% if "/" in show.show_name %}
+                                                <a href="{{ show.show_name.replace("/", "") }}">{{ show.show_name }}</a>
+                                            {% else %}
+                                                <a href="{{ show.show_name }}">{{ show.show_name }}</a>
+                                            {% endif %}
                                         </td>
                                         <td>{{ show.presented_by }}</td>
                                         <td>

@@ -49,7 +49,3 @@ class Shows(db.Model):
     tickets          =  db.Column( db.String(500), nullable = True)
     flyer            =  db.Column( db.String(500), nullable = True)
     id               =  db.Column( db.Integer, primary_key = True)
-
-# db.drop_all()
-# db.create_all()
-# End of models.py

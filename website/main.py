@@ -48,8 +48,6 @@ def shows():
 	Dynamic Rendering of each page
 '''
 
-# UNFINISHED: GOOGLE "Dynamic URLS Flask" for info https://stackoverflow.com/questions/35107885/how-to-generate-dynamic-urls-in-flask
-
 # Artists Page
 @app.route('/artists/<url>')
 def artist(url):
@@ -66,6 +64,8 @@ def venue(url):
 # Shows Page
 @app.route('/shows/<url>')
 def show(url):
+	if " w " in url:
+		url = url.replace(" w ", " w/ ")
 	context = Shows.query.filter(Shows.show_name == url).first()
 	band_context = Band.query.order_by(Band.group).all()
 	return render_template('shows/template.html', show = context, bands = band_context)

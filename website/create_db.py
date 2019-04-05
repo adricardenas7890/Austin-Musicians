@@ -171,5 +171,3 @@ def create_shows():
 create_bands()
 create_shows()
 create_venues()
-
-# end of create_db.py
