@@ -38,8 +38,8 @@ class TestWebsite (TestCase):
     #check that none of Artist column is empty
     def test_ArtistNotEmpty(self):
         context = Band.query.order_by(Band.group).all()
-        for i in context:
-            self.assertEqual(i["group"] != "", True)
+        for artist in context:
+            self.assertEqual(artist.group != "", True)
         pass
     
     #check that none of Show column is empty
