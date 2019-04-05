@@ -4,7 +4,10 @@ try:
 except:
 	from .models import Band, Venue, Shows, db, app
 import os
+import sys
 import subprocess
+import coverage
+sys.path.append('../')
 
 # app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['SQLALCHEMY_DATABASE_URI']
 
@@ -20,18 +23,22 @@ def about():
 
 @app.route('/about/', methods=['POST'])
 def about_post():
-	# Save current path
-	og_path = os.path.dirname( os.path.realpath(__file__) )
-	# Change to path where "make test" can run
-	os.chdir( os.path.dirname(os.path.dirname( os.path.realpath(__file__) ) ))
-	# Clean
-	subprocess.check_output(['make', 'clean'])
-	# Make test
-	testData = subprocess.check_output(['make', 'test'])
-	# GO back to origional path
-	os.chdir( og_path )
-	# Split by newline
-	testData = testData.decode().split("\n")
+	# # Setup Testing
+	# current = os.path.dirname( os.path.dirname( os.path.realpath(__file__) ) )
+	# # cov = coverage.Coverage(branch = True, source = os.path.join(current, 'TestWebsite.py'))
+	# cov = coverage.Coverage(branch = True)
+	# # Do Testing
+	# cov.start()
+	# import TestWebsite
+	# cov.stop()
+	# # Save report to file
+	# coverageReport = open("coverageReport.txt", "w")
+	# cov.report(omit = "*lib*", ignore_errors = True, file = coverageReport)
+	# coverageReport.close()
+	# Open the file and get the data
+	coverageReport = open("coverageReport.txt", "r")
+	testData = coverageReport.readlines()
+	testData = [x.replace("-", "") for x in testData]
 	return render_template('about.html', tests = testData)
 
 # ????? Unsure what this is here for
