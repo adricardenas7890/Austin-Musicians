@@ -43,7 +43,8 @@ def venues():
 def shows():
 	context = Shows.query.order_by(Shows.show_name).all()
 	band_context = Band.query.order_by(Band.group).all()
-	return render_template('shows.html', shows = context, bands = band_context)
+	venue_context = Venue.query.order_by(Venue.venue_name).all()
+	return render_template('shows.html', shows = context, bands = band_context, venues = venue_context)
 
 '''
 	Dynamic Rendering of each page
@@ -71,7 +72,8 @@ def show(url):
 		url = url.replace(" w ", " w/ ")
 	context = Shows.query.filter(Shows.show_name == url).first()
 	band_context = Band.query.order_by(Band.group).all()
-	return render_template('shows/template.html', show = context, bands = band_context)
+	venue_context = Venue.query.order_by(Venue.venue_name).all()
+	return render_template('shows/template.html', show = context, bands = band_context, venues = venue_context)
 
 
 if __name__ == "__main__":
