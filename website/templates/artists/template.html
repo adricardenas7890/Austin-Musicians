@@ -49,30 +49,18 @@
                                     <th>Location</th>
                                     <th>Show Information</th>
                                 </tr>
-                                <tr>
-                                    <td>THU, MAY 09</td>
-                                    <td>BANDAI NAMCO DREAM HALL</td>
-                                    <td>SHANGHAI, CHINA</td>
-                                    <td>None</td>
-                                </tr>
-                                <tr>
-                                    <td>FRI, MAY 10</td>
-                                    <td>TANGO 3F</td>
-                                    <td>BEIJING, CHINA</td>
-                                    <td>None</td>
-                                </tr>
-                                <tr>
-                                    <td>SUN, MAY 12</td>
-                                    <td>O-EAST</td>
-                                    <td>TOKYO, JAPAN</td>
-                                    <td>None</td>
-                                </tr>
-                                <tr>
-                                    <td>MON, MAY 13</td>
-                                    <td>CLUB QUATTRO</td>
-                                    <td>OSAKA, JAPAN</td>
-                                    <td>None</td>
-                                </tr>
+                                {% for show in shows %}
+                                    {% for venue in venues %}
+                                        {% if (band.group.lower() in show.featured_artists.lower()) and (show.venue.lower() in venue.venue_name.lower()) %}
+                                            <tr>
+                                                <td>{{ show.date_time }}</td>
+                                                <td><a href="/venues/{{ venue.venue_name }}">{{ show.venue }}</a></td>
+                                                <td>{{ venue.location }}</td>
+                                                <td>None</td>
+                                            </tr>
+                                        {% endif %}
+                                    {% endfor %}
+                                {% endfor %}
                             </table>
                         </div>
                     </div>
