@@ -1,8 +1,72 @@
+commit 7d6127e35abc026faeae3a66bdc2b6338bab1a3d
+Merge: 206aab4 f1342a2
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Thu Apr 4 21:15:29 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit 206aab471289cb6917d8b047a99437c0ad579d92
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Thu Apr 4 21:15:22 2019 -0500
+
+    Ability to run unit tests on website added
+
+commit f1342a2cb2eed0e16e3321e53d2809250af76b47
+Merge: 67b557b 34c9e3e
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Thu Apr 4 21:14:09 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit 67b557be0e5c430974dd998f7278fb98441c433a
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Thu Apr 4 21:14:02 2019 -0500
+
+    updated about page
+
+commit 34c9e3e51937340b225e769990d0b352e80a47a1
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Thu Apr 4 21:03:42 2019 -0500
+
+    unit test outlines, inspo
+
+commit 0995a664b6712999a99a21b602e859224b91c2c9
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Thu Apr 4 20:40:22 2019 -0500
+
+    fixed minor issue in show template
+
+commit 3bfb0f858db40c520526e00e07d841baf51985e2
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Thu Apr 4 20:37:44 2019 -0500
+
+    made shows.html and tempalte for shows dynamic
+
 commit 73fe9745c43da511e5678c87f7bb1d853dd37728
 Author: Adriana Cardenas <adri.cardenas@utexas.edu>
 Date:   Thu Apr 4 20:29:46 2019 -0500
 
     button added in about.html
+
+commit 6b8985a8050b0bec38c446f3f1836a6ced8b77cc
+Merge: 2b36a4e 73fe974
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Thu Apr 4 20:29:06 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit 2b36a4e05f73e9615b1b979ef6e48f0b5bf8c54c
+Merge: 4196399 4a92f53
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Thu Apr 4 20:28:44 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit 4196399dd04840b6b97b9d82cce44586a7fec583
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Thu Apr 4 20:28:41 2019 -0500
+
+    merge issues
 
 commit 4a92f5378ffef1b03a4fa40d7f336521f03b93b7
 Author: ChristianGil <cmg580@utexas.edu>

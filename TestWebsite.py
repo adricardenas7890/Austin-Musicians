@@ -4,10 +4,7 @@
 # imports
 # -------
 from unittest import main, TestCase
-try:
-	from models import Band, Venue, Shows, db, app
-except:
-	from .models import Band, Venue, Shows, db, app
+from website.models import Band, Venue, Shows, db, app
 
 
 # -----------
@@ -49,11 +46,13 @@ class TestWebsite (TestCase):
 
     #check that none of Venue column is empty
     def test_VenueNotEmpty(self):
-        pass
+        context = Venue.query.order_by(Venue.venue_name).all()
+        return self.assertGreater(len(context), 0)
 
     #check that exact Artist returns the right Genre
     def test_ArtistGenreIsCorrect(self):
-        pass
+        context = Band.query.filter(Band.group == "TC Superstar").first()
+        return self.assertEqual(context.genre, "Pop")
     
     
     # from website import main
