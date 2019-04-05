@@ -44,6 +44,9 @@ class TestWebsite (TestCase):
     
     #check that none of Show column is empty
     def test_ShowNotEmpty(self):
+        context = Shows.query.order_by(Shows.show_name).all()
+        for show in context:
+            self.assertEqual(show.show_name != "", True)
         pass
 
     #check that none of Venue column is empty
