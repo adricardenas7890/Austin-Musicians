@@ -1,0 +1,502 @@
+[
+  {
+    "Venue": "Mohawk",
+    "Location (do not include Austin,TX, ZIP)": "912 Red River St",
+    "Information (Keep short, use google/wiki)": "Handmade in downtown Austin Texas, the Mohawk was built in 2006 as a one of a kind Bar & Venue.  Its mission is to host friends, musicians, and staff that represent all music tastes and all walks of life. All are welcome at the Mohawk.",
+    "Hours (Format: \"3PM-9PM)": "5PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "",
+    "Website": "https://mohawkaustin.com",
+    "Images": "https://lostinaustin.org/listify/wp-content/uploads/2019/02/mohawk-03.jpg"
+  },
+  {
+    "Venue": "Antone's Nightclub",
+    "Location (do not include Austin,TX, ZIP)": "305 E 5th St",
+    "Information (Keep short, use google/wiki)": "Established in 1975 by the late Clifford Antone, Antone’s is an iconic blues venue located in downtown Austin. Over the past 40 years, Antone’s has brought Austin a variety of blues and musicians from across the country including B.B. King, Muddy Waters, Jimmy Reed, Ray Charles, and James Brown, and helped develop local talent like Stevie Ray Vaughan, The Fabulous Thunderbirds, Bob Schneider, Gary Clark Jr., and others. In 2015, the historic brand was restored and a new team brought the iconic venue back to the downtown Austin landscape with a renewed focus on once again making Antone’s the “Home of the Blues.”",
+    "Hours (Format: \"3PM-9PM)": "12PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "Blues",
+    "Website": "https://www.antonesnightclub.com",
+    "Images": "http://bluesfestivalguide.com/images/Austin.jpg"
+  },
+  {
+    "Venue": "The ABGB",
+    "Location (do not include Austin,TX, ZIP)": "1305 W. Oltorf",
+    "Information (Keep short, use google/wiki)": "Warehouselike beer garden matching house microbrews with pub bites such as pizza & sandwiches.",
+    "Hours (Format: \"3PM-9PM)": "11:30AM-11PM",
+    "Days Open (Format: \"Mon-Sun\")": "Tues-Sun",
+    "Genres (Format: \"Genre, Genre\")": "Folk, Country",
+    "Website": "https://theabgb.com/",
+    "Images": "https://cdn.vox-cdn.com/uploads/chorus_image/image/62595258/ABGB-Events-8-1200x800.0.0.0.jpg"
+  },
+  {
+    "Venue": "Cheer Up Charlies",
+    "Location (do not include Austin,TX, ZIP)": "900 Red River Street",
+    "Information (Keep short, use google/wiki)": "Sizable gay bar offering a lodgelike indoor space, outdoor music, drinks, drag shows & more.",
+    "Hours (Format: \"3PM-9PM)": "4PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "Pop, Indie, Queer",
+    "Website": "http://cheerupcharlies.com/",
+    "Images": "https://www.austinchronicle.com/imager/b/original/822583/ad1d/CUC-1.jpg"
+  },
+  {
+    "Venue": "Empire Control Room & Garage",
+    "Location (do not include Austin,TX, ZIP)": "606 East 7th Street",
+    "Information (Keep short, use google/wiki)": "Empire Control Room & Garage is that place you went to, that perfectly crazy time, at the sweet spot of the night, when anything was possible.",
+    "Hours (Format: \"3PM-9PM)": "7PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "Electronic",
+    "Website": "http://empireatx.com/",
+    "Images": "http://empireatx.com/wp-content/uploads/2015/11/empire-control-room-garage-venue-7.jpg"
+  },
+  {
+    "Venue": "The Hole in the Wall",
+    "Location (do not include Austin,TX, ZIP)": "2538 Guadalupe St",
+    "Information (Keep short, use google/wiki)": "Booze, tattoos & plenty of daily live music, both inside & out on the patio.",
+    "Hours (Format: \"3PM-9PM)": "3PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "Punk, Rock",
+    "Website": "https://www.holeinthewallaustin.com/",
+    "Images": "http://res.cloudinary.com/culturemap-com/image/upload/ar_4:3,c_fill,g_faces:center,w_1200/v1493157130/photos/142217_original.jpg"
+  },
+  {
+    "Venue": "The Hideout Theater",
+    "Location (do not include Austin,TX, ZIP)": "617 Congress Ave",
+    "Information (Keep short, use google/wiki)": "Snug comedy club featuring seasoned & up-and-coming talent, plus a coffee shop for drinks & snacks.",
+    "Hours (Format: \"3PM-9PM)": "Varies",
+    "Days Open (Format: \"Mon-Sun\")": "Varies",
+    "Genres (Format: \"Genre, Genre\")": "Theatre, World",
+    "Website": "http://www.hideouttheatre.com/",
+    "Images": "http://farm4.static.flickr.com/3420/3369032819_78acafdd81.jpg"
+  },
+  {
+    "Venue": "Cactus Cafe",
+    "Location (do not include Austin,TX, ZIP)": "2247 Guadalupe St",
+    "Information (Keep short, use google/wiki)": "The Cactus Café is a live music venue and bar on the campus of The University of Texas at Austin. Located in Austin, Texas, a city frequently referred to as \"the live music capital of the world,\" a number of well-known artists have played in the Cactus, and Billboard Magazine named it as one of fifteen \"solidly respected, savvy clubs\" in the United States, \"from which careers can be cut, that work with proven names and new faces.",
+    "Hours (Format: \"3PM-9PM)": "Varies",
+    "Days Open (Format: \"Mon-Sun\")": "Varies",
+    "Genres (Format: \"Genre, Genre\")": "General",
+    "Website": "https://universityunions.utexas.edu/cactus-cafe",
+    "Images": "https://i.imgur.com/bByJn.jpg"
+  },
+  {
+    "Venue": "Stubb's Bar-B-Q",
+    "Location (do not include Austin,TX, ZIP)": "801 Red River St",
+    "Information (Keep short, use google/wiki)": "Beer, brisket and music Downtown with a renowned Sunday gospel brunch.",
+    "Hours (Format: \"3PM-9PM)": "11AM-10PM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "Blues, General",
+    "Website": "https://www.stubbsaustin.com/",
+    "Images": "https://assets.simpleviewinc.com/simpleview/image/fetch/q_90/https://assets.simpleviewinc.com/simpleview/image/upload/crm/austin/DSC_57880_2b5eff75-ea14-c952-f23a1c3674393695.jpg"
+  },
+  {
+    "Venue": "Parish",
+    "Location (do not include Austin,TX, ZIP)": "214 E 6th St",
+    "Information (Keep short, use google/wiki)": "Live hip-hop, rock, funk, reggae, Latin & more attract music-lovers to this 6th Street club.",
+    "Hours (Format: \"3PM-9PM)": "Varies",
+    "Days Open (Format: \"Mon-Sun\")": "Varies",
+    "Genres (Format: \"Genre, Genre\")": "Hip-Hop,  Rock, Funk, Reggae",
+    "Website": "https://www.theparishaustin.com/",
+    "Images": "https://cdn.vox-cdn.com/thumbor/1HF_H2FqrWZlvhVUy_UQaGjm5ok=/0x0:960x581/1200x800/filters:focal(118x179:270x331)/cdn.vox-cdn.com/uploads/chorus_image/image/58245091/10806279_10153004317665734_3479617114634268671_n.0.jpg"
+  },
+  {
+    "Venue": "Cedar Street Courtyard",
+    "Location (do not include Austin,TX, ZIP)": "208 W 4th St suite c",
+    "Information (Keep short, use google/wiki)": "In the heart of downtown Austin, Texas, live music, great food and drinks can be found nightly at Cedar Street Courtyard!",
+    "Hours (Format: \"3PM-9PM)": "5PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "Dance, General",
+    "Website": "http://cedarstreetaustin.com/",
+    "Images": "https://www.totalhappyhour.com/preview/500-450/content/files/mod.happyhour/56c19d6b35c04128b98343156fa74179.jpg"
+  },
+  {
+    "Venue": "ACL Live at the Moody Theater",
+    "Location (do not include Austin,TX, ZIP)": "310 W Willie Nelson Blvd #1B",
+    "Information (Keep short, use google/wiki)": "Austin City Limits at the Moody Theater hosts diverse performers, from Belle & Sebastian to ZZ Top.",
+    "Hours (Format: \"3PM-9PM)": "NA",
+    "Days Open (Format: \"Mon-Sun\")": "NA",
+    "Genres (Format: \"Genre, Genre\")": "General",
+    "Website": "http://acl-live.com/",
+    "Images": "https://res.cloudinary.com/dostuff-media/image/upload//c_fill,g_faces,h_630,w_1200/v1411492627/venue-12880.jpg"
+  },
+  {
+    "Venue": "The Continental Club",
+    "Location (do not include Austin,TX, ZIP)": "1315 S Congress Ave",
+    "Information (Keep short, use google/wiki)": "Rock, country, jazz & blues acts, national & local, are found at this legendary South Congress club.",
+    "Hours (Format: \"3PM-9PM)": "4PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "Rock, Country, Jazz, Blues",
+    "Website": "http://continentalclub.com/",
+    "Images": "https://www.hawaiitribune-herald.com/wp-content/uploads/2019/01/web1_PHOTO____TRAVEL-UST-AUSTIN-CLUB-2-LA.jpg"
+  },
+  {
+    "Venue": "Historic Scoot Inn",
+    "Location (do not include Austin,TX, ZIP)": "1308 E 4th St",
+    "Information (Keep short, use google/wiki)": "Eclectic indie bands & a dance floor in a happening, compact dive with 2 bars & lots of beer.",
+    "Hours (Format: \"3PM-9PM)": "6PM-12AM",
+    "Days Open (Format: \"Mon-Sun\")": "Wed-Sat",
+    "Genres (Format: \"Genre, Genre\")": "Indie",
+    "Website": "https://www.scootinnaustin.com/",
+    "Images": "https://res.cloudinary.com/dostuff-media/image/upload//c_fill,g_faces,h_630,w_1200/v1405636265/venue-654.jpg"
+  },
+  {
+    "Venue": "Historic Victory Grill",
+    "Location (do not include Austin,TX, ZIP)": "1104 E 11th St",
+    "Information (Keep short, use google/wiki)": "Originally on the Chitlin' Circuit, it's hosted acts like James Brown, Billie Holiday & B.B. King.",
+    "Hours (Format: \"3PM-9PM)": "3PM-9PM",
+    "Days Open (Format: \"Mon-Sun\")": "Tues-Thurs, Sat-Sun",
+    "Genres (Format: \"Genre, Genre\")": "Blues",
+    "Website": "http://atxhistoricvictorygrill.org/",
+    "Images": "https://texastimetravel.oncell.com/project-assets/2043/img/fb417b9fe8c3691f10e3877c803e1ea31b6f6036378ae5a41e60221c.jpg"
+  },
+  {
+    "Venue": "The North Door",
+    "Location (do not include Austin,TX, ZIP)": "501 Brushy St",
+    "Information (Keep short, use google/wiki)": "Hip venue featuring diverse music performances & creative New American fare, plus a cocktail lounge.",
+    "Hours (Format: \"3PM-9PM)": "7PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Tues-Sun",
+    "Genres (Format: \"Genre, Genre\")": "Hip-Hop, Dance",
+    "Website": "http://www.ndvenue.com/",
+    "Images": "http://www.ndvenue.com/wp-content/uploads/2015/02/IMG_0583.jpg"
+  },
+  {
+    "Venue": "Saxon Pub",
+    "Location (do not include Austin,TX, ZIP)": "1320 S Lamar Blvd",
+    "Information (Keep short, use google/wiki)": "Popular concert space with free weekday happy hour shows, a listening room & an intimate atmosphere.",
+    "Hours (Format: \"3PM-9PM)": "2PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "General",
+    "Website": "https://www.thesaxonpub.com/",
+    "Images": "https://scontent.fftw1-1.fna.fbcdn.net/v/t31.0-8/11951681_10153607566038044_8408449552588378500_o.jpg?_nc_cat=105&_nc_ht=scontent.fftw1-1.fna&oh=5759f7ccfa8f2fde268046e055e6214b&oe=5D38AAE2"
+  },
+  {
+    "Venue": "The Little Longhorn Saloon",
+    "Location (do not include Austin,TX, ZIP)": "5434 Burnet Rd",
+    "Information (Keep short, use google/wiki)": "This classic honky-tonk draws crowds with cold beer, live music & famous bingo games on Sundays.",
+    "Hours (Format: \"3PM-9PM)": "5PM-11PM",
+    "Days Open (Format: \"Mon-Sun\")": "Tues-Sun",
+    "Genres (Format: \"Genre, Genre\")": "Country, Blues",
+    "Website": "http://thelittlelonghornsaloon.com/public_html_new/",
+    "Images": "https://6street.com/listify/wp-content/uploads/2015/12/blog_little_longhorn_saloon_Rodolfo_Gonzalez_photo.jpg"
+  },
+  {
+    "Venue": "Elephant Room",
+    "Location (do not include Austin,TX, ZIP)": "315 Congress Ave",
+    "Information (Keep short, use google/wiki)": "Underground jazz bar with nightly live music, plus more than 20 draft beers & wines by the glass.",
+    "Hours (Format: \"3PM-9PM)": "4PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "Jazz",
+    "Website": "https://www.elephantroom.com/",
+    "Images": "https://s3-media3.fl.yelpcdn.com/bphoto/bLWKBuS6N0kH7R0itSSybg/o.jpg"
+  },
+  {
+    "Venue": "Emo's Austin",
+    "Location (do not include Austin,TX, ZIP)": "2015 E Riverside Dr",
+    "Information (Keep short, use google/wiki)": "Emo's, formerly known as The Back Room, is a music and event venue located in Austin, Texas. Emo's got its start as a Houston punk club in 1989, with the Austin location opening in 1992. The Houston location closed its doors in September 2001.",
+    "Hours (Format: \"3PM-9PM)": "NA",
+    "Days Open (Format: \"Mon-Sun\")": "NA",
+    "Genres (Format: \"Genre, Genre\")": "General",
+    "Website": "https://www.emosaustin.com/",
+    "Images": "https://pbs.twimg.com/media/CzaQVLIVQAEOwIH.jpg"
+  },
+  {
+    "Venue": "The Skylark Lounge",
+    "Location (do not include Austin,TX, ZIP)": "2039 Airport Blvd,",
+    "Information (Keep short, use google/wiki)": "Beer, wine & BYOB in funky dive bar (with patio & billiards) hosting blues bands & other live music.",
+    "Hours (Format: \"3PM-9PM)": "5PM-12AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "General",
+    "Website": "http://skylarkaustin.com/",
+    "Images": "http://skylarkaustin.com/wordpress/wp-content/uploads/2013/07/1002819_169855546524842_300194649_n.jpg"
+  },
+  {
+    "Venue": "Tellers Austin",
+    "Location (do not include Austin,TX, ZIP)": "607 Trinity St",
+    "Information (Keep short, use google/wiki)": "Austin's newest live music venue. Built upstairs in a 125 year old, limestone walled and wood floor building....the sound is fantastic.",
+    "Hours (Format: \"3PM-9PM)": "5PM-12AM",
+    "Days Open (Format: \"Mon-Sun\")": "Wed-Sat",
+    "Genres (Format: \"Genre, Genre\")": "General",
+    "Website": "NA",
+    "Images": "https://media-cdn.tripadvisor.com/media/photo-s/09/fc/af/01/tellers-bar.jpg"
+  },
+  {
+    "Venue": "Sahara Lounge",
+    "Location (do not include Austin,TX, ZIP)": "1413 Webberville Rd",
+    "Information (Keep short, use google/wiki)": "Laid-back live music venue with an African twist featuring an eclectic lineup & signature cocktails.",
+    "Hours (Format: \"3PM-9PM)": "7PM-12AM",
+    "Days Open (Format: \"Mon-Sun\")": "Wed-Sat",
+    "Genres (Format: \"Genre, Genre\")": "Punk, Rock",
+    "Website": "https://saharalounge.com/",
+    "Images": "https://res.cloudinary.com/dostuff-media/image/upload//c_fill,g_faces,h_630,w_1200/v1460638623/venue-24861.jpg"
+  },
+  {
+    "Venue": "Pete's Dueling Piano Bar",
+    "Location (do not include Austin,TX, ZIP)": "421 E 6th St, Austin",
+    "Information (Keep short, use google/wiki)": "Lively local bar chain offering speciality cocktails, dueling-piano shows & singing waitstaff.",
+    "Hours (Format: \"3PM-9PM)": "7:30PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "Rock",
+    "Website": "https://www.petesduelingpianobar.com/",
+    "Images": "https://media-cdn.tripadvisor.com/media/photo-s/02/b9/54/1a/pete-s-dueling-piano.jpg"
+  },
+  {
+    "Venue": "Barracuda",
+    "Location (do not include Austin,TX, ZIP)": "611 E 7th St",
+    "Information (Keep short, use google/wiki)": "A live music venue with an indoor and outdoor performing space perfect for accomodating a multitude of artists",
+    "Hours (Format: \"3PM-9PM)": "10:30AM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sat",
+    "Genres (Format: \"Genre, Genre\")": "Punk, Electronica",
+    "Website": "https://barracudaaustin.com/",
+    "Images": "https://static1.squarespace.com/static/589be7a317bffc865120e33d/5aaf09a0562fa7d5c72b29c4/5aaf09a0aa4a99e021a62684/1521420713641/DSC02469.jpg?format=2500w"
+  },
+  {
+    "Venue": "The Belmont",
+    "Location (do not include Austin,TX, ZIP)": "305 W 6th St",
+    "Information (Keep short, use google/wiki)": "1000-person space hosts hip-hop, new rock & electronic dance music shows, with covered patio & bar.",
+    "Hours (Format: \"3PM-9PM)": "Varies",
+    "Days Open (Format: \"Mon-Sun\")": "Varies",
+    "Genres (Format: \"Genre, Genre\")": "Electronic",
+    "Website": "https://thebelmontaustin.com/",
+    "Images": "https://static.spacecrafted.com/fd5288b16263413e98b563a5ea4dbf25/i/e24f16d6b8504b27978580d4c368437a/1/HeFQid7LQXgcb94xoFfcAXGjoNdCp8TJdfJQL/2Q%3D%3D-2.jpg"
+  },
+  {
+    "Venue": "Bass Concert Hall",
+    "Location (do not include Austin,TX, ZIP)": "2350 Robert Dedman Dr,",
+    "Information (Keep short, use google/wiki)": "The University of Texas Performing Arts Center is a collective of six theaters operated by The University of Texas at Austin, College of Fine Arts. The theaters are the Bass Concert Hall, McCullough Theater, Bates Recital Hall, Hogg Memorial Auditorium, B. Iden Payne Theater and Oscar Brockett Theater.",
+    "Hours (Format: \"3PM-9PM)": "Varies",
+    "Days Open (Format: \"Mon-Sun\")": "Varies",
+    "Genres (Format: \"Genre, Genre\")": "Classical",
+    "Website": "https://texasperformingarts.org/visit/venues/bass-concert-hall",
+    "Images": "https://austin.broadway.com/wp-content/uploads/sites/19/2019/01/Venue.jpg"
+  },
+  {
+    "Venue": "The Townsend",
+    "Location (do not include Austin,TX, ZIP)": "718 Congress Ave #100",
+    "Information (Keep short, use google/wiki)": "Modern cocktails & elegant small plates served in a historic space with chic, throwback decor.",
+    "Hours (Format: \"3PM-9PM)": "4PM-12AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sat",
+    "Genres (Format: \"Genre, Genre\")": "Acoustic, Folk, Rock",
+    "Website": "https://www.thetownsendaustin.com/",
+    "Images": "https://www.austinchronicle.com/binary/3357/town.jpg"
+  },
+  {
+    "Venue": "The Roosevelt Room",
+    "Location (do not include Austin,TX, ZIP)": "307 W 5th St, Austin",
+    "Information (Keep short, use google/wiki)": "Inventive craft cocktails are served in an airy, industrial-chic space with a cozy upstairs lounge.",
+    "Hours (Format: \"3PM-9PM)": "4PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Tues-Sun",
+    "Genres (Format: \"Genre, Genre\")": "General",
+    "Website": "https://www.therooseveltroomatx.com/",
+    "Images": "https://cdn.vox-cdn.com/thumbor/vUCl5Y37PZ4xtLsPkHZ21kaEspA=/153x0:2043x1418/1200x800/filters:focal(153x0:2043x1418)/cdn.vox-cdn.com/uploads/chorus_image/image/46950018/dh-grandopening-therooseveltroom-062715_0379.0.0.jpg"
+  },
+  {
+    "Venue": "Do512 Lounge",
+    "Location (do not include Austin,TX, ZIP)": "2208 S Lamar Blvd",
+    "Information (Keep short, use google/wiki)": "Unassuming performance venue features regular live bands & events in a laid-back, intimate setting.",
+    "Hours (Format: \"3PM-9PM)": "Varies",
+    "Days Open (Format: \"Mon-Sun\")": "Varies",
+    "Genres (Format: \"Genre, Genre\")": "General",
+    "Website": "https://do512.com/venues/do512-lounge",
+    "Images": "https://i.ytimg.com/vi/PpVgw_WGtVw/maxresdefault.jpg"
+  },
+  {
+    "Venue": "Hotel Vegas",
+    "Location (do not include Austin,TX, ZIP)": "1502 E 6th St",
+    "Information (Keep short, use google/wiki)": "A venue decorated with gold wallpaper & taxidermy features DJs, live music & a patio.",
+    "Hours (Format: \"3PM-9PM)": "9PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "Electronic, Indie",
+    "Website": "http://texashotelvegas.com/",
+    "Images": "https://media.timeout.com/images/103197469/630/472/image.jpg"
+  },
+  {
+    "Venue": "The White Horse",
+    "Location (do not include Austin,TX, ZIP)": "500 Comal St",
+    "Information (Keep short, use google/wiki)": "A laidback venue with with live music and dance lessons.",
+    "Hours (Format: \"3PM-9PM)": "3PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "Rock, Punk",
+    "Website": "https://www.thewhitehorseaustin.com/",
+    "Images": "https://6street.com/listify/wp-content/uploads/2015/05/bp_white_horse_05.jpg"
+  },
+  {
+    "Venue": "Stay Gold",
+    "Location (do not include Austin,TX, ZIP)": "1910 E Cesar Chavez",
+    "Information (Keep short, use google/wiki)": "Hip venue for craft cocktails & beer, a stage for live music & comfort eats from Toaster food truck.",
+    "Hours (Format: \"3PM-9PM)": "3PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "Indie, General",
+    "Website": "http://staygoldaustin.com/",
+    "Images": "https://res.cloudinary.com/dostuff-media/image/upload//c_fill,g_faces,h_630,w_1200/v1492546152/venue-313774.jpg"
+  },
+  {
+    "Venue": "Palm Door on Sixth",
+    "Location (do not include Austin,TX, ZIP)": "508 E 6th St, Austin",
+    "Information (Keep short, use google/wiki)": "Palm Door on Sixth is a contemporary event venue located in downtown Austin's Historic Entertainment district",
+    "Hours (Format: \"3PM-9PM)": "Varies",
+    "Days Open (Format: \"Mon-Sun\")": "Varies",
+    "Genres (Format: \"Genre, Genre\")": "",
+    "Website": "http://www.palmdoor.com/sixth",
+    "Images": "https://cdn.wedding-spot.com/images/venues/787/Palm-Door-on-Sixth-Wedding-Austin-TX-12_main.1404723569.jpg"
+  },
+  {
+    "Venue": "The Paramount Theater",
+    "Location (do not include Austin,TX, ZIP)": "713 Congress Ave",
+    "Information (Keep short, use google/wiki)": "The Paramount Theatre is a live theatre venue/movie theatre located in downtown Austin, Texas. The classical revival style structure was built in 1915. The building was listed in the National Register of Historic Places on June 23, 1976",
+    "Hours (Format: \"3PM-9PM)": "Varies",
+    "Days Open (Format: \"Mon-Sun\")": "Varies",
+    "Genres (Format: \"Genre, Genre\")": "",
+    "Website": "http://www.austintheatre.org/",
+    "Images": "https://cdn.vox-cdn.com/thumbor/lTUwxPI0xelPQGf5n-SQ57IkiIg=/0x0:1636x1136/1200x800/filters:focal(688x438:948x698)/cdn.vox-cdn.com/uploads/chorus_image/image/60139925/CENTER_STAGE_VIEW___credit_H3.0.jpg"
+  },
+  {
+    "Venue": "Speakeasy",
+    "Location (do not include Austin,TX, ZIP)": "412 Congress Ave D",
+    "Information (Keep short, use google/wiki)": "Sprawling 3-level nightclub with nightly live music & weekend DJs, '20s-style decor & rooftop patio.",
+    "Hours (Format: \"3PM-9PM)": "5PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "",
+    "Website": "http://speakeasyaustin.com/",
+    "Images": "http://speakeasyaustin.com/wp-content/uploads/2015/05/dancefloor-640x375.png"
+  },
+  {
+    "Venue": "Friends Bar",
+    "Location (do not include Austin,TX, ZIP)": "208 E 6th St, Austin",
+    "Information (Keep short, use google/wiki)": "Energetic option for live performances from local musicians, DJ dance parties & drinks specials.",
+    "Hours (Format: \"3PM-9PM)": "7:30PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "Blues, Rock, Jaz",
+    "Website": "http://www.friendsbar.com/",
+    "Images": "http://www.friendsbar.com/images/friendsbar1.jpg"
+  },
+  {
+    "Venue": "Vulcan Gas Company",
+    "Location (do not include Austin,TX, ZIP)": "418 E 6th St",
+    "Information (Keep short, use google/wiki)": "The Vulcan Gas Company was the first successful psychedelic music venue in Austin, Texas. The Vulcan opened its doors at 316 Congress Avenue in the fall of 1967, and closed in the summer of 1970. Gary Scanlon, Houston White, Don Hyde and Sandy Lockett started the VGC.",
+    "Hours (Format: \"3PM-9PM)": "9PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Wed-Sat",
+    "Genres (Format: \"Genre, Genre\")": "Electronic, Dance",
+    "Website": "https://www.vulcanatx.com/",
+    "Images": "https://www.discotech.me/wp-content/uploads/2018/07/vulcangascompany2.jpg"
+  },
+  {
+    "Venue": "Come and Take It Live",
+    "Location (do not include Austin,TX, ZIP)": "2015 E Riverside Dr bldg 4",
+    "Information (Keep short, use google/wiki)": "Best live music venue and staff in town hands down! Amazing sound system and floor plan. The club hosts giant acts but doesn’t hold a huge capacity so each show has a very intimate feel without feeling like you need binoculars to see your favorite artists. Not to mention, you’re very likely to bump shoulders with your favorite artist! Come and Take it Live is an Austin, TX must!",
+    "Hours (Format: \"3PM-9PM)": "7PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "",
+    "Website": "https://www.facebook.com/comeandtakeitlive/",
+    "Images": "https://www.austinchronicle.com/binary/b14c/music_play.jpg"
+  },
+  {
+    "Venue": "Beerland",
+    "Location (do not include Austin,TX, ZIP)": "711 Red River St",
+    "Information (Keep short, use google/wiki)": "Intimate, old-school club for rock & punk shows & pool, plus popular Monday rock 'n' roll karaoke.",
+    "Hours (Format: \"3PM-9PM)": "9PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "Rock, Punk",
+    "Website": "http://www.beerlandtexas.com/",
+    "Images": "https://cdn.vox-cdn.com/thumbor/zTlgHLuqKKK6g8hoW6IbJvC4aOQ=/0x0:1572x1040/1200x800/filters:focal(661x395:911x645)/cdn.vox-cdn.com/uploads/chorus_image/image/58054311/17038866_10154982547304647_3050970365124259033_o.0.0.jpg"
+  },
+  {
+    "Venue": "Waterloo Records & Video",
+    "Location (do not include Austin,TX, ZIP)": "600 N Lamar Blvd",
+    "Information (Keep short, use google/wiki)": "Longtime hot spot with in-store performances, local artist compilations & concert ticket sales.",
+    "Hours (Format: \"3PM-9PM)": "10AM-11PM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "",
+    "Website": "https://waterloorecords.com/",
+    "Images": "https://media.timeout.com/images/103338035/630/472/image.jpg"
+  },
+  {
+    "Venue": "Lamberts",
+    "Location (do not include Austin,TX, ZIP)": "401 W 2nd St",
+    "Information (Keep short, use google/wiki)": "Fancy BBQ & other meaty fare in a refurbished general store with an upstairs bar with live music.",
+    "Hours (Format: \"3PM-9PM)": "11AM-10PM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "",
+    "Website": "https://www.sanjacsaloon.com/",
+    "Images": "http://www.lambertsaustin.com/wp-content/uploads/2015/02/LAMBERTS_08.jpg"
+  },
+  {
+    "Venue": "San Jac Saloon",
+    "Location (do not include Austin,TX, ZIP)": "300 E 6th St",
+    "Information (Keep short, use google/wiki)": "Spacious hangout in a historic building with ample beer & sipping whiskey, live music & dancing.",
+    "Hours (Format: \"3PM-9PM)": "2PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "",
+    "Website": "https://www.sanjacsaloon.com/",
+    "Images": "https://media-cdn.tripadvisor.com/media/photo-s/0c/94/af/e2/looking-down-the-length.jpg"
+  },
+  {
+    "Venue": "Cherrywood Coffeehouse",
+    "Location (do not include Austin,TX, ZIP)": "1400 E 38th 1/2 St",
+    "Information (Keep short, use google/wiki)": "Eclectic eats from tacos to muffalettas in an art-adorned counter-serve cafe, plus free yoga.",
+    "Hours (Format: \"3PM-9PM)": "7AM-12AM",
+    "Days Open (Format: \"Mon-Sun\")": "Mon-Sun",
+    "Genres (Format: \"Genre, Genre\")": "",
+    "Website": "https://www.sanjacsaloon.com/",
+    "Images": "http://cherrywoodcoffeehouse.com/wp-content/uploads/IMG_1176-e1547271162437.jpg"
+  },
+  {
+    "Venue": "Frank C. Erwin Special Events Center",
+    "Location (do not include Austin,TX, ZIP)": "1701 Red River St",
+    "Information (Keep short, use google/wiki)": "The Frank C. Erwin Jr. Center is a multi-purpose arena located on the campus of the University of Texas at Austin in Austin, Texas. It is also sometimes referred to as \"The Drum\" or \"The Superdrum\", owing to its round, drum-like appearance from outside.",
+    "Hours (Format: \"3PM-9PM)": "Varies",
+    "Days Open (Format: \"Mon-Sun\")": "Varies",
+    "Genres (Format: \"Genre, Genre\")": "",
+    "Website": "https://uterwincenter.com/",
+    "Images": "https://www.henselphelps.com/wp-content/uploads/2017/08/The-University-of-Texas-Frank-C-Erwin-Center-Stage-I-IL-I-1000x684.jpg"
+  },
+  {
+    "Venue": "The Backyard",
+    "Location (do not include Austin,TX, ZIP)": "13801 Bee Cave Pkwy",
+    "Information (Keep short, use google/wiki)": "Iconic, scenic amphitheater for jazz, country, classical & rock concerts, plus private events.",
+    "Hours (Format: \"3PM-9PM)": "Varies",
+    "Days Open (Format: \"Mon-Sun\")": "Varies",
+    "Genres (Format: \"Genre, Genre\")": "",
+    "Website": "http://backyardaustin.com/",
+    "Images": "http://backyardaustin.com/wp-content/uploads/Concert-1025x600.jpg"
+  },
+  {
+    "Venue": "Elysium",
+    "Location (do not include Austin,TX, ZIP)": "705 Red River St",
+    "Information (Keep short, use google/wiki)": "Goth & industrial dance music from DJs & live bands, with theme nights, sunken dance floor & patio.",
+    "Hours (Format: \"3PM-9PM)": "9:30PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Tues-Sun",
+    "Genres (Format: \"Genre, Genre\")": "Dance, Electronic",
+    "Website": "http://www.elysiumonline.net/",
+    "Images": "http://apps.startribune.com/blogs/user_images/chrisr_1394635458_HollowJanTN044.jpg"
+  },
+  {
+    "Venue": "Majestic Austin",
+    "Location (do not include Austin,TX, ZIP)": "419 E 6th St",
+    "Information (Keep short, use google/wiki)": "The Majestic is a classy venue located on the Historical 6th street district. the venue can accommodate 300 guests comfortably because of its open lay out.",
+    "Hours (Format: \"3PM-9PM)": "Varies",
+    "Days Open (Format: \"Mon-Sun\")": "Varies",
+    "Genres (Format: \"Genre, Genre\")": "",
+    "Website": "NA",
+    "Images": "https://www.austinchronicle.com/binary/a7ad/food_feature2.jpg"
+  },
+  {
+    "Venue": "Swan Dive",
+    "Location (do not include Austin,TX, ZIP)": "615 Red River St",
+    "Information (Keep short, use google/wiki)": "Chic white & grey lounge offers choice cocktails & events such as dance parties, burlesque & bands.",
+    "Hours (Format: \"3PM-9PM)": "9:30PM-2AM",
+    "Days Open (Format: \"Mon-Sun\")": "Tues,Thurs-Sat",
+    "Genres (Format: \"Genre, Genre\")": "",
+    "Website": "http://www.swandiveaustin.com/",
+    "Images": "https://www.austinchronicle.com/binary/a640/BOA_2011_carson-39.jpg"
+  },
+  {
+    "Venue": "Eberly",
+    "Location (do not include Austin,TX, ZIP)": "615 S. Lamar",
+    "Information (Keep short, use google/wiki)": "Contemporary American cuisine, relaxing study, rooftop event space & legendary cedar tavern bar",
+    "Hours (Format: \"3PM-9PM)": "Varies",
+    "Days Open (Format: \"Mon-Sun\")": "Varies",
+    "Genres (Format: \"Genre, Genre\")": "",
+    "Website": "https://eberlyaustin.com/",
+    "Images": "https://static.spacecrafted.com/d18843c176cd4ca0b238d7130034d6eb/i/f24d7faff53b4d809e0d24768d46010d/1/GCuCv726vxAVM9sgguVj4g/eberly101016-0010.jpg"
+  }
+]

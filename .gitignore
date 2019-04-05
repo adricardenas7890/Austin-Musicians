@@ -1,6 +1,6 @@
 ChristianEnv
 venv
-.vscode/settings.json
+.vscode
 __pycache__
 .coverage
 .DS_Store

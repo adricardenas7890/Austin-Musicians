@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1>{% block title %}{{ band.group }}{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="text-center">{{ band.group }}</h1>
+        <div style="text-align: center;">
+            <img class = "width-100" src="{{ band.image }}">
+        </div>
+
+        <!-- About the artist
+            Title, with about information -->
+        <br>
+        <br>
+        <div>
+            <h3>About</h3>
+            <p>{{ band.group_summary }}</p>
+        </div>
+
+        <!-- Members
+            Should be under image in small text -->
+        <p>
+        <h3>Members:</h3>
+            {% for artist in band.artists.split(",") %}
+                {{ artist }}<br>
+            {% endfor %}
+        </p>
+
+        <!-- Genre -->
+        <p><h3>Genre:</h3> {{ band.genre }}</p>
+
+        <!-- Tour dates -->
+        <div class="graph-page-container">
+            <div class="container page-title-container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-lg-offset-4">
+                        <h3 class="text-center">Shows</h3>
+                    </div>
+                </div>
+                    <div class="row table-row justify-content-center">
+                        <div class="col">
+                            <table class="table table-hover">
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Venue</th>
+                                    <th>Location</th>
+                                    <th>Show Information</th>
+                                </tr>
+                                {% for show in shows %}
+                                    {% for venue in venues %}
+                                        {% if (band.group.lower() in show.featured_artists.lower()) and (show.venue.lower() in venue.venue_name.lower()) %}
+                                            <tr>
+                                                <td>{{ show.date_time }}</td>
+                                                <td><a href="/venues/{{ venue.venue_name }}">{{ show.venue }}</a></td>
+                                                <td>{{ venue.location }}</td>
+                                                <td>None</td>
+                                            </tr>
+                                        {% endif %}
+                                    {% endfor %}
+                                {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- Links -->
+        <div>
+            <br>
+            <br>
+            <h4>Check them out on...</h4>
+            <p>
+                <a href="{{ band.external_links }}" target="_blank">Website</a><br>
+                {% for social in band.social_media.split("\n") %}
+                    {% if "facebook" in social %}
+                        <a href="{{ social }}" target="_blank">Facebook</a><br>
+                    {% elif "youtube" in social %}
+                        <a href="{{ social }}" target="_blank">Youtube</a><br>
+                    {% elif "twitter" in social %}
+                        <a href="{{ social }}" target="_blank">Twitter</a><br>
+                    {% elif "instagram" in social %}
+                        <a href="{{ social }}" target="_blank">Instagram</a><br>
+                    {% elif "m.me" in social %}
+                        <a href="{{ social }}" target="_blank">Facebook Messager</a><br>
+                    {% else %}
+                        <a href="{{ social }}" target="_blank">?????</a><br>
+                    {% endif %}                
+                {% endfor %}
+            </p>
+        </div>
+    </div>
+
+{% endblock content %}

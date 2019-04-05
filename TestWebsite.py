@@ -4,6 +4,8 @@
 # imports
 # -------
 from unittest import main, TestCase
+from website.models import Band, Venue, Shows, db, app
+
 
 # -----------
 # TestWebsite
@@ -28,10 +30,36 @@ class TestWebsite (TestCase):
             pass
         self.assertTrue(successful, "ERROR: Could not import flask")
 
+
     # -------
     # Check functions in code
     # -------
 
+    #check that none of Artist column is empty
+    def test_ArtistNotEmpty(self):
+        context = Band.query.order_by(Band.group).all()
+        for artist in context:
+            self.assertEqual(artist.group != "", True)
+        pass
+    
+    #check that none of Show column is empty
+    def test_ShowNotEmpty(self):
+        context = Shows.query.order_by(Shows.show_name).all()
+        for show in context:
+            self.assertEqual(show.show_name != "", True)
+        pass
+
+    #check that none of Venue column is empty
+    def test_VenueNotEmpty(self):
+        context = Venue.query.order_by(Venue.venue_name).all()
+        return self.assertGreater(len(context), 0)
+
+    #check that exact Artist returns the right Genre
+    def test_ArtistGenreIsCorrect(self):
+        context = Band.query.filter(Band.group == "TC Superstar").first()
+        return self.assertEqual(context.genre, "Pop")
+    
+    
     # from website import main
 
 
