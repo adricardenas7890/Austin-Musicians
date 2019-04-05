@@ -52,7 +52,9 @@ def shows():
 @app.route('/artists/<url>')
 def artist(url):
 	context = Band.query.filter(Band.group == url).first()
-	return render_template('artists/template.html', band = context)
+	show_context = Shows.query.order_by(Shows.show_name).all()
+	venue_context = Venue.query.order_by(Venue.venue_name).all()
+	return render_template('artists/template.html', band = context, shows = show_context, venues = venue_context)
 
 # Venue Page
 @app.route('/venues/<url>')
