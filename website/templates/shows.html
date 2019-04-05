@@ -37,15 +37,32 @@
                                         <td>{{ show.presented_by }}</td>
                                         <td>
                                             {% for artist in show.featured_artists.split(",") %}
-                                                {% if artist in show.featured_artists %}  <!---check if artist is in band.groups...i think-->
-                                                    <a href="{{ artist }}">{{ artist }}</a> <br>
+                                                {% set exists = [] %}
+                                                {% for band in bands %}
+                                                    {% if artist == band.group %}  <!---check if artist is in band.groups...i think-->
+                                                        {% if exists.append(0) %}{% endif %}
+                                                    {% endif %}
+                                                {% endfor %}
+                                                {% if exists|length == 0 %}
+                                                    {{artist}}<br>
                                                 {% else %}
-                                                    {{ artist }}
+                                                    <a href="/artists/{{ artist }}">{{ artist }}</a> <br>
                                                 {% endif %}
                                             {% endfor %}                                        
                                         </td>
                                         <td>
-                                            <a href="{{ show.venue }}">{{show.venue}}</a> <!--need to check if venue exists in venue.venue_name...i think-->
+                                            <!-- venue -->
+                                            {% set exists = [] %}
+                                            {% for venue in venues %}
+                                                {% if show.venue == venue.venue_name %}  <!---check if artist is in band.groups...i think-->
+                                                    {% if exists.append(0) %}{% endif %}
+                                                {% endif %}
+                                            {% endfor %}  
+                                            {% if exists|length == 0 %}
+                                                    {{show.venue}}<br>
+                                                {% else %}
+                                                    <a href="/venues/{{ show.venue }}">{{ show.venue }}</a> <br>
+                                            {% endif %}
                                         </td>
                                         <td>{{ show.date_time }}</td>
                                     </tr>
