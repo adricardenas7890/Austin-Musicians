@@ -1,3 +1,352 @@
+commit 73fe9745c43da511e5678c87f7bb1d853dd37728
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Thu Apr 4 20:29:46 2019 -0500
+
+    button added in about.html
+
+commit 4a92f5378ffef1b03a4fa40d7f336521f03b93b7
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Thu Apr 4 20:28:06 2019 -0500
+
+    Artists now have shows
+
+commit 523c64049544220ea56e35e5b185a76f01ffb51b
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Thu Apr 4 19:55:16 2019 -0500
+
+    Fixed bug in Venues
+
+commit ad2e9e6933fcf10450834111491b01e42c8a177c
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Thu Apr 4 19:42:28 2019 -0500
+
+    added linkage to artists in show page
+
+commit f751bf7ae6b30c84b3e01ecb5a89901f3ed0d867
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Thu Apr 4 18:28:04 2019 -0500
+
+    created template for venue page
+
+commit 6be7862c11f19d27d27ac1bd2072edd4fb68293b
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Thu Apr 4 16:30:46 2019 -0500
+
+    fixed main.py, show page now renders
+
+commit c2f9b7da26309ad9d0c244480b3f727060aa5987
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Thu Apr 4 16:20:43 2019 -0500
+
+    fixed routing error and made venues.html dynamic
+
+commit 39b030bbe6230fa68f89a1956edf7c77aae90706
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Thu Apr 4 14:35:33 2019 -0500
+
+    updated shows.html with links
+
+commit 6ed996d4a8be94aa51de86a55cb42cec1f625c08
+Merge: 905477a a8b64f7
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Thu Apr 4 14:20:53 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit 905477af1e993c5fe6e719f769030c66d18b233a
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Thu Apr 4 14:20:40 2019 -0500
+
+    shows.html page working
+
+commit a8b64f786631bf27a16243309f7467b566c34e0c
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Thu Apr 4 14:18:47 2019 -0500
+
+    added image links for each venue
+
+commit dcbe50dad6519f3fc6b7bf95f5f274826bc33277
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Thu Apr 4 11:43:55 2019 -0500
+
+    shows template page added
+
+commit edebf86befa766982d02e5ed6390b39be7a7bc81
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Thu Apr 4 10:24:25 2019 -0500
+
+    Working version of artists with pages
+
+commit 9139230c1cbe136d8fc0c396391f68f579622860
+Merge: 27cb56d 55c3632
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Apr 3 23:00:51 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit 27cb56d06ac43a445822f72bbc863b94eb377e6f
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Apr 3 23:00:45 2019 -0500
+
+    Stared Dynamic URLS
+
+commit 55c36324b299ae749e1fb5f1fc2223f08e077a6c
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Wed Apr 3 22:51:24 2019 -0500
+
+    fixed flyers
+
+commit f339823bc1677c49dfb0ceb510c844a4b347ebe0
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Wed Apr 3 22:49:46 2019 -0500
+
+    fixed date
+
+commit 75c5a1a3a064dc08718514d3d4bb49817298389b
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Wed Apr 3 22:48:49 2019 -0500
+
+    fixed create_shows method
+
+commit 82e4870780a546fe5149085f7a3cc8a1588a935e
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Wed Apr 3 22:34:25 2019 -0500
+
+    fixed tickets column
+
+commit c2e80fe990b59bc9e1ca1399bda70352dd220906
+Merge: 9e4b415 1a0b18e
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Wed Apr 3 22:25:58 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit 9e4b4150c4c5c24bcbce44dad6c89760ec104cba
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Wed Apr 3 22:25:18 2019 -0500
+
+    deleted venue name formatting
+
+commit 1a0b18e3da9df1806dd0b2a982d291acf07f58ac
+Merge: 2d96c28 c25fa78
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Wed Apr 3 22:23:32 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit 2d96c28b7ba3120fd2683336f59ab7403d501409
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Wed Apr 3 22:23:21 2019 -0500
+
+    fixed if statements
+
+commit c25fa78d47a9a18ac7c201f8167c9b573b8915d0
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Apr 3 22:22:57 2019 -0500
+
+    Database update works. Removed None from bands
+
+commit c3fb8613516c560b2281f79baa9d34eba8c11e8d
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Apr 3 22:14:22 2019 -0500
+
+    Working server with small changes
+
+commit ae1d92ac68f22039b88f778e050118646e23d180
+Merge: 95a0060 18a64be
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Wed Apr 3 22:00:47 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit 95a00602a789fd1471792e2ac3fa95e5230b1baf
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Wed Apr 3 22:00:34 2019 -0500
+
+    shows json path updated
+
+commit 18a64be1373d6ca2c5bbc78b6622ff4890f5e887
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Wed Apr 3 21:58:57 2019 -0500
+
+    fixed name and paranthesis error
+
+commit 716c07b8ea7fc5d6d34b033f0f19d4827f5f982a
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Wed Apr 3 21:58:47 2019 -0500
+
+    fixed name and paranthesis error
+
+commit f03b322895bec11cf231c0f3828aabab7ac6da51
+Merge: bc9af7b 935f3a5
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Wed Apr 3 21:52:11 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit bc9af7b1185bfd30c1fe4adacd2fe98183e5e8d3
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Wed Apr 3 21:51:45 2019 -0500
+
+    fixed attribute naming problems in create_venue
+
+commit 935f3a5a10c05849b685612f95997f0bc2f4fd99
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Apr 3 21:47:08 2019 -0500
+
+    Removed files included in .gitignore
+
+commit b940cd79cb8ac9b57df4d7877731d2830368a153
+Merge: aead7d2 8cee7fd
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Apr 3 21:46:24 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit aead7d27a94292fa2e3ee62c6874e193e082df46
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Apr 3 21:46:13 2019 -0500
+
+    Finished artists modeling and database
+
+commit 8cee7fdbdab3660439923e9303d9207c14e5c93a
+Merge: 1ab2259 989d0fa
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Wed Apr 3 21:44:00 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit 1ab225948c064020c7eb40398403da5288c2663d
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Wed Apr 3 21:43:54 2019 -0500
+
+    added parsing of create_venues in create_db.py
+
+commit 989d0fa9dc2d5207d948bc2ae77894dd1c75bb23
+Merge: 6406fb2 57dfdb1
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Wed Apr 3 21:42:41 2019 -0500
+
+    merge conflicts
+
+commit 6406fb2e36c7778d9a84fc6932eb46f258d741fd
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Wed Apr 3 21:40:02 2019 -0500
+
+    add comments
+
+commit f3fe6c51a55dbb364645cee409c89da69d1ec467
+Merge: b6a9293 57dfdb1
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Wed Apr 3 21:39:02 2019 -0500
+
+    merge conflicts
+
+commit 57dfdb1944de126305f4af738e176fa13729399e
+Merge: b9842a8 22c840f
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Apr 3 21:37:57 2019 -0500
+
+    Attempt to merge
+
+commit b9842a8447a8ad7737942928aeea15f9d680c72a
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Apr 3 21:33:28 2019 -0500
+
+    Finished adding artists
+
+commit b6a9293e5f7db51979a8d1fed7e4efad20c2859b
+Merge: 6b7e258 22c840f
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Wed Apr 3 21:31:15 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit 6b7e258a046870d5ef5a19a42434680dc1301f96
+Merge: 6272cd8 24d67ba
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Wed Apr 3 21:30:36 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+    
+    merge conflict
+
+commit 6272cd8f185f9f92c2e608cef56800b8012d74b3
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Wed Apr 3 21:30:30 2019 -0500
+
+    merge conflict
+
+commit 22c840f47d405ecbd67953567e672f5c622bacf6
+Merge: f61fea3 24d67ba
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Wed Apr 3 21:29:58 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit f61fea3f1c7cdf6ac1d582f581e3d1337bcf1939
+Merge: 52a2965 85b230b
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Wed Apr 3 21:29:44 2019 -0500
+
+    merge conflicts
+
+commit 24d67ba97e8444caf14e9b361019ef4a774d4312
+Merge: 9541947 bcdae4f
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Apr 3 21:28:48 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit 95419471b7478b0d0241ab803b594eeee14dfef7
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Apr 3 21:28:40 2019 -0500
+
+    Fixed bugs in create_db ... sorry guys
+
+commit bcdae4f9b74565cb11fe9bec145e8b12c2a0ee81
+Merge: 3137aad 85b230b
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Wed Apr 3 21:05:08 2019 -0500
+
+    fixed merging error
+
+commit 52a2965b10fb3aac0af7229d76befd272857c2f5
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Wed Apr 3 21:04:45 2019 -0500
+
+    create_shows method
+
+commit 3137aadd96c01c05ae564537bb7cec24a75d7703
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Wed Apr 3 21:02:52 2019 -0500
+
+    added to create_db.py and models.py for venues
+
+commit 85b230b6beb82d0c9ed9df8181a59cff722ed25b
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Apr 3 21:01:00 2019 -0500
+
+    Uploaded Some methods for Create DB
+
+commit de45db21c5bee5b48c4d5ab09cc7ad584b1b0928
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Apr 3 19:56:16 2019 -0500
+
+    Uploaded Database files.
+
+commit 6b6c7594a44c2291393a5eace16a6ff54a7d9e6d
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Fri Mar 29 17:23:15 2019 -0500
+
+    Added in Google Cloud Database support.
+
+commit 9676ea0d86da5ec7c771d77c4456dbcdf8e51086
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Mar 27 09:06:08 2019 -0500
+
+    Created dev_phase2 branch
+
 commit 9aff8cb3c62353192017f7d31c96fbf6aca275dc
 Merge: 7028f14 c28c903
 Author: Christian Gil <cmg580@utexas.edu>

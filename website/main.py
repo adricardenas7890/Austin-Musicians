@@ -1,9 +1,10 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request
 try:
 	from models import Band, Venue, Shows, db, app
 except:
 	from .models import Band, Venue, Shows, db, app
 import os
+import subprocess
 
 # app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['SQLALCHEMY_DATABASE_URI']
 
@@ -15,7 +16,23 @@ def index():
 # About Page
 @app.route('/about/')
 def about():
-	return render_template('about.html')
+	return render_template('about.html', tests = {})
+
+@app.route('/about/', methods=['POST'])
+def about_post():
+	# Save current path
+	og_path = os.path.dirname( os.path.realpath(__file__) )
+	# Change to path where "make test" can run
+	os.chdir( os.path.dirname(os.path.dirname( os.path.realpath(__file__) ) ))
+	# Clean
+	subprocess.check_output(['make', 'clean'])
+	# Make test
+	testData = subprocess.check_output(['make', 'test'])
+	# GO back to origional path
+	os.chdir( og_path )
+	# Split by newline
+	testData = testData.decode().split("\n")
+	return render_template('about.html', tests = testData)
 
 # ????? Unsure what this is here for
 @app.route('/general/')
