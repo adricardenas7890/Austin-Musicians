@@ -1,7 +1,7 @@
 Name                                                                         Stmts   Miss Branch BrPart  Cover
 --------------------------------------------------------------------------------------------------------------
-/Users/christian/Dropbox/College/Spring_2019/SWE/cs329e-idb/TestWebsite.py      28     19      2      0    30%
+/Users/christian/Dropbox/College/Spring_2019/SWE/cs329e-idb/TestWebsite.py      31     22      4      0    26%
 __init__.py                                                                      0      0      0      0   100%
 models.py                                                                       42      0      0      0   100%
 --------------------------------------------------------------------------------------------------------------
-TOTAL                                                                           70     19      2      0    71%
+TOTAL                                                                           73     22      4      0    66%

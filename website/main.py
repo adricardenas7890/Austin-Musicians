@@ -6,7 +6,8 @@ except:
 import os
 import sys
 import subprocess
-#import coverage
+import coverage
+from io import *
 sys.path.append('../')
 
 # app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['SQLALCHEMY_DATABASE_URI']
@@ -23,20 +24,18 @@ def about():
 
 @app.route('/about/', methods=['POST'])
 def about_post():
-	# # Setup Testing
-	# current = os.path.dirname( os.path.dirname( os.path.realpath(__file__) ) )
-	# # cov = coverage.Coverage(branch = True, source = os.path.join(current, 'TestWebsite.py'))
-	# cov = coverage.Coverage(branch = True)
-	# # Do Testing
-	# cov.start()
-	# import TestWebsite
-	# cov.stop()
-	# # Save report to file
-	# coverageReport = open("coverageReport.txt", "w")
-	# cov.report(omit = "*lib*", ignore_errors = True, file = coverageReport)
-	# coverageReport.close()
+	# Setup Testing
+	current = os.path.dirname( os.path.dirname( os.path.realpath(__file__) ) )
+	# cov = coverage.Coverage(branch = True, source = os.path.join(current, 'TestWebsite.py'))
+	cov = coverage.Coverage(branch = True)
+	# Do Testing
+	cov.start()
+	import TestWebsite
+	cov.stop()
+	# Save report to file
+	coverageReport = StringIO()
+	cov.report(omit = "*lib*", ignore_errors = True, file = coverageReport.write)
 	# Open the file and get the data
-	coverageReport = open("coverageReport.txt", "r")
 	testData = coverageReport.readlines()
 	testData = [x.replace("-", "") for x in testData]
 	return render_template('about.html', tests = testData)
