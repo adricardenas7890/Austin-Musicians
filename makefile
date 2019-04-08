@@ -37,8 +37,8 @@ endif
 Website.html: website/main.py
 	$(PYDOC) -w website/main.py
 
-IDB1.log:
-	git log > IDB1.log
+IDB2.log:
+	git log > IDB2.log
 
 TestWebsite.tmp: TestWebsite.py
 	$(COVERAGE) run    --branch TestWebsite.py >  TestWebsite.tmp 2>&1
@@ -112,4 +112,4 @@ versions:
 	which    $(PYTHON)
 	python   --version
 
-test: Website.html IDB1.log TestWebsite.tmp check
+test: Website.html IDB2.log TestWebsite.tmp check

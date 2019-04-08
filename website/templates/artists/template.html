@@ -72,20 +72,47 @@
             <br>
             <h4>Check them out on...</h4>
             <p>
-                <a href="{{ band.external_links }}" target="_blank">Website</a><br>
-                {% for social in band.social_media.split("\n") %}
-                    {% if "facebook" in social %}
-                        <a href="{{ social }}" target="_blank">Facebook</a><br>
-                    {% elif "youtube" in social %}
-                        <a href="{{ social }}" target="_blank">Youtube</a><br>
-                    {% elif "twitter" in social %}
-                        <a href="{{ social }}" target="_blank">Twitter</a><br>
-                    {% elif "instagram" in social %}
-                        <a href="{{ social }}" target="_blank">Instagram</a><br>
-                    {% elif "m.me" in social %}
-                        <a href="{{ social }}" target="_blank">Facebook Messager</a><br>
+                {% for social in (band.social_media.split("\n") + [band.external_links]) %}
+                    {% if "facebook" in social.lower() %}
+                        <a href="{{ social }}" target="_blank"><i class="fab fa-facebook"></i> Facebook</i></a><br>
+                    {% elif "youtube" in social.lower() %}
+                        <a href="{{ social }}" target="_blank"><i class="fab fa-youtube"></i> Youtube</a><br>
+                    {% elif "twitter" in social.lower() %}
+                        <a href="{{ social }}" target="_blank"><i class="fab fa-twitter"></i> Twitter</a><br>
+                    {% elif "instagram" in social.lower() %}
+                        <a href="{{ social }}" target="_blank"><i class="fab fa-instagram"></i> Instagram</a><br>
+                    {% elif "m.me" in social.lower() %}
+                        <a href="{{ social }}" target="_blank"><i class="fab fa-facebook-messenger"></i> Facebook Messager</a><br>
+                    {% elif "itunes" in social.lower() %}
+                        <a href="{{ social }}" target="_blank"><i class="fab fa-itunes"></i> iTunes</a><br>
+                    {% elif "amazon" in social.lower() %}
+                        <a href="{{ social }}" target="_blank"><i class="fab fa-amazon"></i> Amazon</a><br>
+                    {% elif "spotify" in social.lower() %}
+                        <a href="{{ social }}" target="_blank"><i class="fab fa-spotify"></i> Spotify</a><br>
+                    {% elif "bandcamp" in social.lower() %}
+                        <a href="{{ social }}" target="_blank"><i class="fab fa-bandcamp"></i> Bandcamp</a><br>
+                    {% elif "dualtonestore" in social.lower() %}
+                        <a href="{{ social }}" target="_blank"><i class="fas fa-external-link-alt"></i> DualToneStore</a><br>
+                    {% elif "vuhaus" in social.lower() %}
+                        <a href="{{ social }}" target="_blank"><i class="fas fa-external-link-alt"></i> Vuhaus</a><br>
+                    {% elif "soundcloud" in social.lower() %}
+                        <a href="{{ social }}" target="_blank"><i class="fab fa-soundcloud"></i> SoundCloud</a><br>
+                    {% elif "bandsintown" in social.lower() %}
+                        <a href="{{ social }}" target="_blank"><i class="fas fa-external-link-alt"></i> Bands In Town</a><br>
+                    {% elif "reverbnation" in social.lower() %}
+                        <a href="{{ social }}" target="_blank"><i class="fas fa-external-link-alt"></i> Reverb Nation</a><br>
+                    {% elif "play.google" in social.lower() %}
+                        <a href="{{ social }}" target="_blank"><i class="fab fa-google-play"></i> Google Play</a><br>
+                    {% elif "wikipedia" in social.lower() %}
+                        <a href="{{ social }}" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a><br>
+                    {% elif "tumblr" in social.lower() %}
+                        <a href="{{ social }}" target="_blank"><i class="fab fa-tumblr"></i> Tumblr</a><br>
+                    {% elif "songkick" in social.lower() %}
+                        <a href="{{ social }}" target="_blank"><i class="fas fa-external-link-alt"></i> Song Kick</a><br>
+                    {% elif band.group.replace(" ", "").lower() in social.lower() %}
+                        <a href="{{ social }}" target="_blank"><i class="fas fa-external-link-alt"></i> Website</a><br>
                     {% else %}
-                        <a href="{{ social }}" target="_blank">?????</a><br>
+                        <a href="{{ social }}" target="_blank"><i class="fas fa-external-link-alt"></i> Exteral Link</a><br>
                     {% endif %}                
                 {% endfor %}
             </p>
