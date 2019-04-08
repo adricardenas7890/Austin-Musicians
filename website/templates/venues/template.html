@@ -46,7 +46,7 @@
                         {% if show_exist.append(0) %}{% endif %}
                         <li>
                             <!-- linking to show's page -->
-                            <a href="/shows/{{ show.show_name }}">{{ show.show_name }}</a>
+                            <a href="/shows/{{ show.show_name }}">{{ show.show_name }}, {{ show.date_time }}</a>
                         </li>
                     {% endif %}
                 {% endfor %}

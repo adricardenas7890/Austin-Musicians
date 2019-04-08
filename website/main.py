@@ -6,7 +6,7 @@ except:
 import os
 import sys
 import subprocess
-import coverage
+#import coverage
 sys.path.append('../')
 
 # app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['SQLALCHEMY_DATABASE_URI']
