@@ -1,1 +1,0 @@
-This media file is meant to hold any media that changes due to users on the website.
