@@ -12,24 +12,30 @@
 <!-- contains content of the page -->
 {% block content %}
     <div class = "full-page-container-austin">
-        <div class="main-title-container-austin">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <h1 class="text-center cover">
+                        Austin Musicians
+                    </h1>
+                </div>
+            </div>
             <div class="row justify-content-center">
                 <div class="col-6">
-                    <h1 class="text-center cover">
-                        <img src="/static/images/logo.png" alt="austin musicians">
-                    </h1>
+                    <div class="text-center">
+                        <div class="card mb-3" style="max-width: 100%; max-height: 50%;">
+
+                          <div class="card-body text-dark cover-card">
+                            <h3 class="card-title">Not sure what you're doing tonight?</h3>
+                              <p class="card-text"><em>Groove better in your own city</em></p>
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
 
-        <div class="container">
-            <div class="row justify-content-center">
-            <div class="col">
-                <h3 class="text-center fancy-cursive">Groove Better in Your Own City</h3>
-            </div>
-        </div>
-    </div>
+
 
 
 {% endblock content %}
