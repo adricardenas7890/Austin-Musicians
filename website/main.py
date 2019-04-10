@@ -10,8 +10,6 @@ import coverage
 from io import *
 sys.path.append('../')
 
-# app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['SQLALCHEMY_DATABASE_URI']
-
 # Main Page
 @app.route('/')
 def index():
@@ -25,20 +23,14 @@ def about():
 @app.route('/about/', methods=['POST'])
 def about_post():
 	# Setup Testing
-	current = os.path.dirname( os.path.dirname( os.path.realpath(__file__) ) )
-	# cov = coverage.Coverage(branch = True, source = os.path.join(current, 'TestWebsite.py'))
-	cov = coverage.Coverage(branch = True)
-	# Do Testing
-	cov.start()
-	import TestWebsite
-	cov.stop()
-	# Save report to file
-	coverageReport = StringIO()
-	cov.report(omit = "*lib*", ignore_errors = True, file = coverageReport.write)
-	# Open the file and get the data
-	testData = coverageReport.readlines()
-	testData = [x.replace("-", "") for x in testData]
-	return render_template('about.html', tests = testData)
+	p = subprocess.Popen(["coverage", "run", "--branch", "../TestWebsite.py"],
+		stdout=subprocess.PIPE,
+		stderr=subprocess.PIPE,
+		stdin=subprocess.PIPE)
+	out, err = p.communicate()
+	output=err+out
+	output = output.decode("utf-8") #convert from byte type to string type
+	return render_template('about.html', tests = "<br/>".join(output.split("\n")))
 
 # ????? Unsure what this is here for
 @app.route('/general/')

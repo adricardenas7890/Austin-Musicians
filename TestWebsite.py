@@ -12,25 +12,6 @@ from website.models import Band, Venue, Shows, db, app
 # -----------
 
 class TestWebsite (TestCase):
-
-    # ----
-    # Check Dependencies
-    # ----
-
-    def test_isFlaskPresent(self):
-        successful = False
-        try:
-            # Hide depreciation warning
-            import warnings
-            warnings.filterwarnings("ignore", category=DeprecationWarning) 
-            # Do Test
-            from flask import Flask
-            successful = True
-        except:
-            pass
-        self.assertTrue(successful, "ERROR: Could not import flask")
-
-
     # -------
     # Check functions in code
     # -------

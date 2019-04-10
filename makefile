@@ -35,14 +35,17 @@ endif
 
 # Modify this to make more or less .HTML files representing our files
 Website.html: website/main.py
-	$(PYDOC) -w website/main.py
+	$(PYDOC) -w website.main
+	mv website.main.html main.html
+	$(PYDOC) -w website.models
+	mv website.models.html models.html
 
 IDB2.log:
 	git log > IDB2.log
 
 TestWebsite.tmp: TestWebsite.py
 	$(COVERAGE) run    --branch TestWebsite.py >  TestWebsite.tmp 2>&1
-	# $(COVERAGE) report -m                      >> TestWebsite.tmp  # Uncomment line when tests are made
+	$(COVERAGE) report -m --omit=*site-packages*    >> TestWebsite.tmp
 	cat TestWebsite.tmp
 
 check:
