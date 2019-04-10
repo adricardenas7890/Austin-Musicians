@@ -22,7 +22,7 @@ before_script:
     - printenv | sort
     - wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy
     - chmod +x cloud_sql_proxy
-    - ./cloud_sql_proxy -instances=cs329e:us-central1:austin-music=tcp:5432 &
+    - ./cloud_sql_proxy -instances=cs329e:us-central1:austin-music=tcp:5432 -credential_file=CS329E-1201fa6fd01d.json &
 
 Website:
     script:

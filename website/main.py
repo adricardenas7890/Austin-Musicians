@@ -27,13 +27,7 @@ def about_post():
 	# Commits
 	gitlabCommits = getCommits()
 	# Setup Testing
-	p = subprocess.Popen(["coverage", "run", "--branch", "../TestWebsite.py"],
-		stdout=subprocess.PIPE,
-		stderr=subprocess.PIPE,
-		stdin=subprocess.PIPE)
-	out, err = p.communicate()
-	output=err+out
-	output = output.decode("utf-8") #convert from byte type to string type
+	output = getTests()
 	return render_template('about.html', tests = "<br/>".join(output.split("\n")), commits = gitlabCommits)
 
 # ????? Unsure what this is here for
@@ -110,6 +104,15 @@ def getCommits():
 			if search in line:
 				GitLabDict[ID] = GitLabDict[ID] + 1
 	return GitLabDict
+# Function to open TestWebsite.tmp and get test results
+def getTests():
+	currentParent = os.path.dirname( os.path.realpath(__file__) ) # Parent folder of main.py
+	tmpParent = os.path.dirname( currentParent )
+	websiteTestResults = open(os.path.join(tmpParent, "TestWebsite.tmp"), 'r')
+	string = ""
+	for line in websiteTestResults:
+		string = string + line
+	return string
 
 if __name__ == "__main__":
 	app.debug = True

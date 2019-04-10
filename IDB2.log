@@ -1,3 +1,9 @@
+commit f89a6cf53f3f0e28807e900313e71c8e4d2b67ef
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Apr 10 11:20:46 2019 -0500
+
+    About Updates itself. Gitlab CI Fix (?)
+
 commit bdc8522ec5b58a5fbeb3dfd92e5639f6acbd8074
 Merge: ceb1ab5 9c1128d
 Author: ChristianGil <cmg580@utexas.edu>
