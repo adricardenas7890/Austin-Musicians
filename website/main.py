@@ -6,7 +6,7 @@ except:
 import os
 import sys
 import subprocess
-import coverage
+#import coverage
 from io import *
 sys.path.append('../')
 
