@@ -1,3 +1,28 @@
+commit bdc8522ec5b58a5fbeb3dfd92e5639f6acbd8074
+Merge: ceb1ab5 9c1128d
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Tue Apr 9 23:33:53 2019 -0500
+
+    Merge branch 'dev_phase3' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase3
+
+commit ceb1ab57aa2007cc470b97f08335065de0176717
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Tue Apr 9 23:33:40 2019 -0500
+
+    Checked all hyperlinks. Gitlab fix(?)
+
+commit 9c1128de0677359b4edd6d4dc7aefbef089fff76
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Tue Apr 9 15:26:30 2019 -0500
+
+    splash page made nicer, padding added to page titles
+
+commit 6e661ca15c2063fc0e58d887f0b0fdb3ab6e4257
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Tue Apr 9 15:15:34 2019 -0500
+
+    search added to models.py
+
 commit 9767ce66a57b1da767d7870d630a67a8903c0b53
 Author: ChristianGil <cmg580@utexas.edu>
 Date:   Mon Apr 8 11:31:51 2019 -0500

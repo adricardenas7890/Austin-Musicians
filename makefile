@@ -44,6 +44,7 @@ IDB2.log:
 	git log > IDB2.log
 
 TestWebsite.tmp: TestWebsite.py
+	$(COVERAGE) run    --branch TestWebsite.py
 	$(COVERAGE) run    --branch TestWebsite.py >  TestWebsite.tmp 2>&1
 	$(COVERAGE) report -m --omit=*site-packages*    >> TestWebsite.tmp
 	cat TestWebsite.tmp
@@ -83,8 +84,8 @@ format:
 
 scrub:
 	make clean
-	rm -f  Website.html
-	rm -f  IDB1.log
+	rm -f  main.html
+	rm -f  IDB2.log
 
 status:
 	make clean

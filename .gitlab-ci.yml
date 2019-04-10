@@ -18,7 +18,7 @@ before_script:
     - uname -a
     - pip install --upgrade pip
     - pip install -r requirements.txt
-    - make versions	
+    - make versions
     - printenv | sort
     - wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy
     - chmod +x cloud_sql_proxy
@@ -27,4 +27,5 @@ before_script:
 Website:
     script:
     - ls -al
+    - make scrub
     - make test

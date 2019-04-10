@@ -18,10 +18,14 @@ def index():
 # About Page
 @app.route('/about/')
 def about():
-	return render_template('about.html', tests = {})
+	# Manually count gitlab commits
+	gitlabCommits = getCommits()
+	return render_template('about.html', tests = "", commits = gitlabCommits)
 
 @app.route('/about/', methods=['POST'])
 def about_post():
+	# Commits
+	gitlabCommits = getCommits()
 	# Setup Testing
 	p = subprocess.Popen(["coverage", "run", "--branch", "../TestWebsite.py"],
 		stdout=subprocess.PIPE,
@@ -30,7 +34,7 @@ def about_post():
 	out, err = p.communicate()
 	output=err+out
 	output = output.decode("utf-8") #convert from byte type to string type
-	return render_template('about.html', tests = "<br/>".join(output.split("\n")))
+	return render_template('about.html', tests = "<br/>".join(output.split("\n")), commits = gitlabCommits)
 
 # ????? Unsure what this is here for
 @app.route('/general/')
@@ -90,6 +94,22 @@ def show(url):
 	venue_context = Venue.query.order_by(Venue.venue_name).all()
 	return render_template('shows/template.html', show = context, bands = band_context, venues = venue_context)
 
+# Function to open IDB2.log and get commits
+def getCommits():
+	# Read IDB2.log
+	currentParent = os.path.dirname( os.path.realpath(__file__) ) # Parent folder of main.py
+	logParent = os.path.dirname( currentParent )
+	log = open(os.path.join(logParent, "IDB2.log"), "r")
+	GitLabDict = {"ChristianGil": 0, "Katelynn19": 0, "Adriana Cardenas": 0, "Kevin Han": 0, "commit": 0}
+	for line in log:
+		for ID in GitLabDict.keys():
+			if ID != "commit":
+				search = " " + ID + " "
+			else:
+				search = ID + " "
+			if search in line:
+				GitLabDict[ID] = GitLabDict[ID] + 1
+	return GitLabDict
 
 if __name__ == "__main__":
 	app.debug = True
