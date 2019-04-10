@@ -33,7 +33,7 @@ refer to home.html for documentation on flask
                                     <td>
                                         <a href="{{ venue.venue_name }}">{{ venue.venue_name }}</a>
                                     </td>
-                                    <td>{{ venue.location }}</td>
+                                    <td><a href="https://maps.google.com/?q={{ venue.location.strip().replace(' ', '%20').replace('#', '') }}" target="_blank">{{ venue.location }}</a></td>
                                     <!-- Genre(s) listed? -->
                                     {% if venue.genres == "" %}
                                         <td>Various</td>
