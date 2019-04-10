@@ -1,3 +1,19 @@
+p {
+    font-family: "Tahoma";
+}
+
+h1 {
+    font-family: "Arial Black";
+    font-size: 3.2rem;
+}
+
+h1.title-text{
+    font-family: 'Arial Black';
+    color: white;
+    font-size: 50px;
+    text-shadow: 1px 1px black;
+}
+
 html, body {
     height: 100%;
 }
@@ -15,9 +31,11 @@ img.about-image{
 }
 
 h1.text-center.cover {
-    font-style: italic;
-    font-size: 50px;
+    font-size: 130px;
     color: black;
+    text-shadow: 10px 10px white;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
 }
 
 h3.fancy-cursive{
@@ -32,7 +50,7 @@ h3.fancy-cursive{
 }
 
 .main-title-container-austin {
-    padding-top: 40vh;
+    padding-top: 15vh;
     padding-bottom: 10vh;
     border: black;
 }
@@ -44,7 +62,7 @@ h3.fancy-cursive{
 .full-page-container-austin {
     height: calc(100% - 60px);
     overflow: hidden;
-    background-image: url(/static/images/coverphoto2.png);
+    background-image: url(/static/images/coverphoto4.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,6 +138,20 @@ nav {
     border:2px solid #000! important;
 }
 
+.card-body.cover-card {
+    background-color: white;
+    border-color: transparent;
+}
+
+.card.cover-card {
+    border: white;
+}
+
+
+row.row-title {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
 
 
 
