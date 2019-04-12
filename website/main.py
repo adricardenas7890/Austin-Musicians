@@ -1,4 +1,5 @@
 from flask import Flask, render_template, url_for, request
+from  sqlalchemy.sql.expression import func, select
 try:
 	from models import Band, Venue, Shows, db, app
 except:
@@ -6,6 +7,7 @@ except:
 import os
 import sys
 import subprocess
+import random
 #import coverage
 from io import *
 sys.path.append('../')
@@ -13,7 +15,11 @@ sys.path.append('../')
 # Main Page
 @app.route('/')
 def index():
-	return render_template('home.html')
+	# work in progress - Kevin
+	band_context = Band.query.order_by(Band.group).all()
+	venue_context = Venue.query.order_by(Venue.venue_name).all()
+	show = Shows.query.order_by(func.rand()).limit(0)
+	return render_template('home.html', show = show, bands = band_context, venues = venue_context)
 
 # About Page
 @app.route('/about/')
