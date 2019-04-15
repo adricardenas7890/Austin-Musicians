@@ -1,3 +1,46 @@
+commit b1751e8177b5e10645dbda56d3561cd138a2cd0d
+Merge: ef465a3 e86a455
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Mon Apr 15 10:12:18 2019 -0500
+
+    Merge branch 'dev_phase3' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase3
+
+commit ef465a371e6a8c171d93f1e7e12ea09cf44a1299
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Mon Apr 15 10:12:16 2019 -0500
+
+    Fixed Date Sorting. Gitlab CI Fix(?)
+
+commit e86a455995fb29192eef57e5f8a69220a5107ef5
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Fri Apr 12 14:43:59 2019 -0500
+
+    added general carousel for home page. In progress
+
+commit eeaf20366e8cb4a0bfa6e3483bb99f6e2c01e7d5
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Wed Apr 10 18:41:16 2019 -0500
+
+    added info to base.html
+
+commit e37fb91ceea1d9cbbd6b16ab2e00c808d2d7b18b
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Wed Apr 10 18:37:26 2019 -0500
+
+    added pagination
+
+commit 5dcb7f8f45e7b6da4ca12d8621e407bac68b149e
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Apr 10 12:10:01 2019 -0500
+
+    Added in Google Maps. Gitlab Fix(?)
+
+commit 1956ae08b089fffe93b6c4c9a7e63b5a05efbdb2
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Apr 10 11:42:34 2019 -0500
+
+    Unittests display on about page. Gitlab CI Fix(?)
+
 commit f89a6cf53f3f0e28807e900313e71c8e4d2b67ef
 Author: ChristianGil <cmg580@utexas.edu>
 Date:   Wed Apr 10 11:20:46 2019 -0500

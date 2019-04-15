@@ -11,23 +11,26 @@
 
 <!-- contains content of the page -->
 {% block content %}
-    <div id="mainCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+    <div id="mainCarousel" class="carousel slide full-page" data-ride="carousel">
+        <div class="carousel-inner height100">
             <div class = "full-page-container-austin carousel-item active">
-                <div class="row justify-content-center">
-                    <div class="col-10">
-                        <h1 class="text-center cover">
-                            Austin Musicians
-                        </h1>
+                <div class = "flex-sep height100">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <h1 class="text-center cover">
+                                Austin Music
+                            </h1>
+                            <h4 class="text-center fancy-cursive">Groove Better in Your Own City</h4>
+                        </div>
                     </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-6">
-                        <div class="text-center">
-                            <div class="card mb-3" style="max-width: 100%; max-height: 50%;">
-                                <div class="card-body text-dark cover-card">
-                                <h3 class="card-title">Not sure what you're doing tonight?</h3>
-                                    <p class="card-text"><em>Groove better in your own city</em></p>
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <div class="text-center">
+                                <div class="card mb-3 cover-card" style="max-width: 100%; max-height: 50%;">
+                                    <div class="card-body text-dark">
+                                    <h3 class="card-title">Not sure what you're doing tonight?</h3>
+                                        <p class="card-text"><em>Checkout some <a href="{{ url_for('shows') }}">shows</a> happening nearby!</em></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
