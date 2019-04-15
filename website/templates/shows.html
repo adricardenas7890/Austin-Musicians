@@ -62,7 +62,7 @@
                                                     <a href="/venues/{{ show.venue.lower().title() }}">{{ show.venue }}</a> <br>
                                             {% endif %}
                                         </td>
-                                        <td>{{ show.date_time }}</td>
+                                        <td><span style = "display: none !important;">{{ show.date_time }}</span>{{ show.date_time.strftime('%A, %B %w @ %I:%M %p').replace(" 0", " ") }}</td>
                                     </tr>
                                     {% endfor %}
                             </tbody>

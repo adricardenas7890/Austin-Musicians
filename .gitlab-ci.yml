@@ -9,7 +9,8 @@ services:
   - postgres:9.5
 
 variables:
-  SQLALCHEMY_DATABASE_URI: "postgresql://postgres:postgres@postgres/austin-music"
+  POSTGRES_DB: austin-music
+  SQLALCHEMY_DATABASE_URI: "postgresql://postgres:postgres@postgres/$POSTGRES_DB"
 
 
 before_script:
@@ -20,9 +21,6 @@ before_script:
     - make versions
     - printenv | sort
     - python3 website/create_db.py
-    # - wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy
-    # - chmod +x cloud_sql_proxy
-    # - ./cloud_sql_proxy -instances=cs329e:us-central1:austin-music=tcp:5432 -credential_file=CS329E-1201fa6fd01d.json &
 
 Website:
     script:

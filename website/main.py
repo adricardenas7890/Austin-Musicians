@@ -8,7 +8,7 @@ import sys
 import subprocess
 import coverage
 from io import *
-sys.path.append('../')
+from datetime import datetime
 
 # Main Page
 @app.route('/')
@@ -57,6 +57,13 @@ def shows():
 	context = Shows.query.order_by(Shows.show_name).all()
 	band_context = Band.query.order_by(Band.group).all()
 	venue_context = Venue.query.order_by(Venue.venue_name).all()
+	# Convert date string to datetime
+	for show in context:
+		stipped_datetime = show.date_time.replace("rd", "").replace("th", "").replace("nd", "").replace("@", "") + " 2019"
+		try:
+			show.date_time = datetime.strptime(stipped_datetime, '%B %d %I%p %Y')
+		except:
+			show.date_time = datetime.strptime(stipped_datetime, '%B %d %I:%M%p %Y')
 	return render_template('shows.html', shows = context, bands = band_context, venues = venue_context)
 
 '''

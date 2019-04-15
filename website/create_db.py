@@ -2,8 +2,6 @@
 import json
 from models import *
 import os
-db.drop_all()
-db.create_all()
 
 current = os.path.dirname( os.path.realpath(__file__) )
 def load_json(filename):
@@ -168,6 +166,14 @@ def create_shows():
         db.session.add(newShow)
         db.session.commit()
 
+# If we are not on the gitlab CI, drop the tables first
+if not (os.environ.get('SQLALCHEMY_DATABASE_URI') == 'postgresql://postgres:postgres@postgres/austin-music'):
+    db.drop_all()
+
+db.create_all()
 create_bands()
 create_shows()
 create_venues()
+
+
+
