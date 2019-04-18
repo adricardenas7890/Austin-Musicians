@@ -113,6 +113,9 @@ def create_venues():
 
         venue['Images'] = removeAllButFirstLink(venue['Images'])
 
+        # Check that the image link is valid
+        if not isLinkValid( venue['Images'] ):
+            venue['Images'] = ""
 
         newVenue = Venue(id = i,
                         venue_name = venue['Venue'],

@@ -1,9 +1,9 @@
 from flask import Flask, render_template, url_for, request
-from  sqlalchemy.sql.expression import func, select
+from sqlalchemy.sql.expression import func, select
 try:
 	from models import Band, Venue, Shows, db, app
 except:
-	from .models import Band, Venue, Shows, db, app
+	from models import Band, Venue, Shows, db, app
 import os
 import sys
 import subprocess
@@ -16,10 +16,10 @@ from datetime import datetime
 @app.route('/')
 def index():
 	# work in progress - Kevin
-	band_context = Band.query.order_by(Band.group).all()
-	venue_context = Venue.query.order_by(Venue.venue_name).all()
-	show = Shows.query.order_by(func.rand()).limit(0)
-	return render_template('home.html', show = show, bands = band_context, venues = venue_context)
+	band = Band.query.filter(Band.image != "").order_by(func.random()).first()
+	venue = Venue.query.filter(Venue.image_link != "").order_by(func.random()).first()
+	show = Shows.query.filter(Shows.flyer != "").order_by(func.random()).first()
+	return render_template('home.html', show = show, band = band, venue = venue)
 
 # About Page
 @app.route('/about/')
@@ -128,5 +128,5 @@ def getTests():
 	return string
 
 if __name__ == "__main__":
-	app.debug = True
+	#app.debug = False
 	app.run()

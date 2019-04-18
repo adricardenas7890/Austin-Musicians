@@ -60,7 +60,6 @@ h4.fancy-cursive{
 .full-page-container-austin {
     height: 100%;
     overflow: hidden;
-    background-image: url(/static/images/coverphoto4.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
