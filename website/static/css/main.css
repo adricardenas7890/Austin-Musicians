@@ -36,6 +36,16 @@ h1.text-center.cover {
     text-shadow: 10px 10px white;
 }
 
+h1.text-center.random-carousel-slide.cover {
+    font-size: calc(65px + 65*(100vw - 600px)/(2000 - 600));
+    color: white;
+    text-shadow: 
+        0 0 20px black,
+        0 0 20px black,
+        0 0 20px black,
+        0 0 20px black;
+}
+
 h4.fancy-cursive{
     font-family: 'Pacifico', cursive;
     color: white;

@@ -3,19 +3,17 @@ from sqlalchemy.sql.expression import func, select
 try:
 	from models import Band, Venue, Shows, db, app
 except:
-	from models import Band, Venue, Shows, db, app
+	from .models import Band, Venue, Shows, db, app
 import os
 import sys
 import subprocess
 import random
-#import coverage
 from io import *
 from datetime import datetime
 
 # Main Page
 @app.route('/')
 def index():
-	# work in progress - Kevin
 	band = Band.query.filter(Band.image != "").order_by(func.random()).first()
 	venue = Venue.query.filter(Venue.image_link != "").order_by(func.random()).first()
 	show = Shows.query.filter(Shows.flyer != "").order_by(func.random()).first()
