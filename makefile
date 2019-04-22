@@ -1,4 +1,4 @@
-.PHONY: IDB1.log
+.PHONY: IDB2.log
 
 FILES :=                              \
     .gitignore                        \
@@ -86,6 +86,10 @@ scrub:
 	make clean
 	rm -f  main.html
 	rm -f  IDB2.log
+	rm -f  website.models.html
+	rm -f  models.html
+	rm -f  website.main.html
+	rm -f  main.html
 
 status:
 	make clean
