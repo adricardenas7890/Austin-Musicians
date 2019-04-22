@@ -27,9 +27,9 @@
                         {% endif %}
                     {% endfor %}  
                     {% if exists|length == 0 %}
-                            {{show.venue}}<br><br>
-                        {% else %}
-                            <a href="/venues/{{ show.venue }}">{{ show.venue }}</a><br><br>
+                        {{show.venue}}<br><br>
+                    {% else %}
+                        <a href="/venues/{{ show.venue }}">{{ show.venue }}</a><br><br>
                     {% endif %}
                 </p>
                 <h5>
@@ -47,7 +47,7 @@
                         {% if exists|length == 0 %}
                             {{artist}}<br>
                         {% else %}
-                            <a href="/artists/{{ artist }}">{{ artist }}</a> <br>
+                            <a href="/artists/{{ artist.strip() }}">{{ artist }}</a> <br>
                         {% endif %}
                     {% endfor %}  
                 </p>
