@@ -39,7 +39,12 @@ class TestWebsite (TestCase):
     def test_ArtistGenreIsCorrect(self):
         context = Band.query.filter(Band.group == "TC Superstar").first()
         return self.assertEqual(context.genre, "Pop")
-    
+
+    #check that exact Venue returns the right Address
+    #adri
+    def test_VenueLocationIsCorrect(self):
+        context = Venue.query.filter(Venue.venue_name == "Mohawk").first()
+        return self.assertEqual(context.location, "912 Red River St")
     
     # from website import main
 
