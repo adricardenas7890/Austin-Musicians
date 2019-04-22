@@ -1,4 +1,4 @@
-.PHONY: IDB2.log
+.PHONY: IDB3.log
 
 FILES :=                              \
     .gitignore                        \
@@ -40,8 +40,8 @@ Website.html: website/main.py
 	$(PYDOC) -w website.models
 	mv website.models.html models.html
 
-IDB2.log:
-	git log > IDB2.log
+IDB3.log:
+	git log > IDB3.log
 
 TestWebsite.tmp: TestWebsite.py
 	$(COVERAGE) run    --branch TestWebsite.py
@@ -85,7 +85,7 @@ format:
 scrub:
 	make clean
 	rm -f  main.html
-	rm -f  IDB2.log
+	rm -f  IDB3.log
 	rm -f  website.models.html
 	rm -f  models.html
 	rm -f  website.main.html
@@ -120,4 +120,4 @@ versions:
 	which    $(PYTHON)
 	python   --version
 
-test: Website.html IDB2.log TestWebsite.tmp check
+test: Website.html IDB3.log TestWebsite.tmp check

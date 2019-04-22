@@ -45,7 +45,18 @@ class TestWebsite (TestCase):
     def test_VenueLocationIsCorrect(self):
         context = Venue.query.filter(Venue.venue_name == "Mohawk").first()
         return self.assertEqual(context.location, "912 Red River St")
-    
+
+
+    #check that non-existent entry in Venue does not return a value
+    def test_VenueNonexistentRecord(self):
+        context = Venue.query.filter(Venue.venue_name == "NotRealRecord").first()
+        return self.assertEqual(context, None)
+
+    #check that non-existent entry in Show does not return a value
+    def test_ShowNonexistentRecord(self):
+        context = Shows.query.filter(Shows.show_name == "NotRealRecord").first()
+        return self.assertEqual(context, None)
+
     # from website import main
 
 # ----
