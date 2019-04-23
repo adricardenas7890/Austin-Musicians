@@ -46,6 +46,10 @@ class TestWebsite (TestCase):
         context = Venue.query.filter(Venue.venue_name == "Mohawk").first()
         return self.assertEqual(context.location, "912 Red River St")
 
+    #check that exact Show returns the right date & time
+    def test_ShowTimeIsCorrect(self):
+        context = Shows.query.filter(Shows.show_name == "Band Jam").first()
+        return self.assertEqual(context.date_time, "April 18th @ 9pm")
 
     #check that non-existent entry in Venue does not return a value
     def test_VenueNonexistentRecord(self):
@@ -55,6 +59,11 @@ class TestWebsite (TestCase):
     #check that non-existent entry in Show does not return a value
     def test_ShowNonexistentRecord(self):
         context = Shows.query.filter(Shows.show_name == "NotRealRecord").first()
+        return self.assertEqual(context, None)
+
+    #check that non-existent entry in Artist does not return a value
+    def test_ArtistNonexistentRecord(self):
+        context = Band.query.filter(Band.group == "NotRealRecord").first()
         return self.assertEqual(context, None)
 
     # from website import main
