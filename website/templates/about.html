@@ -44,9 +44,9 @@
               <div>
                 <h5>Number of commits: {{ commits['Adriana Cardenas'] }}</h5>
 
-                <h5>Number of issues: 29</h5>
+                <h5>Number of issues: 30</h5>
 
-                <h5>Number of unit tests: 0</h5>
+                <h5>Number of unit tests: 3</h5>
               </div>
             </div>
           </div>
@@ -118,6 +118,7 @@
                 <h2 class="card-title">Testing Module</h2>
                 <h6 class="card-subtitle mb-2 text-muted">Press this button to run all unit tests</h6>
                 {{ tests|safe }}
+
                 <form method="POST">
                     <input type="submit" name = "Push To Test">
                 </form>
@@ -130,6 +131,7 @@
               <div class="card-body">
                   <h2 class="card-title">Project Stats</h2>
                   <h6 class="card-subtitle mb-2 text-muted">Overall</h6>
+                  <h5><a href="#">A Link to Our Presentation on SpeakerDeck</a></h5>
                   <h5>Total Number of Commits: {{ commits['commit'] }}</h5>
                   <h5>Total Number of Issues: 48</h5>
                   <h5>Total Number of Unit Tests: 4</h5>
