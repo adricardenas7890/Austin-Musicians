@@ -1,3 +1,58 @@
+commit 04ce7210f71eeb20eee9fe7559345d6a5a108218
+Merge: 1f8c16c 738a8b4
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Mon Apr 22 22:08:54 2019 -0500
+
+    Merge Conflict Resolved
+
+commit 1f8c16cb0f928d8f48b1c18417212e84734ea402
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Mon Apr 22 22:06:18 2019 -0500
+
+    Fixed shows in venues. edited makefile and log.
+
+commit 738a8b40a8344397f4228b0c90ef1bcaf08a5c19
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Mon Apr 22 19:13:37 2019 -0500
+
+    added description to the About page testing block. says whether test failed or passed
+
+commit af178505b73a99654cb2b9bb050201337396a7f0
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Mon Apr 22 19:08:28 2019 -0500
+
+    added katelynn's unittests
+
+commit fed0e83b4ba355c8074586e8aabeaa1698a4de7d
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Mon Apr 22 18:37:59 2019 -0500
+
+    blank link to speakerdeck added
+
+commit 5efa2d79c5ae90c84d51ccb309f0422e1cd79623
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Mon Apr 22 18:25:28 2019 -0500
+
+    updated about.html for Adriana C
+
+commit c904bae685c2895f037d4463f52e62d5f42952f2
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Mon Apr 22 17:45:39 2019 -0500
+
+    added unittests VenueNonExistentRecord, ShowNonexistentRecord, updated makefile to IDBlog3.log
+
+commit 94da18220363940538250c48f08db1d14700383b
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Mon Apr 22 17:20:10 2019 -0500
+
+    unit test_VenueLocationIsCorrect added
+
+commit 3df63c2e8f6cfe87ec449e513aef69e7d4d813ef
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Mon Apr 22 11:48:09 2019 -0500
+
+    fixed link issue of artist from show template
+
 commit 226594d553b0c4e5a4299238b399f33517ad1b48
 Author: ChristianGil <cmg580@utexas.edu>
 Date:   Mon Apr 22 11:09:37 2019 -0500
