@@ -1,10 +1,10 @@
-.PHONY: IDB2.log
+.PHONY: IDB3.log
 
 FILES :=                              \
     .gitignore                        \
     .gitlab-ci.yml                    \
     requirements.txt                  \
-    TestWebsite.py                    \
+    website/tests.py                    \
     website/main.py                   \
     website/views.py                  \
     website/__init__.py
@@ -37,15 +37,17 @@ endif
 Website.html: website/main.py
 	$(PYDOC) -w website.main
 	mv website.main.html main.html
+
+Models.html: website/models.py
 	$(PYDOC) -w website.models
 	mv website.models.html models.html
 
-IDB2.log:
-	git log > IDB2.log
+IDB3.log:
+	git log > IDB3.log
 
-TestWebsite.tmp: TestWebsite.py
-	$(COVERAGE) run    --branch TestWebsite.py
-	$(COVERAGE) run    --branch TestWebsite.py >  TestWebsite.tmp 2>&1
+TestWebsite.tmp: website/tests.py
+	$(COVERAGE) run    --branch website/tests.py
+	$(COVERAGE) run    --branch website/tests.py >  TestWebsite.tmp 2>&1
 	$(COVERAGE) report -m --omit=*site-packages*    >> TestWebsite.tmp
 	cat TestWebsite.tmp
 
@@ -85,7 +87,7 @@ format:
 scrub:
 	make clean
 	rm -f  main.html
-	rm -f  IDB2.log
+	rm -f  IDB3.log
 	rm -f  website.models.html
 	rm -f  models.html
 	rm -f  website.main.html
@@ -120,4 +122,4 @@ versions:
 	which    $(PYTHON)
 	python   --version
 
-test: Website.html IDB2.log TestWebsite.tmp check
+test: Website.html Models.html IDB3.log TestWebsite.tmp check

@@ -4,7 +4,10 @@
 # imports
 # -------
 from unittest import main, TestCase
-from website.models import Band, Venue, Shows, db, app
+try:
+	from models import Band, Venue, Shows, db, app
+except:
+	from .models import Band, Venue, Shows, db, app
 
 
 # -----------
@@ -50,7 +53,7 @@ if __name__ == '__main__':
     main()
 
 """ #pragma: no cover
-% coverage3 run --branch TestWebsite.py >  TestWebsite.out 2>&1
+% coverage3 run --branch tests.py >  ../TestWebsite.out 2>&1
 
 
 

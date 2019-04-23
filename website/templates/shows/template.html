@@ -21,15 +21,17 @@
                 <p>
                     <!-- venue -->
                     {% set exists = [] %}
+                    {% set venue_name = [] %}
                     {% for venue in venues %}
-                        {% if show.venue == venue.venue_name %}  <!---check if artist is in band.groups...i think-->
+                        {% if show.venue.lower() == venue.venue_name.lower() %}  <!---check if artist is in band.groups...i think-->
                             {% if exists.append(0) %}{% endif %}
+                            {% if venue_name.append(venue.venue_name) %}{% endif %}
                         {% endif %}
                     {% endfor %}  
                     {% if exists|length == 0 %}
                             {{show.venue}}<br><br>
                         {% else %}
-                            <a href="/venues/{{ show.venue }}">{{ show.venue }}</a><br><br>
+                            <a href="/venues/{{ venue_name[0] }}">{{ show.venue }}</a><br><br>
                     {% endif %}
                 </p>
                 <h5>

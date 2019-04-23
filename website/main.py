@@ -87,7 +87,26 @@ def artist(url):
 def venue(url):
 	context = Venue.query.filter(Venue.venue_name == url).first()
 	show_context = Shows.query.order_by(Shows.show_name).all()
-	return render_template('venues/template.html', venue = context, shows = show_context)
+	# Find what shows have this venue as the venue
+	venue_show_list = []
+	for show in show_context:
+		if show.venue.lower() in context.venue_name.lower():
+			venue_show_list.append(show)
+	# Of the bands at each show, find which are linkable
+	band_context = Band.query.order_by(Band.group).all()
+	all_bands_we_have = set( [band.group.lower().strip() for band in band_context] )
+	all_bands = dict( zip( sorted( list(all_bands_we_have) ), sorted( [band.group for band in band_context] )) )
+	show_band_list = []
+	for show in venue_show_list:
+		band_dict = {}
+		for band in show.featured_artists.split(","):
+			band = band.strip().lower()
+			if band in all_bands_we_have:
+				band_dict[all_bands[band]] = "/artists/" + all_bands[band]
+			else:
+				band_dict[band.title()] = ""
+		show_band_list.append(band_dict)
+	return render_template('venues/template.html', venue = context, shows = venue_show_list, artists = show_band_list)
 
 # Shows Page
 @app.route('/shows/<url>')
@@ -104,7 +123,7 @@ def getCommits():
 	# Read IDB2.log
 	currentParent = os.path.dirname( os.path.realpath(__file__) ) # Parent folder of main.py
 	logParent = os.path.dirname( currentParent )
-	log = open(os.path.join(logParent, "IDB2.log"), "r")
+	log = open(os.path.join(logParent, "IDB3.log"), "r")
 	GitLabDict = {"ChristianGil": 0, "Katelynn19": 0, "Adriana Cardenas": 0, "Kevin Han": 0, "commit": 0}
 	for line in log:
 		for ID in GitLabDict.keys():
@@ -126,5 +145,5 @@ def getTests():
 	return string
 
 if __name__ == "__main__":
-	#app.debug = False
+	app.debug = True # TODO Uncomment in production
 	app.run()

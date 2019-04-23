@@ -34,27 +34,40 @@
             </div>
         </div>
         <!-- Upcoming Shows -->
-        <div>
-            <br>
-            <h3>Upcoming Shows</h3>
-            {% set show_exist = [] %}
-            <ul>
-                <!-- looping through shows -->
-                {% for show in shows %}
-                    {% if show.venue == venue.venue_name %}
-                        <!-- if the show's venue is this venue -->
-                        {% if show_exist.append(0) %}{% endif %}
-                        <li>
-                            <!-- linking to show's page -->
-                            <a href="/shows/{{ show.show_name.replace('/', '')  }}">{{ show.show_name }}</a>
-                        </li>
-                    {% endif %}
-                {% endfor %}
-                <!-- if there are no upcoming shows -->
-                {% if show_exist|length == 0 %}
-                    <li>No Upcoming Shows</li>
-                {% endif %}
-            </ul>
+        <div class="graph-page-container">
+            <div class="container page-title-container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-lg-offset-4">
+                        <h3 class="text-center">Shows</h3>
+                    </div>
+                </div>
+                    <div class="row table-row justify-content-center">
+                        <div class="col">
+                            <table class="table table-hover">
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Show Name</th>
+                                    <th>Artists</th>
+                                </tr>
+                                {% for i in range( shows|length ) %}
+                                    <tr>
+                                        <td>{{ shows[i].date_time }}</td>
+                                        <td><a href="/shows/{{ shows[i].show_name.replace('/', '') }}">{{ shows[i].show_name }}</a></td>
+                                        <td>
+                                        {% for artist in artists[i].keys() %}
+                                            {% if artists[i][artist] != "" %}
+                                                <a href="{{ artists[i][artist] }}">{{ artist }}</a>{% if loop.index != loop.length %},{% endif %}
+                                            {% else %}
+                                                {{ artist|title }}{% if loop.index != loop.length %},{% endif %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+            </div>
         </div>
     </div>
 

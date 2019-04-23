@@ -1,3 +1,15 @@
+commit 226594d553b0c4e5a4299238b399f33517ad1b48
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Mon Apr 22 11:09:37 2019 -0500
+
+    Changed Font styling. Updated Gcloud
+
+commit 0f97dbcd9e5755507b679bf92e7f953f80c9ee09
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Mon Apr 22 10:40:00 2019 -0500
+
+    Updated Makefile, logs, and models.html
+
 commit bdef4b882821930b6a74e2b0a4d7de44b23a5fc7
 Author: Kevin Han <kevinhan007@gmail.com>
 Date:   Fri Apr 19 10:45:51 2019 -0500
