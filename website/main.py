@@ -115,6 +115,7 @@ def getCommits():
 			if search in line:
 				GitLabDict[ID] = GitLabDict[ID] + 1
 	return GitLabDict
+
 # Function to open TestWebsite.tmp and get test results
 def getTests():
 	currentParent = os.path.dirname( os.path.realpath(__file__) ) # Parent folder of main.py
@@ -123,6 +124,13 @@ def getTests():
 	string = ""
 	for line in websiteTestResults:
 		string = string + line
+
+	#Adds userfriendly description of testing in block
+	if "OK" not in string:
+		string += "\n In other words, testing failed."
+	else:
+		string += "\n In other words, all tests passed."
+
 	return string
 
 if __name__ == "__main__":
