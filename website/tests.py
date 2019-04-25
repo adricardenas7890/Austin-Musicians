@@ -4,7 +4,10 @@
 # imports
 # -------
 from unittest import main, TestCase
-from website.models import Band, Venue, Shows, db, app
+try:
+	from models import Band, Venue, Shows, db, app
+except:
+	from .models import Band, Venue, Shows, db, app
 
 
 # -----------
@@ -12,25 +15,6 @@ from website.models import Band, Venue, Shows, db, app
 # -----------
 
 class TestWebsite (TestCase):
-
-    # ----
-    # Check Dependencies
-    # ----
-
-    def test_isFlaskPresent(self):
-        successful = False
-        try:
-            # Hide depreciation warning
-            import warnings
-            warnings.filterwarnings("ignore", category=DeprecationWarning) 
-            # Do Test
-            from flask import Flask
-            successful = True
-        except:
-            pass
-        self.assertTrue(successful, "ERROR: Could not import flask")
-
-
     # -------
     # Check functions in code
     # -------
@@ -58,8 +42,33 @@ class TestWebsite (TestCase):
     def test_ArtistGenreIsCorrect(self):
         context = Band.query.filter(Band.group == "TC Superstar").first()
         return self.assertEqual(context.genre, "Pop")
-    
-    
+
+    #check that exact Venue returns the right Address
+    #adri
+    def test_VenueLocationIsCorrect(self):
+        context = Venue.query.filter(Venue.venue_name == "Mohawk").first()
+        return self.assertEqual(context.location, "912 Red River St")
+
+    #check that exact Show returns the right date & time
+    def test_ShowTimeIsCorrect(self):
+        context = Shows.query.filter(Shows.show_name == "Band Jam").first()
+        return self.assertEqual(context.date_time, "April 18th @ 9pm")
+
+    #check that non-existent entry in Venue does not return a value
+    def test_VenueNonexistentRecord(self):
+        context = Venue.query.filter(Venue.venue_name == "NotRealRecord").first()
+        return self.assertEqual(context, None)
+
+    #check that non-existent entry in Show does not return a value
+    def test_ShowNonexistentRecord(self):
+        context = Shows.query.filter(Shows.show_name == "NotRealRecord").first()
+        return self.assertEqual(context, None)
+
+    #check that non-existent entry in Artist does not return a value
+    def test_ArtistNonexistentRecord(self):
+        context = Band.query.filter(Band.group == "NotRealRecord").first()
+        return self.assertEqual(context, None)
+
     # from website import main
 
 # ----
@@ -69,7 +78,7 @@ if __name__ == '__main__':
     main()
 
 """ #pragma: no cover
-% coverage3 run --branch TestWebsite.py >  TestWebsite.out 2>&1
+% coverage3 run --branch tests.py >  ../TestWebsite.out 2>&1
 
 
 

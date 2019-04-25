@@ -22,8 +22,8 @@
             <div class="col-md-6">
                 <br>
             <h3>Location</h3>
+            <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q={{ venue.location.strip().replace(' ', '%20').replace('#', '') }}&key=AIzaSyAfxluUBh_b2hLLZo0Feoo1CvD_lCIkdkA" allowfullscreen></iframe>
             <p>{{ venue.location }}</p>
-            <!-- <iframe width="400" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ1aFZAqS1RIYRu5WiNjw8b0A&key=AIzaSyAfxluUBh_b2hLLZo0Feoo1CvD_lCIkdkA" allowfullscreen></iframe> -->
         </div>
 
             <!-- Contact information -->
@@ -34,27 +34,40 @@
             </div>
         </div>
         <!-- Upcoming Shows -->
-        <div>
-            <br>
-            <h3>Upcoming Shows</h3>
-            {% set show_exist = [] %}
-            <ul>
-                <!-- looping through shows -->
-                {% for show in shows %}
-                    {% if show.venue == venue.venue_name %}
-                        <!-- if the show's venue is this venue -->
-                        {% if show_exist.append(0) %}{% endif %}
-                        <li>
-                            <!-- linking to show's page -->
-                            <a href="/shows/{{ show.show_name }}">{{ show.show_name }}, {{ show.date_time }}</a>
-                        </li>
-                    {% endif %}
-                {% endfor %}
-                <!-- if there are no upcoming shows -->
-                {% if show_exist|length == 0 %}
-                    <li>No Upcoming Shows</li>
-                {% endif %}
-            </ul>
+        <div class="graph-page-container">
+            <div class="container page-title-container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-lg-offset-4">
+                        <h3 class="text-center">Shows</h3>
+                    </div>
+                </div>
+                    <div class="row table-row justify-content-center">
+                        <div class="col">
+                            <table class="table table-hover">
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Show Name</th>
+                                    <th>Artists</th>
+                                </tr>
+                                {% for i in range( shows|length ) %}
+                                    <tr>
+                                        <td>{{ shows[i].date_time }}</td>
+                                        <td><a href="/shows/{{ shows[i].show_name.replace('/', '') }}">{{ shows[i].show_name }}</a></td>
+                                        <td>
+                                        {% for artist in artists[i].keys() %}
+                                            {% if artists[i][artist] != "" %}
+                                                <a href="{{ artists[i][artist] }}">{{ artist }}</a>{% if loop.index != loop.length %},{% endif %}
+                                            {% else %}
+                                                {{ artist|title }}{% if loop.index != loop.length %},{% endif %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+            </div>
         </div>
     </div>
 

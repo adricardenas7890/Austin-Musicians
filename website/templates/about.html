@@ -16,7 +16,7 @@
     <!-- Main Page -->
     <div class="container page-title-container">
         <!-- Title -->
-        <div class="row justify-content-center" style = "padding-top: 50px;">
+        <div class="row row-title justify-content-center" style = "padding-top: 50px;">
           <div class="col-lg-4 col-lg-offset-4">
               <h1 class="text-center">About</h1>
           </div>
@@ -42,11 +42,11 @@
                 </p>
               </div>
               <div>
-                <h5>Number of commits: 15</h5>
+                <h5>Number of commits: {{ commits['Adriana Cardenas'] }}</h5>
 
-                <h5>Number of issues: 29</h5>
+                <h5>Number of issues: 30</h5>
 
-                <h5>Number of unit tests: 0</h5>
+                <h5>Number of unit tests: 3</h5>
               </div>
             </div>
           </div>
@@ -62,11 +62,11 @@
                 </p>
               </div>
               <div>
-                <h5>Number of commits: 41</h5>
+                <h5>Number of commits: {{ commits['ChristianGil'] }}</h5>
 
-                <h5>Number of issues: 5</h5>
+                <h5>Number of issues: 17</h5>
 
-                <h5>Number of unit tests: 1</h5>
+                <h5>Number of unit tests: 2</h5>
               </div>
             </div>
           </div>
@@ -82,11 +82,11 @@
                 </p>
               </div>
               <div>
-                <h5>Number of commits: 23</h5>
+                <h5>Number of commits: {{ commits['Katelynn19'] }}</h5>
 
-                <h5>Number of issues: 0</h5>
+                <h5>Number of issues: 2</h5>
 
-                <h5>Number of unit tests: 0</h5>
+                <h5>Number of unit tests: 2</h5>
               </div>
             </div>
           </div>
@@ -103,9 +103,9 @@
                 </p>
               </div>
               <div>
-                <h5>Number of commits: 29</h5>
+                <h5>Number of commits: {{ commits['Kevin Han'] }}</h5>
 
-                <h5>Number of issues: 1</h5>
+                <h5>Number of issues: 3</h5>
 
                 <h5>Number of unit tests: 2</h5>
               </div>
@@ -117,9 +117,8 @@
               <div>
                 <h2 class="card-title">Testing Module</h2>
                 <h6 class="card-subtitle mb-2 text-muted">Press this button to run all unit tests</h6>
-                {% for line in tests %}
-                  {{ line }}
-                {% endfor %}
+                {{ tests|safe }}
+
                 <form method="POST">
                     <input type="submit" name = "Push To Test">
                 </form>
@@ -132,21 +131,24 @@
               <div class="card-body">
                   <h2 class="card-title">Project Stats</h2>
                   <h6 class="card-subtitle mb-2 text-muted">Overall</h6>
-                  <h5>Total Number of Commits: 86</h5>
-                  <h5>Total Number of Issues: 35</h5>
-                  <h5>Total Number of Unit Tests: 3</h5>
+                  <br>
+                  <h5>Total Number of Commits: {{ commits['commit'] }}</h5>
+                  <h5>Total Number of Issues: 52</h5>
+                  <h5>Total Number of Unit Tests: 9</h5>
                   <!--number of commits total, total no of issues,
                   total number of unit tests, link to gitlab issue tracker, link to gitlab repo, link to gitlab wiki -->
                   <h5>Data:  <a href="http://do512.com/">http://do512.com/</a></h5> 
                   <!--Links to data sources -->
-                  <h5> Tools:</h5> Flask, Bootstrap, Google Cloud Platform, IntelliJ IDE, W3C
+                  <h5> Tools:</h5>
+                    <p>Flask, Bootstrap, Google Cloud Platform, IntelliJ IDE, W3C</p><br>
                   <!--Tools used -->
-                  <h5>
-                      GitLab Issue Tracker:</h5><a href="https://gitlab.com/ChristianGil/cs329e-idb/issues" alt="issues">click here</a>
-
-                  <h5> Gitlab Repo:</h5><a href="https://gitlab.com/ChristianGil/cs329e-idb" alt="repo">click here</a>
-                    <h5>Gitlab Wiki:
-                  </h5><a href="https://gitlab.com/ChristianGil/cs329e-idb/wikis/home" alt="wiki">click here</a>
+                  <a href="https://gitlab.com/ChristianGil/cs329e-idb/issues"     target="_blank" alt="issues"><h5>GitLab Issue Tracker</h5></a>
+                  <br>
+                  <a href="https://gitlab.com/ChristianGil/cs329e-idb"            target="_blank" alt="repo"  ><h5>GitLab Repo</h5></a>
+                  <br>
+                  <a href="https://gitlab.com/ChristianGil/cs329e-idb/wikis/home" target="_blank" alt="wiki"  ><h5>GitLab Wiki</h5></a>
+                  <br>
+                  <a href="https://speakerdeck.com/kevhookem/austin-musicians" target="_blank" alt="slides"><h5>Speaker Deck</h5></a>
                 </div>
               </div>
             </div>

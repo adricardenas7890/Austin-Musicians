@@ -1,3 +1,19 @@
+p {
+    font-family: "Tahoma";
+}
+
+h1 {
+    font-family: "Arial Black";
+    font-size: 3.2rem;
+}
+
+h1.title-text{
+    font-family: 'Arial Black';
+    color: white;
+    font-size: 50px;
+    text-shadow: 1px 1px black;
+}
+
 html, body {
     height: 100%;
 }
@@ -15,15 +31,21 @@ img.about-image{
 }
 
 h1.text-center.cover {
-    font-style: italic;
-    font-size: 50px;
+    font-size: calc(65px + 65*(100vw - 600px)/(2000 - 600));
     color: black;
+    text-shadow: 10px 10px white;
 }
 
-h3.fancy-cursive{
+h1.text-center.random-carousel-slide.cover {
+    font-size: calc(65px + 50*(100vw - 600px)/(2000 - 600));
+    color: white;
+    text-shadow: 10px 10px black;
+}
+
+h4.fancy-cursive{
     font-family: 'Pacifico', cursive;
     color: white;
-    font-size: 50px;
+    font-size: calc(25px + 15*(100vw - 600px)/(2000 - 600));
     text-shadow: 1px 1px black;
 }
 
@@ -32,7 +54,7 @@ h3.fancy-cursive{
 }
 
 .main-title-container-austin {
-    padding-top: 40vh;
+    padding-top: 15vh;
     padding-bottom: 10vh;
     border: black;
 }
@@ -42,12 +64,23 @@ h3.fancy-cursive{
     overflow: hidden;
 }
 .full-page-container-austin {
-    height: calc(100% - 60px);
+    height: 100%;
     overflow: hidden;
-    background-image: url(/static/images/coverphoto2.png);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.height100{
+    height: 100%
+}
+.full-page{
+    height: calc(100% - 60px);
+}
+.flex-sep{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
 }
 
 .full-page-container2 {
@@ -120,6 +153,20 @@ nav {
     border:2px solid #000! important;
 }
 
+.card.cover-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: transparent;
+}
+
+.card.cover-card {
+    border: white;
+}
+
+
+row.row-title {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
 
 
 

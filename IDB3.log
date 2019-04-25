@@ -1,3 +1,286 @@
+commit 04ce7210f71eeb20eee9fe7559345d6a5a108218
+Merge: 1f8c16c 738a8b4
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Mon Apr 22 22:08:54 2019 -0500
+
+    Merge Conflict Resolved
+
+commit 1f8c16cb0f928d8f48b1c18417212e84734ea402
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Mon Apr 22 22:06:18 2019 -0500
+
+    Fixed shows in venues. edited makefile and log.
+
+commit 738a8b40a8344397f4228b0c90ef1bcaf08a5c19
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Mon Apr 22 19:13:37 2019 -0500
+
+    added description to the About page testing block. says whether test failed or passed
+
+commit af178505b73a99654cb2b9bb050201337396a7f0
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Mon Apr 22 19:08:28 2019 -0500
+
+    added katelynn's unittests
+
+commit fed0e83b4ba355c8074586e8aabeaa1698a4de7d
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Mon Apr 22 18:37:59 2019 -0500
+
+    blank link to speakerdeck added
+
+commit 5efa2d79c5ae90c84d51ccb309f0422e1cd79623
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Mon Apr 22 18:25:28 2019 -0500
+
+    updated about.html for Adriana C
+
+commit c904bae685c2895f037d4463f52e62d5f42952f2
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Mon Apr 22 17:45:39 2019 -0500
+
+    added unittests VenueNonExistentRecord, ShowNonexistentRecord, updated makefile to IDBlog3.log
+
+commit 94da18220363940538250c48f08db1d14700383b
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Mon Apr 22 17:20:10 2019 -0500
+
+    unit test_VenueLocationIsCorrect added
+
+commit 3df63c2e8f6cfe87ec449e513aef69e7d4d813ef
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Mon Apr 22 11:48:09 2019 -0500
+
+    fixed link issue of artist from show template
+
+commit 226594d553b0c4e5a4299238b399f33517ad1b48
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Mon Apr 22 11:09:37 2019 -0500
+
+    Changed Font styling. Updated Gcloud
+
+commit 0f97dbcd9e5755507b679bf92e7f953f80c9ee09
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Mon Apr 22 10:40:00 2019 -0500
+
+    Updated Makefile, logs, and models.html
+
+commit bdef4b882821930b6a74e2b0a4d7de44b23a5fc7
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Fri Apr 19 10:45:51 2019 -0500
+
+    fixed font in carousel
+
+commit 9cc52b7aa7bf95d9e57ee0530215bee901832898
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Wed Apr 17 19:55:44 2019 -0500
+
+    working carousel
+
+commit 0feaf31b4acd83cd315f72fab158a455b6f37d11
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Mon Apr 15 11:22:47 2019 -0500
+
+    Fixed Homepage styling. Dynamic homepage text.
+
+commit b1751e8177b5e10645dbda56d3561cd138a2cd0d
+Merge: ef465a3 e86a455
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Mon Apr 15 10:12:18 2019 -0500
+
+    Merge branch 'dev_phase3' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase3
+
+commit ef465a371e6a8c171d93f1e7e12ea09cf44a1299
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Mon Apr 15 10:12:16 2019 -0500
+
+    Fixed Date Sorting. Gitlab CI Fix(?)
+
+commit e86a455995fb29192eef57e5f8a69220a5107ef5
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Fri Apr 12 14:43:59 2019 -0500
+
+    added general carousel for home page. In progress
+
+commit eeaf20366e8cb4a0bfa6e3483bb99f6e2c01e7d5
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Wed Apr 10 18:41:16 2019 -0500
+
+    added info to base.html
+
+commit e37fb91ceea1d9cbbd6b16ab2e00c808d2d7b18b
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Wed Apr 10 18:37:26 2019 -0500
+
+    added pagination
+
+commit 5dcb7f8f45e7b6da4ca12d8621e407bac68b149e
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Apr 10 12:10:01 2019 -0500
+
+    Added in Google Maps. Gitlab Fix(?)
+
+commit 1956ae08b089fffe93b6c4c9a7e63b5a05efbdb2
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Apr 10 11:42:34 2019 -0500
+
+    Unittests display on about page. Gitlab CI Fix(?)
+
+commit f89a6cf53f3f0e28807e900313e71c8e4d2b67ef
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Wed Apr 10 11:20:46 2019 -0500
+
+    About Updates itself. Gitlab CI Fix (?)
+
+commit bdc8522ec5b58a5fbeb3dfd92e5639f6acbd8074
+Merge: ceb1ab5 9c1128d
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Tue Apr 9 23:33:53 2019 -0500
+
+    Merge branch 'dev_phase3' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase3
+
+commit ceb1ab57aa2007cc470b97f08335065de0176717
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Tue Apr 9 23:33:40 2019 -0500
+
+    Checked all hyperlinks. Gitlab fix(?)
+
+commit 9c1128de0677359b4edd6d4dc7aefbef089fff76
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Tue Apr 9 15:26:30 2019 -0500
+
+    splash page made nicer, padding added to page titles
+
+commit 6e661ca15c2063fc0e58d887f0b0fdb3ab6e4257
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Tue Apr 9 15:15:34 2019 -0500
+
+    search added to models.py
+
+commit 9767ce66a57b1da767d7870d630a67a8903c0b53
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Mon Apr 8 11:31:51 2019 -0500
+
+    Fixed Artists links. Gitlab Fix?
+
+commit ebb3b53f77c854e8dda0a3c57067bf5d1c51e9a1
+Merge: 4273da7 4c715ff
+Author: Christian Gil <cmg580@utexas.edu>
+Date:   Mon Apr 8 14:58:47 2019 +0000
+
+    Merge branch 'dev_phase2' into 'master'
+    
+    Dev phase2
+    
+    See merge request ChristianGil/cs329e-idb!5
+
+commit 4c715ff08f79113548ff3391e68256a299650068
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Mon Apr 8 09:57:23 2019 -0500
+
+    final version on GC. Switching to dev_phase3.
+
+commit f40c8490f47bda25ad64d28896c9c36d00a86263
+Merge: fa48320 145499c
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Fri Apr 5 11:25:09 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit fa483202949b9dad2a9b9822c1092212a75b58a6
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Fri Apr 5 11:25:00 2019 -0500
+
+    Fixed Gitlab CI
+
+commit b674da8d2498122ccf4d22f24af2664b4255feb7
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Fri Apr 5 11:24:45 2019 -0500
+
+    Fixed Artists Shows. Gcloud compatible.
+
+commit 4273da713b2564f8b4882bc9eac8cff314391d5d
+Merge: 9aff8cb 145499c
+Author: Adriana Cardenas <adri.cardenas@utexas.edu>
+Date:   Fri Apr 5 02:53:22 2019 +0000
+
+    Merge branch 'dev_phase2' into 'master'
+    
+    Dev phase2
+    
+    See merge request ChristianGil/cs329e-idb!4
+
+commit 145499c715f8755d6668df4206d7ad0cd3256b61
+Merge: 1c88f4f 18e56ac
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Thu Apr 4 21:46:52 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit 1c88f4f2aab2d10ee43deb3088827b85e3f8abb9
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Thu Apr 4 21:46:42 2019 -0500
+
+    added 2nd unit test
+
+commit 18e56acfdd46a7cbbaa001b8c6faa8c5f24e387f
+Merge: e1e15f3 57f55d3
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Thu Apr 4 21:45:42 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit e1e15f3b78689eeed120fe80399b8f43a80bdd94
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Thu Apr 4 21:45:35 2019 -0500
+
+    Attempt to pass the gitlab  CI
+
+commit 57f55d3c318d733470de61e768b50726f5395ea7
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Thu Apr 4 21:35:26 2019 -0500
+
+    fixed first unit test
+
+commit 548b69a5762a344a32ead272ec0f4f5ec1d34915
+Merge: 37c6171 7d6707e
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Thu Apr 4 21:33:12 2019 -0500
+
+    Finished 2 tests
+
+commit 37c61713a3f199b4fcca4e128fd1b2bcc2597eb0
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Thu Apr 4 21:31:41 2019 -0500
+
+    Added in 2 tests
+
+commit 7d6707ed486c2d33621b62f1bf3ff6e8cbeef3bd
+Merge: e68c9ad 1cb6f02
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Thu Apr 4 21:31:05 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit e68c9ad1f90455d09f4b041c5655868d18fb2569
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Thu Apr 4 21:30:50 2019 -0500
+
+    first test case
+
+commit 1cb6f02bfc95c8bbbe51fd40b35ea7942afdca9e
+Merge: 109d9ac 7d6127e
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Thu Apr 4 21:23:05 2019 -0500
+
+    Merge branch 'dev_phase2' of https://gitlab.com/ChristianGil/cs329e-idb into dev_phase2
+
+commit 109d9acb292d7e3bafa42530d83af466d726b48c
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Thu Apr 4 21:22:57 2019 -0500
+
+    updated about page
+
 commit 7d6127e35abc026faeae3a66bdc2b6338bab1a3d
 Merge: 206aab4 f1342a2
 Author: ChristianGil <cmg580@utexas.edu>

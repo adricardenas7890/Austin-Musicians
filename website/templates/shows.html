@@ -7,7 +7,7 @@
 {% block content %}
 <div class="graph-page-container">
         <div class="container page-title-container">
-            <div class="row justify-content-center">
+            <div class="row row-title justify-content-center">
                 <div class="col-lg-4 col-lg-offset-4">
                     <h1 class="text-center">Shows & Tours</h1>
                 </div>
@@ -28,25 +28,21 @@
                                     {% for show in shows %}
                                     <tr>
                                         <td>
-                                            {% if "/" in show.show_name %}
-                                                <a href="{{ show.show_name.replace("/", "") }}">{{ show.show_name }}</a>
-                                            {% else %}
-                                                <a href="{{ show.show_name }}">{{ show.show_name }}</a>
-                                            {% endif %}
+                                            <a href="{{ show.show_name.replace('/', '') }}">{{ show.show_name }}</a>
                                         </td>
                                         <td>{{ show.presented_by }}</td>
                                         <td>
                                             {% for artist in show.featured_artists.split(",") %}
                                                 {% set exists = [] %}
                                                 {% for band in bands %}
-                                                    {% if artist == band.group %}  <!---check if artist is in band.groups...i think-->
+                                                    {% if artist.strip().lower() == band.group.lower() %}  <!---check if artist is in band.groups...i think-->
                                                         {% if exists.append(0) %}{% endif %}
                                                     {% endif %}
                                                 {% endfor %}
                                                 {% if exists|length == 0 %}
                                                     {{artist}}<br>
                                                 {% else %}
-                                                    <a href="/artists/{{ artist }}">{{ artist }}</a> <br>
+                                                    <a href="/artists/{{ artist.strip() }}">{{ artist }}</a> <br>
                                                 {% endif %}
                                             {% endfor %}                                        
                                         </td>
@@ -54,17 +50,19 @@
                                             <!-- venue -->
                                             {% set exists = [] %}
                                             {% for venue in venues %}
-                                                {% if show.venue == venue.venue_name %}  <!---check if artist is in band.groups...i think-->
+                                                {% set venueName =  venue.venue_name.lower().strip() %}
+                                                {% set showVenue =  show.venue.lower().strip() %}
+                                                {% if showVenue == venueName or showVenue in venueName or venueName in showVenue %}  <!---check if artist is in band.groups...i think-->
                                                     {% if exists.append(0) %}{% endif %}
                                                 {% endif %}
                                             {% endfor %}  
                                             {% if exists|length == 0 %}
                                                     {{show.venue}}<br>
                                                 {% else %}
-                                                    <a href="/venues/{{ show.venue }}">{{ show.venue }}</a> <br>
+                                                    <a href="/venues/{{ show.venue.lower().title() }}">{{ show.venue }}</a> <br>
                                             {% endif %}
                                         </td>
-                                        <td>{{ show.date_time }}</td>
+                                        <td><span style = "display: none !important;">{{ show.date_time }}</span>{{ show.date_time.strftime('%A, %B %w @ %I:%M %p').replace(" 0", " ") }}</td>
                                     </tr>
                                     {% endfor %}
                             </tbody>

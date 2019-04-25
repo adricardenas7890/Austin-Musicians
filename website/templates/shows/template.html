@@ -12,36 +12,44 @@
                 <img class = "width-100" src="{{ show.flyer }}">
             </div>
             <div>
+                <h5>
+                    <br><a href="{{ show.tickets }}">Tickets</a><br><br>
+                    <u>Date and Time:</u><br><br>
+                    <b>{{ show.date_time }}</b><br><br>
+                    <u>Venue:</u><br>
+                </h5>
                 <p>
-                    <a href="{{ show.tickets }}">Tickets</a><br>
-                    Date and Time: {{ show.date_time }}<br>
-                    
                     <!-- venue -->
                     {% set exists = [] %}
+                    {% set venue_name = [] %}
                     {% for venue in venues %}
-                        {% if show.venue == venue.venue_name %}  <!---check if artist is in band.groups...i think-->
+                        {% if show.venue.lower() == venue.venue_name.lower() %}  <!---check if artist is in band.groups...i think-->
                             {% if exists.append(0) %}{% endif %}
+                            {% if venue_name.append(venue.venue_name) %}{% endif %}
                         {% endif %}
                     {% endfor %}  
                     {% if exists|length == 0 %}
-                            {{show.venue}}<br>
+                            {{show.venue}}<br><br>
                         {% else %}
-                            <a href="/venues/{{ show.venue }}">{{ show.venue }}</a> <br>
+                            <a href="/venues/{{ venue_name[0] }}">{{ show.venue }}</a><br><br>
                     {% endif %}
-                    
+                </p>
+                <h5>
+                    <u>Featuring:</u><br>
+                </h5>
+                <p>
                     <!-- featuring artists -->
-                    Featuring:<br>
                     {% for artist in show.featured_artists.split(",") %}
                         {% set exists = [] %}
                         {% for band in bands %}
-                            {% if artist == band.group %}  <!---check if artist is in band.groups...i think-->
+                            {% if artist.lower().strip() == band.group.lower().strip() %}  <!---check if artist is in band.groups...i think-->
                                 {% if exists.append(0) %}{% endif %}
                             {% endif %}
                         {% endfor %}
                         {% if exists|length == 0 %}
                             {{artist}}<br>
                         {% else %}
-                            <a href="/artists/{{ artist }}">{{ artist }}</a> <br>
+                            <a href="/artists/{{ artist.strip() }}">{{ artist }}</a> <br>
                         {% endif %}
                     {% endfor %}  
                 </p>

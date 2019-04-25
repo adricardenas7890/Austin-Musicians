@@ -1,10 +1,10 @@
-.PHONY: IDB1.log
+.PHONY: IDB3.log
 
 FILES :=                              \
     .gitignore                        \
     .gitlab-ci.yml                    \
     requirements.txt                  \
-    TestWebsite.py                    \
+    website/tests.py                    \
     website/main.py                   \
     website/views.py                  \
     website/__init__.py
@@ -35,14 +35,20 @@ endif
 
 # Modify this to make more or less .HTML files representing our files
 Website.html: website/main.py
-	$(PYDOC) -w website/main.py
+	$(PYDOC) -w website.main
+	mv website.main.html main.html
 
-IDB1.log:
-	git log > IDB1.log
+Models.html: website/models.py
+	$(PYDOC) -w website.models
+	mv website.models.html models.html
 
-TestWebsite.tmp: TestWebsite.py
-	$(COVERAGE) run    --branch TestWebsite.py >  TestWebsite.tmp 2>&1
-	# $(COVERAGE) report -m                      >> TestWebsite.tmp  # Uncomment line when tests are made
+IDB3.log:
+	git log > IDB3.log
+
+TestWebsite.tmp: website/tests.py
+	$(COVERAGE) run    --branch website/tests.py
+	$(COVERAGE) run    --branch website/tests.py >  TestWebsite.tmp 2>&1
+	$(COVERAGE) report -m --omit=*site-packages*    >> TestWebsite.tmp
 	cat TestWebsite.tmp
 
 check:
@@ -80,8 +86,12 @@ format:
 
 scrub:
 	make clean
-	rm -f  Website.html
-	rm -f  IDB1.log
+	rm -f  main.html
+	rm -f  IDB3.log
+	rm -f  website.models.html
+	rm -f  models.html
+	rm -f  website.main.html
+	rm -f  main.html
 
 status:
 	make clean
@@ -112,4 +122,4 @@ versions:
 	which    $(PYTHON)
 	python   --version
 
-test: Website.html IDB1.log TestWebsite.tmp check
+test: Website.html Models.html IDB3.log TestWebsite.tmp check

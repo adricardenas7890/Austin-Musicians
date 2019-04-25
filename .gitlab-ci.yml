@@ -1,15 +1,29 @@
+# Official framework image. Look for the different tagged releases at:
+# https://hub.docker.com/r/library/python
+image: python:latest
+
+# Pick zero or more services to be used on all builds.
+# Only needed when using a docker container to run your tests in.
+# Check out: http://docs.gitlab.com/ce/ci/docker/using_docker_images.html#what-is-a-service
+services:
+  - postgres:9.5
+
+variables:
+  POSTGRES_DB: austin-music
+  SQLALCHEMY_DATABASE_URI: "postgresql://postgres:postgres@postgres/$POSTGRES_DB"
+
+
 before_script:
     - date
     - uname -a
     - pip install --upgrade pip
     - pip install -r requirements.txt
-    - make versions	
+    - make versions
     - printenv | sort
-    - wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy
-    - chmod +x cloud_sql_proxy
+    - python3 website/create_db.py
 
 Website:
-    image: "python:latest"
     script:
     - ls -al
+    - make scrub
     - make test
