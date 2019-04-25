@@ -1,3 +1,36 @@
+commit 45c1b8901645bfb73a281d8a42cf3b599e273362
+Merge: c8beac4 54cded4
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Thu Apr 25 23:57:53 2019 +0000
+
+    Merge branch 'dev_phase3' into 'master'
+    
+    Dev phase3
+    
+    See merge request ChristianGil/cs329e-idb!6
+
+commit 54cded48264b7f8f8354099a69c1371575e42469
+Merge: 7896369 c8beac4
+Author: Katelynn19 <kwhittington19@utexas.edu>
+Date:   Thu Apr 25 23:47:45 2019 +0000
+
+    Merge branch 'master' into 'dev_phase3'
+    
+    # Conflicts:
+    #   website/templates/venues/template.html
+
+commit 78963690b6f5a1faae530daea2afef6e11cf8ce0
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Tue Apr 23 12:36:50 2019 -0500
+
+    updated link to speaker deck
+
+commit e7d9775bad6e85de15cdbe877260a80fc536d4fa
+Author: ChristianGil <cmg580@utexas.edu>
+Date:   Mon Apr 22 22:16:36 2019 -0500
+
+    Updated about page and log.
+
 commit 04ce7210f71eeb20eee9fe7559345d6a5a108218
 Merge: 1f8c16c 738a8b4
 Author: ChristianGil <cmg580@utexas.edu>
@@ -162,6 +195,19 @@ Author: ChristianGil <cmg580@utexas.edu>
 Date:   Mon Apr 8 11:31:51 2019 -0500
 
     Fixed Artists links. Gitlab Fix?
+
+commit c8beac48efc9f5690644a349828d8841471b7279
+Merge: 9ead055 ebb3b53
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Mon Apr 8 11:19:26 2019 -0500
+
+    merge conflict
+
+commit 9ead055c86b450caefbf8b27a0f6fef3c69d5fd7
+Author: Kevin Han <kevinhan007@gmail.com>
+Date:   Mon Apr 8 11:17:23 2019 -0500
+
+    fixed show output in venue template
 
 commit ebb3b53f77c854e8dda0a3c57067bf5d1c51e9a1
 Merge: 4273da7 4c715ff
