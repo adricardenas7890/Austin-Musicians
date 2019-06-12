@@ -6,7 +6,7 @@ This website was created by Adriana Cardenas, Christian Gil, Katelynn Whittingto
 
 We hope to continue our efforts and produce a website that can continue to assist local Austin residents long after our class is over.
 
-(Originally Gitlab Repository)
+(Originally Gitlab Repository Maintainer: https://gitlab.com/ChristianGil/cs329e-idb)
 
 # 1. Introduction
 
