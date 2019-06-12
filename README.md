@@ -128,3 +128,4 @@ As as a user, I want to able to view the splash page upon visiting our website s
 
 # Web Navigation
 
+![alt text](https://gitlab.com/ChristianGil/cs329e-idb/wikis/uploads/be85582939affd90f569a6022afed617/Screen_Shot_2019-03-24_at_9.29.24_PM.png)
