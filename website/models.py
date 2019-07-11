@@ -5,9 +5,9 @@ from flask_sqlalchemy import SQLAlchemy
 import os
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI', "postgresql+psycopg2://postgres:password123@127.0.0.1:5432/austin-music")
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True # to suppress a warning message
-db = SQLAlchemy(app)
+#app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI', "postgresql+psycopg2://postgres:password123@127.0.0.1:5432/austin-music")
+#app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True # to suppress a warning message
+#db = SQLAlchemy(app)
 
 class Band(db.Model):
     __tablename__ = 'band'
